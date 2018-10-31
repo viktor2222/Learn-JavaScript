@@ -307,3 +307,132 @@ const plantNeedsWater = (day) => {
 
 //Let's refactor plantNeedsWater() to be a concise body. Notice that we've already converted the if/else statement to a ternary operator to make the code fit on one line.
 const plantNeedsWater = day => day === 'Wednesday' ? true : false;
+
+
+//Arrays
+
+let newYearsResolutions = ['Keep a journal', 'Take a falconry class', 'Learn to juggle'];
+
+console.log(newYearsResolutions);
+
+//Create an Array
+
+//Declare a variable using const named hobbies and set it equal to an array with three strings inside of it.
+const hobbies = ['drive', 'run', 'water'];
+console.log(hobbies);
+
+//Accessing Elements
+
+const famousSayings = ['Fortune favors the brave.', 'A joke is a very serious thing.', 'Where there is love there is life.'];
+
+//Create a variable named listItem and set it equal to the first item in the famousSayings array using square bracket notation ([]).
+let listItem = famousSayings[0];
+
+console.log(listItem);
+
+//Now, console.log() the third element in the famousSayings array using bracket notation to access the element.
+console.log(famousSayings[2]);
+
+//Try to log the item at index [3] of famousSayings to the console. What is logged to the console?
+console.log(famousSayings[3]);
+
+//Update Elements
+
+let groceryList = ['bread', 'tomatoes', 'milk'];
+//Change the second element of the array groceryList to 'avocados'.
+groceryList[1] = 'avocados';
+
+//Arrays with let and const
+
+let condiments = ['Ketchup', 'Mustard', 'Soy Sauce', 'Sriracha'];
+
+const utensils = ['Fork', 'Knife', 'Chopsticks', 'Spork'];
+
+//Below the two existing arrays, re-assign the element in index 0 of condiments to 'Mayo'.
+condiments[0] = 'Mayo';
+console.log(condiments);
+
+//Below your code from Step 1, reassign condiments to be a new array that contains a single string ['Mayo']. Log the result to the console. Notice that you can re-assign elements in an array and re-assign an entire new array to a variable declared using the let keyword.
+condiments = ['Mayo'];
+console.log(condiments);
+
+//Below your code from Step 2, re-assign the last item from the utensils array to 'Spoon'.
+utensils[3] = 'Spoon';
+console.log(utensils);
+
+//The .length property
+
+const objectives = ['Learn a new languages', 'Read 52 books', 'Run a marathon'];
+
+//Find the length of the objectives array and log it to the console.
+console.log(objectives.length);
+
+
+//The .push() Method
+
+const chores = ['wash dishes', 'do laundry', 'take out trash'];
+
+//Add two elements to the chores array using .push().
+chores.push('drink', 'water');
+//Use console.log to print your chores array to make sure your items were added.
+console.log(chores);
+
+//The .pop() Method
+
+const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
+
+//Use the .pop() method to remove the last element from chores.In a line after you called chores.pop(), log chores to the console to make sure it worked.
+chores.pop();
+console.log(chores);
+
+//More Array Methods
+
+const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
+
+//Use the .shift() method to remove the first item from the array groceryList. Log the new groceryList to the console.
+groceryList.shift();
+
+//Under the code added in step 1, use the .unshift() method to add 'popcorn' to the beginning of your grocery list. After calling .unshift() on groceryList, log groceryList to the console. You may wish to delete the console.log() statement from the previous step.
+groceryList.unshift('popcorn');
+console.log(groceryList);
+
+//You're in a hurry so you decide to ask a friend to help you with your grocery shopping. You want him to pick up the 'bananas', 'coffee beans', and 'brown rice'. Under the code you added for step 2, use .slice() to provide your friend with a list of these three things.
+console.log(groceryList.slice(1, 4));
+
+//After calling .slice() on groceryList, log the grocery list to the console one more time.
+console.log(groceryList);
+
+//Let's find the index of a particular element in groceryList using .indexOf(). Call .indexOf() on groceryList to find the index of the element 'pasta' and save the returned value to a const variable named pastaIndex.
+const pastaIndex = groceryList.indexOf('pasta');
+console.log(pastaIndex);
+
+//arrays-24-10-2018
+
+//Arrays and Functions
+
+const concept = ['arrays', 'can', 'be', 'mutated'];
+
+function changeArr(arr){
+  arr[3] = 'MUTATED';
+}
+
+changeArr(concept);
+//Underneath the function call, log concept to the console to check if this reassignment mutated the array.
+console.log(concept);
+
+//Under the console.log() statement, define another function named removeElement that takes a parameter of newArr. Inside the function body call .pop() on newArr.
+function removeElement(newArr){
+  newArr.pop();
+}
+
+removeElement(concept);
+//After calling removeElement(concept), check the value of concept by logging it to console.
+console.log(concept);
+
+//Nested Arrays
+
+//Let's make a nested array! Create a variable numberClusters. Assign as its value an array with three array elements. The first array element should hold the elements 1 and 2 in that order. The second array element should hold the elements 3 and 4 in that order. The third array element should hold the elements 5 and 6 in that order.
+const numberClusters = [[1, 2], [3, 4], [5, 6]];
+
+//Awesome, you made a nested array! Now declare a variable named target using the const keyword and assign to access the element 6 inside numberClusters.
+const target = numberClusters[2][1];
