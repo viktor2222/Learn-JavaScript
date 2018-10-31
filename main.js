@@ -436,3 +436,153 @@ const numberClusters = [[1, 2], [3, 4], [5, 6]];
 
 //Awesome, you made a nested array! Now declare a variable named target using the const keyword and assign to access the element 6 inside numberClusters.
 const target = numberClusters[2][1];
+
+//conditional
+
+//What are Conditional Statements?
+
+//create an if statement
+
+//Now create an if statement. Provide the if statement a condition of sale. Inside the code block of the if statement, console.log() the string 'Time to buy!'.
+//Notice that the code inside the if statement ran, since 'Time to buy!' was logged to the console.Below the sale variable declaration, but before the if statement, reassign sale to false. Run your code and observe what happens, we'll be changing this behavior in the next exercise.
+let sale = true;
+
+sale = false;
+
+if(sale){
+   console.log('Time to buy!');
+   }
+
+//If...Else Statements
+//Add an else statement to the existing if statement. Inside the code block of the else statement, console.log() the string 'Time to wait for a sale.'
+let sale = true;
+
+sale = false;
+
+if(sale) {
+  console.log('Time to buy!');
+} else{
+  	console.log('Time to wait for a sale.');
+	}
+  //Comparison Operators
+
+  //Using let, create a variable named hungerLevel and set it equal to 7.
+  let hungerLevel = 7;
+
+  //Write an if...else statement using a comparison operator. The condition should check if hungerLevel is greater than 7. If so, the conditional statement should log, 'Time to eat!'. Otherwise, it should log 'We can eat later!'.
+  if(hungerLevel > 7){
+     console.log('Time to eat!');
+     } else{
+       console.log('We can eat later!');
+     }
+
+  //Logical Operators
+  //In main.js there are two variables mood and tirednessLevel.Let's create an if...else statement that checks if mood is 'sleepy' and tirednessLevel is greater than 8. If both conditions evaluate to true, then console.log() the string 'time to sleep'. Otherwise, we should console.log() 'not bed time yet'. After you press "Run", play around with the || operator and the ! operator! What happens if you negate the value of the entire statement with ! and switch to || instead of &&?
+  let mood = 'sleepy';
+  let tirednessLevel = 6;
+
+  if(mood === 'sleepy' && tirednessLevel > 8){
+    console.log('time to sleep');
+    } else{
+      console.log('not bed time yet');
+    }
+
+  //Truthy and Falsy
+  //Change the value of wordCount so that it is truthy. This value should still be a number. After you make this change and run your code, 'Great! You've started your work!' should log to the console.
+  let wordCount = 1;
+
+  if (wordCount) {
+    console.log("Great! You've started your work!");
+  } else {
+    console.log('Better get to work!');
+  }
+
+  //Change the value of favoritePhrase so that it is still a string but falsy. After you make this change and run your code, 'This string is definitely empty.' should log to the console.
+  let favoritePhrase = '';
+
+  if (favoritePhrase) {
+    console.log("This string doesn't seem to be empty.");
+  } else {
+    console.log('This string is definitely empty.');
+  }
+
+  //Truthy and Falsy Assignment
+
+  //Notice that text 'The pen is mightier than the sword' logged to the console. Which means the value of writingUtensil is 'pen'. What if we reassign the value of tool to 'marker'. Let's see what happens to the value of writingUtensil.
+  let tool = 'marker';
+
+  //Let's use short-circuit evaluation to assign a value to writingUtensil. Do not edit tool yet, we'll return to tool in the next step. Assign to writingUtensil the value of tool and if tool is falsy, assign a default value of 'pen'. Use short circuit evaluation to assign  writingUtensil variable below:
+  let writingUtensil = tool || 'pen';
+
+  console.log(`The ${writingUtensil} is mightier than the sword.`);
+
+  //Ternary Operator
+
+  let isLocked = false;
+
+  if (isLocked) {
+    console.log('You will need a key to open the door.');
+  } else {
+    console.log('You will not need a key to open the door.');
+  }
+
+  let isCorrect = true;
+
+  if (isCorrect) {
+    console.log('Correct!');
+  } else {
+    console.log('Incorrect!');
+  }
+
+  let favoritePhrase = 'Love That!';
+
+  if (favoritePhrase === 'Love That!') {
+    console.log('I love that!');
+  } else {
+    console.log("I don't love that!");
+  }
+  //Refactor, or edit, the first if...else block to use a ternary operator.
+  isLocked ? console.log('You will need a key to open the door.') : console.log('You will not need a key to open the door.');
+
+  //Refactor the second if...else block to use a ternary operator.
+  isCorrect ? console.log('Correct!') : console.log('Incorrect!');
+
+  //Refactor the third if...else block to use a ternary operator.
+  favoritePhrase === 'Love That!' ? console.log('I love that!') : console.log("I don't love that!");
+
+  //Else If Statements
+
+  //In main.js there is already an if...else statement in place. Let's add an else if statement that checks if season is equal to 'winter'. Add another else if statement that checks if season is equal to 'fall'. Add a final else if statement that checks if season is equal to 'summer'.
+  let season = 'summer';
+
+  if (season === 'spring') {
+    console.log('It\'s spring! The trees are budding!');
+  } else if(season === 'winter'){
+    console.log('It\'s winter! Everything is covered in snow.');
+  }	else if(season === 'fall'){
+    console.log('It\'s fall! Leaves are falling!')
+  }	else if(season === 'summer'){
+    console.log('It\'s sunny and warm because it\'s summer!');
+  } else {
+    console.log('Invalid season.');
+  }
+
+  //The switch keyword
+
+  //Let's write a switch statement to decide what medal to award an athlete.
+  let athleteFinalPosition = 'first place';
+
+  switch (athleteFinalPosition){
+    case 'first place':
+      console.log('You get the gold medal!');
+      break;
+    case 'second place':
+      console.log('You get the silver medal!');
+      break;
+    case 'third place':
+      console.log('You get the bronze medal!');
+      break;
+    default:
+      console.log('No medal awarded.');
+      break;
+  }
