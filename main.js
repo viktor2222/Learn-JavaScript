@@ -210,3 +210,100 @@ const logVisibleLightWaves = () => {
 };
 
 logVisibleLightWaves();
+
+
+//functions
+//Function Declarations
+
+ //Let's create a function that prints a reminder to the console. Using a function declaration, create a function called getReminder().
+function getReminder() {
+  console.log('Water the plants.');
+}
+ //Using a function declaration, create a function called greetInSpanish().
+function greetInSpanish(){
+  console.log('Buenas Tardes.');
+}
+
+//Calling a Function
+
+ //Define a function called sayThanks() as a function declaration. In the function body of sayThanks(), add code such that the function writes the following thank you message to the console when called: 'Thank you for your purchase! We appreciate your business.'
+function sayThanks(){
+ console.log('Thank you for your purchase! We appreciate your business.');
+}
+sayThanks();
+sayThanks();
+sayThanks();
+
+//Parameters and Arguments
+
+ //With name as a parameter, it can be used as a variable in the function body of sayThanks().
+function sayThanks(name) {
+  console.log('Thank you for your purchase '+ name + '! We appreciate your business.');
+}
+sayThanks('Cole');
+
+//Default Parameters
+
+//Change the parameters of makeShoppingList() into default parameters : Assign 'milk' as the default value of item1. Assign 'bread' as the default value of item2. Assign 'eggs' as the default value of item3.
+function makeShoppingList(item1 = 'milk', item2 = 'bread', item3 = 'eggs'){
+  console.log(`Remember to buy ${item1}`);
+  console.log(`Remember to buy ${item2}`);
+  console.log(`Remember to buy ${item3}`);
+}
+
+makeShoppingList();
+
+//Return
+
+//Declare a function monitorCount() that has two parameters. The first parameter is rows and the second parameter is columns.
+function monitorCount(rows, columns){
+  return rows * columns;
+}
+//Declare a variable named numOfMonitors using the const keyword and assign numOfMonitors the value of invoking monitorCount() with the arguments 5 and 4.
+const numOfMonitors = monitorCount(5, 4);
+
+console.log(numOfMonitors);
+
+//Helper Functions
+
+function monitorCount(rows, columns) {
+  return rows * columns;
+}
+//Below monitorCount Create a function declaration named costOfMonitors that has two parameters, the first parameter is rows and the second parameter is columns. Leave the function body empty for now.
+function costOfMonitors(rows, columns) {
+  return monitorCount(rows, columns) * 200;
+}
+
+//Declare a variable named totalCost using the const keyword. Assign to totalCost the value of calling costOfMonitors() with the arguments 5 and 4 respectively.
+const totalCost = costOfMonitors(5, 4);
+
+console.log(totalCost);
+
+//Function Expressions
+
+//Let's say we have a plant that we need to water once a week on Wednesdays. We could define a function expression to help us check the day of the week and the plant needs to be watered:
+const  plantNeedsWater = function (day){
+  if(day === 'Wednesday'){
+    return true;
+  } else {
+    return false;
+  }
+}
+plantNeedsWater('Tuesday')
+console.log(plantNeedsWater('Tuesday'));
+
+//Arrow Functions
+
+//Change plantNeedsWater() to use arrow function syntax.
+const plantNeedsWater = (day) => {
+  if (day === 'Wednesday') {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+//Concise Body Arrow Functions
+
+//Let's refactor plantNeedsWater() to be a concise body. Notice that we've already converted the if/else statement to a ternary operator to make the code fit on one line.
+const plantNeedsWater = day => day === 'Wednesday' ? true : false;
