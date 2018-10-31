@@ -7,6 +7,8 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/7d56630857602149f857d1b1b3e532d2125775f2">Functions</a> - function is a block of code designed to perform a particular task. Function is executed when something invokes it.</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d4720f6bfcd7cc4f00924d8743e62f7d6bacc97f">Arrays</a> - are used to store multiple values in a single variable.</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/cfca26f415ec0995aacab4e2148a38c3c32d04f3">Conditional</a> - сonditional expressions are used to perform different actions for conditions</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/add572b87f76b35b0eac86bdb8d99bc48711769c">Loops, iterators</a> - to run the same code again and again, each time with another value.</li>
+  <li><a href="">Conditional</a> - сonditional expressions are used to perform different actions for conditions</li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
@@ -60,6 +62,25 @@
   <li>if statement - if the condition is true, then the code block will be executed</li>
   <li>If...Else Statements - is executed when block "if" with the same condition false</li>
   <li>The switch keyword - to select one of many code blocks to be executed.</li>
+</ul>
+
+<h4>Loops</h4>
+
+<ul>
+  <li>for - loops through a block of code a number of times</li>
+  <li>for/in - loops through the properties of an object</li>
+  <li>while - loops through a block of code while a specified condition is true</li>
+  <li>do/while - also loops through a block of code while a specified condition is true</li>
+</ul>
+
+<h4>Iterators</h4>
+
+<ul>
+  <li>The .forEach() Method - calls a provided function once for each element in an array, in order.</li>
+  <li>The .map() Method - creates a new array with the results of calling a provided function on every element in the calling array.</li>
+  <li>The .filter() Method - creates a new array with all elements that pass the test implemented by the provided function.</li>
+  <li>The .findIndex() Method - returns the index of the first element in the array that satisfies the provided testing function. if returns -1, no element passed the test.</li>
+  <li>The .reduce() Method - executes a reducer function (that you provide) on each member of the array resulting in a single output value.</li>
 </ul>
 
 <h4></h4>
