@@ -586,3 +586,208 @@ if(sale) {
       console.log('No medal awarded.');
       break;
   }
+
+
+//LOOPS
+
+//Repeating Tasks Manually
+
+// Write your code below
+//Create the variable vacationSpots, and assign its value to an array of three strings naming places you'd like to visit.
+const vacationSpots = ['Lviv', 'Rivne', 'Kiev'];
+
+//Next, console.log() each item in vacationSpots. Since we don't know loops yet, we have to console.log() each element in the array separately.
+console.log(vacationSpots[0]);
+console.log(vacationSpots[1]);
+console.log(vacationSpots[2]);
+
+//The For Loop
+
+//Create a program that loops from 5 to 10 and logs each number to the console.
+for (let counter = 5; counter <= 10; counter++) {
+  console.log(counter);
+};
+
+//Looping in Reverse
+
+// The loop below loops from 0 to 3. Edit it to loop backwards from 3 to 0
+for (let counter = 3; counter >= 0; counter--){
+  console.log(counter)
+};
+
+//Looping through Arrays
+
+const vacationSpots = ['Bali', 'Paris', 'Tulum'];
+
+// Write your code below
+//Write a for loop that iterates through our vacationSpots array using i as the iterator variable. Inside the block of the for loop, use console.log() to log each element in the vacationSpots array after the string 'I would love to visit '. For example, the first round of the loop should print 'I would love to visit Bali' to the console.
+for (let i = 0; i < vacationSpots.length; i++){
+  console.log(vacationSpots[i]);
+}
+console.log('I would love to visit ' + vacationSpots[0]);
+
+//Nested Loops
+
+// Write your code below
+//Make a variable called bobsFollowers and set it equal to an array with four strings representing the names of Bob's friends.
+const bobsFollowers = ['Petro', 'Andriy', 'Vasyl', 'Volodya'];
+
+//Make a variable called tinasFollowers and set it equal to an array with three strings representing the names of Tina's friends. Make exactly two of these the same as two of the friends in the bobsFollowers array.
+const tinasFollowers = ['Petro', 'Volodya', 'Vika'];
+
+let mutualFollowers = [];
+
+//Create a nested loop that iterates through bobsFollowers as the array for the outer loop, and tinasFollowers as the array for the inner array. If the current element from the outer loop is the same as the current element from the inner loop, push the that element into the mutualFollowers array.
+for (let i = 0; i < bobsFollowers.length; i++){
+  for (let j = 0; j < tinasFollowers.length; j++){
+    if (bobsFollowers[i] === tinasFollowers[j]){
+      mutualFollowers.push(tinasFollowers[j]);
+    }
+  }
+}
+
+//The While Loop
+
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+// Write your code below
+//Below the cards array, declare a variable, currentCard, with the let keyword but don't assign it a value.
+let currentCard;
+
+//Create a while loop with a condition that checks if the currentCard does not have that value 'spade'. Inside the block of your while loop, add the following line of code: currentCard = cards[Math.floor(Math.random() * 4)]; Math.floor(Math.random() * 4) will give us a random number from 0 to 3. We'll use this number to index the cards array, and assign the value of currentCard to a random element from that array.
+while(currentCard != 'spade') {
+  currentCard = cards[Math.floor(Math.random() * 4)];
+  console.log(currentCard);
+}
+
+//Do...While Statements
+
+//Create the variable cupsOfSugarNeeded, and assign it a number value of your choosing. The cups of sugar must be added to the batter one at a time. Declare the variable cupsAdded and assign it the value 0.
+const cupsOfSugarNeeded = 5;
+const cupsAdded = 0;
+
+//We have a sweet tooth, so we want to add at least one cup of sugar to the batter even if the value of cupsOfSugarNeeded is 0. Create a do...while loop which increments cupsAdded by one while cupsAdded is less than cupsOfSugarNeeded.
+do {
+  cupsAdded++
+} while (cupsAdded < cupsOfSugarNeeded);
+
+//The break Keyword
+
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+// Write you code below
+//Log each element from rapperArray in a for loop with the iterator variable rapperArrayIndex. Add a break inside your loop's block that breaks out of the loop if the element at the current index in the rapperArray is 'Notorious B.I.G.'.
+for (let rapperArrayIndex = 0; rapperArrayIndex < (rapperArray.length); rapperArrayIndex++) {
+  if(rapperArrayIndex > 2){
+     break;
+     }
+  console.log(rapperArray[rapperArrayIndex])
+}
+console.log("And if you don't know, now you know.");
+
+
+
+//Iterators
+
+//Introduction to Iterators
+
+const artists = ['Picasso', 'Kahlo', 'Matisse', 'Utamaro'];
+
+artists.forEach(artist => {
+  console.log(artist + ' is one of my favorite artists.');
+});
+
+const numbers = [1, 2, 3, 4, 5];
+
+const squareNumbers = numbers.map(number => {
+  return number * number;
+});
+
+console.log(squareNumbers);
+
+const things = ['desk', 'chair', 5, 'backpack', 3.14, 100];
+
+const onlyNumbers = things.filter(thing => {
+  return typeof thing === 'number';
+});
+
+console.log(onlyNumbers);
+
+//The .forEach() Method
+
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+// Iterate over the fruits array to log I want to eat a plus the name of each fruit to the console. For example, I want to eat a mango. fruits.forEach(itemFruit => console.log('I want to eat a ' + itemFruit));
+
+fruits.forEach(function(itemFruit){
+  console.log('I want to eat a ' + itemFruit)
+});
+
+//The .map() Method
+
+const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+// Add your code under the animals array and before the line console.log(secretMessage.join('')); Use .map() to create a new array that contains the first character of each string in the animals array. Save the new array to a const variable named secretMessage.
+const secretMessage = animals.map(secretAnimal => {
+  return secretAnimal[0];
+});
+
+console.log(secretMessage.join(''));
+
+const bigNumbers = [100, 200, 300, 400, 500];
+
+// Use .map() to divide all the numbers in bigNumbers by 100. Save the returned values to a variable declared with const called smallNumbers.
+const smallNumbers = bigNumbers.map(num => {
+  return num / 100;
+})
+console.log(smallNumbers);
+
+//The .filter() Method
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// Call .filter() on randomNumbers below
+const smallNumbers = randomNumbers.filter(number =>{
+  return number < 250;
+})
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+
+// Call .filter() on favoriteWords below
+const longFavoriteWords = favoriteWords.filter(latters => {
+  return latters.length > 7;
+});
+
+
+//The .findIndex() Method
+
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+
+//Invoke .findIndex() on the the animals array to find the index of the element that has the value 'elephant' and save the returned value to a const variable named foundAnimal.
+const foundAnimal = animals.findIndex(animal => {
+  return animal === 'elephant';
+});
+console.log(foundAnimal);
+
+//Let's see if we can find the index of the first animal that starts with the letter 's'. Call .findIndex() on the animals array return the index of the first element that starts with 's'. Assign the returned value to a const variable named startsWithS.
+const startsWithS = animals.findIndex(animal => {
+  return animal[0] === 's' ? true : false;
+});
+
+console.log(startsWithS);
+
+//The .reduce() Method
+
+const newNumbers = [1, 3, 5, 7];
+
+//Let's practice calling .reduce() and using console.log() to check the values as .reduce() iterates through the array. In main.js, there is an array of numbers, newNumbers. To start, declare a new variable named newSum using the const keyword. Assign to newSum the value of calling .reduce() on newNumbers. You don't need to provide any arguments to .reduce() yet. You'll also see a TypeError: undefined is not a function but we'll fix that after we add our callback function in the next step!
+const newSum = newNumbers.reduce((accumulator, currentValue) =>{
+  console.log('The value of accumulator: ', accumulator);
+  console.log('The value of currentValue: ', currentValue);
+  return accumulator + currentValue;
+}, 10);
+//Log the value of newSum to the console to see the return value of calling .reduce() on newNumbers.
+console.log(newSum);
+//While we have this code set up, let's also check what happens if you add a second argument to .reduce(). The second argument acts as an initial value for the accumulator. Add a second argument of 10 to .reduce().
