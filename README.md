@@ -8,7 +8,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d4720f6bfcd7cc4f00924d8743e62f7d6bacc97f">Arrays</a> - are used to store multiple values in a single variable.</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/cfca26f415ec0995aacab4e2148a38c3c32d04f3">Conditional</a> - сonditional expressions are used to perform different actions for conditions</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/add572b87f76b35b0eac86bdb8d99bc48711769c">Loops, iterators</a> - to run the same code again and again, each time with another value.</li>
-  <li><a href="">Conditional</a> - сonditional expressions are used to perform different actions for conditions</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/efff7ef7b3f42ded664a7dd4cd91b2ee9ae02fc0">Higher Order Functions</a> - is a function that can take another function as an argument, or that returns a function as a result.</li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
@@ -81,6 +81,12 @@
   <li>The .filter() Method - creates a new array with all elements that pass the test implemented by the provided function.</li>
   <li>The .findIndex() Method - returns the index of the first element in the array that satisfies the provided testing function. if returns -1, no element passed the test.</li>
   <li>The .reduce() Method - executes a reducer function (that you provide) on each member of the array resulting in a single output value.</li>
+</ul>
+
+<h4>Higher Order Functions</h4>
+
+<ul>
+  <li>Functions as Parameters - is a function that is passed as a parameter to another function, and the callback function is run inside of the function it was passed into.</li>
 </ul>
 
 <h4></h4>
