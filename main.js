@@ -1195,3 +1195,89 @@ console.log(robotEntries);
 //Now what if we want another object that has the properties of robot but with a few additional properties. Object.assign() sounds like a great method to use, but like the previous examples we should check Object.assign() documentation at MDN. Declare a const variable named newRobot. newRobot will be a new object that has all the properties of robot and the properties in the following object: {laserBlaster: true, voiceRecognition: true}. Make sure that you are not changing the robot object!
 const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot)
 console.log(newRobot);
+
+//Classes
+
+//Introduction to Classes
+
+class Dog {
+  constructor(name) {
+    this._name = name;
+    this._behavior = 0;
+  }
+
+  get name() {
+    return this._name;
+  }
+  get behavior() {
+    return this._behavior;
+  }
+
+  incrementBehavior() {
+    this._behavior ++;
+  }
+};
+const halley = new Dog('Halley');
+console.log(halley.name); // Print name value to console
+console.log(halley.behavior); // Print behavior value to console
+halley.incrementBehavior(); // Add one to behavior
+console.log(halley.name); // Print name value to console
+console.log(halley.behavior); // Print behavior value to console
+
+//Constructor
+
+//Create an empty class named Surgeon. Inside the Surgeon class, create a constructor() method that accepts two parameters: name and department. Inside the Surgeon constructor(), create name and department properties and set them equal to your input parameters.
+class Surgeon{
+  constructor(name, department){
+    this.name = name;
+    this.department = department
+  }
+}
+
+//Instance
+
+class Surgeon {
+  constructor(name, department) {
+    this.name = name;
+    this.department = department;
+  }
+}
+
+//Create an instance of the Surgeon class — set the name to 'Curry' and department to 'Cardiovascular'. Save the instance to a constant variable called surgeonCurry.
+const surgeonCurry = new Surgeon ('Curry', 'Cardiovascular');
+
+//Create an instance of the Surgeon class — set the name to 'Durant' and department to 'Orthopedics'. Save the instance to a constant variable called surgeonDurant.
+const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+
+console.log(surgeonCurry.name + ': ' + surgeonCurry.department);
+console.log(surgeonDurant.name + ': ' + surgeonDurant.department);
+
+//Methods
+
+//In the Surgeon constructor, prepend the name and department properties with an underscore (_).
+class Surgeon {
+  constructor(name, department) {
+    this._name = name;
+    this._department = department;
+    this._remainingVacationDays = 20;
+  }
+  //Under the constructor(), create a getter called name that returns the value saved to _name.
+  get name(){
+    return this._name;
+  }
+  //Under the name getter, create a getter called department that returns the value saved to _department.
+  get department(){
+    return this._department;
+  }
+  //Under the department getter, create a getter called remainingVacationDays that returns the value saved to _remainingVacationDays
+  get remainingVacationDays(){
+    return this._remainingVacationDays;
+  }
+  //Under the remainingVacationDays getter, create a method called takeVacationDays that accepts one argument named daysOff. Inside of the method, subtract daysOff from the number saved to _remainingVacationDays. Set _remainingVacationDays to the result.
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
+const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
