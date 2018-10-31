@@ -9,6 +9,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/cfca26f415ec0995aacab4e2148a38c3c32d04f3">Conditional</a> - сonditional expressions are used to perform different actions for conditions</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/add572b87f76b35b0eac86bdb8d99bc48711769c">Loops, iterators</a> - to run the same code again and again, each time with another value.</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/efff7ef7b3f42ded664a7dd4cd91b2ee9ae02fc0">Higher Order Functions</a> - is a function that can take another function as an argument, or that returns a function as a result.</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/083c22f3cd253af6cfacc97cef8a8d60b25e3a86">Objects</a> - object properties can be both primitive values, other objects, and functions.</li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
@@ -87,6 +88,29 @@
 
 <ul>
   <li>Functions as Parameters - is a function that is passed as a parameter to another function, and the callback function is run inside of the function it was passed into.</li>
+</ul>
+
+<h4>Objects</h4>
+
+<ul>
+  <li>Accessing Properties - provide access to an object's properties by using the dot notation or the bracket notation.</li>
+  <li>Methods - methods are actions that can be performed on objects.</li>
+  <li>Pass By Reference - іn Pass by Reference, Function is called by directly passing the reference/address of the variable as the argument. Changing the argument inside the function affect the variable passed from outside the function.</li>
+  <li>Looping Through Objects - аfter converting an object into an array, you can execute a loop over an ordinary array.</li>
+  <li>The this Keyword - the this keyword refers to the object it belongs to.
+    <ul>
+      <li>In a method, this refers to the owner object.</li>
+      <li>Alone, this refers to the global object.</li>
+      <li>In a function, this refers to the global object.</li>
+      <li>In a function, in strict mode, this is undefined.</li>
+      <li>In an event, this refers to the element that received the event.</li>
+      <li>Methods like call(), and apply() can refer this to any object.</li>
+    </ul>
+  </li>
+  <li>Getters - the get syntax binds an object property to a function that will be called when that property is looked up.</li>
+  <li>Setters - the set syntax binds an object property to a function to be called when there is an attempt to set that property.</li>
+  <li>Factory Functions - This is a function we create as a workpiece for further use. when it's called, we just pass the value without creating keys</li>
+  <li>Destructured Assignment - makes it possible to unpack values from arrays or properties from objects to distinct variables.</li>
 </ul>
 
 <h4></h4>
