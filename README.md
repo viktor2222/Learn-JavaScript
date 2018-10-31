@@ -10,6 +10,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/add572b87f76b35b0eac86bdb8d99bc48711769c">Loops, iterators</a> - to run the same code again and again, each time with another value.</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/efff7ef7b3f42ded664a7dd4cd91b2ee9ae02fc0">Higher Order Functions</a> - is a function that can take another function as an argument, or that returns a function as a result.</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/083c22f3cd253af6cfacc97cef8a8d60b25e3a86">Objects</a> - object properties can be both primitive values, other objects, and functions.</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/30c582cce04375c71f386538138b3780b99cffb0">Classes</a></li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
@@ -109,16 +110,12 @@
   </li>
   <li>Getters - the get syntax binds an object property to a function that will be called when that property is looked up.</li>
   <li>Setters - the set syntax binds an object property to a function to be called when there is an attempt to set that property.</li>
-  <li>Factory Functions - This is a function we create as a workpiece for further use. when it's called, we just pass the value without creating keys</li>
   <li>Destructured Assignment - makes it possible to unpack values from arrays or properties from objects to distinct variables.</li>
 </ul>
 
-<h4></h4>
+<h4>Classes</h4>
 
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Introduction to Classes - Classes are in fact "special functions", and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.</li>
+  <li>Constructor - the constructor method is a special way to create and initialize an object created using a class.</li>
 </ul>
