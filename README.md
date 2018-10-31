@@ -5,7 +5,7 @@
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/c2e10d303d8a194fd8720725e186cb53dff81162">Introduction</a> - All here to start learning JavaScript</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/7d56630857602149f857d1b1b3e532d2125775f2">Functions</a> - function is a block of code designed to perform a particular task. Function is executed when something invokes it.</li>
-  <li></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d4720f6bfcd7cc4f00924d8743e62f7d6bacc97f">Arrays</a> - are used to store multiple values in a single variable.</li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
@@ -36,4 +36,29 @@
   <li>Return - the return statement ends function execution and specifies a value to be returned to the function caller.</li>
   <li>Arrow Functions - has a shorter syntax than a function expression. They cannot be used as constructors.</li>
   <li>Concise Body Arrow Functions - arrow functions can have either a "concise body" or the usual "block body". In a concise body, only an expression is specified, which becomes the implicit return value. In a block body, you must use an explicit return statement.</li>
+</ul>
+
+<h4>Arrays</h4>
+
+<ul>
+  <li>Create an Array - syntax: var array_name = [item1, item2, ...];</li>
+  <li>Update Elements - change an element in an array by its index ([0])</li>
+  <li>Arrays with let and const - arrays are declared through let can be changed but the const can not be changed, but you can mutate to a new array</li>
+  <li>The .length property - will report the number of characters in the array</li>
+  <li>The .push() Method - adds one or more elements to the end of an array and returns the new length of the array.</li>
+  <li>The .pop() Method - removes the last element from an array and returns that element. Сhanges the length of the array.</li>
+  <li>The .shift() method - removes the first element from an array and returns that removed element.. Сhanges the length of the array.</li>
+  <li>The .unshift() method - can prepend one or more elements to the beginning of an array. This alters the array on which the method was called.</li>
+  <li>.indexOf() - returns the first index at which a given element can be found in the array, or -1 if it is not present.</li>
+  
+</ul>
+
+<h4></h4>
+
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
 </ul>
