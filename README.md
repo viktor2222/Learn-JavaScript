@@ -6,6 +6,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/c2e10d303d8a194fd8720725e186cb53dff81162">Introduction</a> - All here to start learning JavaScript</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/7d56630857602149f857d1b1b3e532d2125775f2">Functions</a> - function is a block of code designed to perform a particular task. Function is executed when something invokes it.</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d4720f6bfcd7cc4f00924d8743e62f7d6bacc97f">Arrays</a> - are used to store multiple values in a single variable.</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/cfca26f415ec0995aacab4e2148a38c3c32d04f3">Conditional</a> - сonditional expressions are used to perform different actions for conditions</li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
@@ -51,6 +52,14 @@
   <li>The .unshift() method - can prepend one or more elements to the beginning of an array. This alters the array on which the method was called.</li>
   <li>.indexOf() - returns the first index at which a given element can be found in the array, or -1 if it is not present.</li>
   
+</ul>
+
+<h4>Conditional</h4>
+
+<ul>
+  <li>if statement - if the condition is true, then the code block will be executed</li>
+  <li>If...Else Statements - is executed when block "if" with the same condition false</li>
+  <li>The switch keyword - to select one of many code blocks to be executed.</li>
 </ul>
 
 <h4></h4>
