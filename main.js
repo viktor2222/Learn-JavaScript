@@ -846,3 +846,352 @@ const checkConsistentOutput = (func, val) => {
 
 //Invoke your checkConsistentOutput() with the addTwo() function we wrote and a number as arguments.
 checkConsistentOutput(addTwo, 10);
+
+
+//Objects
+
+//Creating Object Literals
+
+// The spaceship we have so far looks good but, unfortunately, is not very fast at hyperspace travel due to having an inferior fuel source. Make a new spaceship object named fasterShip with the same color as spaceship but with a Fuel Type equal to 'Turbo Fuel'.
+let fasterShip = {
+  'Fuel Type': 'Turbo Fuel',
+  color: 'silver'
+};
+
+//Accessing Properties
+
+let spaceship = {
+  homePlanet: 'Earth',
+  color: 'silver',
+  'Fuel Type': 'Turbo Fuel',
+  numCrew: 5,
+  flightPath: ['Venus', 'Mars', 'Saturn']
+};
+
+// Let's use the dot operator to access the value of numCrew from the spaceship object in the code editor. Create a variable crewCount and assign the spaceship's numCrew property to it.
+let crewCount = spaceship.numCrew;
+
+//Again using the dot operator, create a variable planetArray and assign the spaceship's flightPath property to it.
+let planetArray = spaceship.flightPath;
+
+//Bracket Notation
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  'Active Mission' : true,
+  homePlanet : 'Earth',
+  numCrew: 5
+ };
+
+let propName =  'Active Mission';
+
+// Let's use bracket notation to access the value of 'Active Mission' from the spaceship object in the code editor. Create a variable isActive and assign the spaceship's 'Active Mission' property to it.
+let isActive = spaceship['Active Mission'];
+
+//Using bracket notation and the propName variable provided, console.log() the value of the 'Active Mission' property.
+console.log(spaceship[propName]);
+
+//Property Assignment
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth',
+  color: 'silver',
+  'Secret Mission' : 'Discover life outside of Earth.'
+};
+
+// Reassign the color property of the spaceship object to have a value of 'glorious gold'
+spaceship.color = 'glorious gold';
+
+//Without changing lines 1 - 6, add a numEngines property with a numeric value between 1 and 10 to the spaceship object.
+spaceship.numEngines = 5;
+
+//Use the delete operator to remove the 'Secret Mission' property from the spaceship object.
+delete spaceship['Secret Mission'];
+
+//Methods
+
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+
+// Below the retreatMessage variable in the code editor, create an alienShip object. It should contain a method .retreat() which will console.log() the retreatMessage. Add another method to your object literal. This method, .takeOff(), should console.log() the string 'Spim... Borp... Glix... Blastoff!'.
+let alienShip = {
+  retreat(){
+    console.log(retreatMessage);
+  },
+  takeOff(){
+    console.log('Spim... Borp... Glix... Blastoff!');
+  }
+};
+
+alienShip.retreat();
+alienShip.takeOff();
+
+//Nested Objects
+
+let spaceship = {
+  passengers: [{name: 'cap'}],
+  telescope: {
+    yearBuilt: 2018,
+    model: "91031-XLT",
+    focalLength: 2032
+  },
+  crew: {
+    captain: {
+      name: 'Sandra',
+      degree: 'Computer Engineering',
+      encourageTeam() { console.log('We got this!') },
+     'favorite foods': ['cookies', 'cakes', 'candy', 'spinach'] }
+  },
+  engine: {
+    model: "Nimbus2000"
+  },
+  nanoelectronics: {
+    computer: {
+      terabytes: 100,
+      monitors: "HD"
+    },
+    backup: {
+      battery: "Lithium",
+      terabytes: 50
+    }
+  }
+};
+
+//Create a variable capFave and assign the captain's favorite food (the element in the 0th index of her 'favorite foods' array) to it. Make sure to use bracket and dot notation to get the value of the food through nested access (don't just copy the value into the variable!)
+let capFave = spaceship.crew.captain['favorite foods'][0];
+
+//Create a variable firstPassenger and assign the first passenger as its value (the element in the 0th index of the spaceship.passengers array you just made). Make sure to use bracket and dot notation to get the passenger object through nested access (don't just copy the object into the variable!)
+let firstPassenger = spaceship.passengers[0];
+
+//Pass By Reference
+
+let spaceship = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+
+// Write a function greenEnergy() that has an object as a parameter and sets that object's 'Fuel Type' property to 'avocado oil'.
+let greenEnergy = objParam => {
+  objParam['Fuel Type'] = 'avocado oil'
+};
+
+//Write a function remotelyDisable() that has an object as a parameter and sets (or reassigns) that object's disabled property to true.
+let remotelyDisable = obj => {
+  obj.disabled = true
+};
+
+//Call your two functions with the spaceship object in the code editor, then console.log() the spaceship object to confirm those properties were changed/added.
+greenEnergy(spaceship);
+remotelyDisable(spaceship);
+
+console.log(spaceship);
+
+//Looping Through Objects
+
+let spaceship = {
+    crew: {
+    captain: {
+        name: 'Lily',
+        degree: 'Computer Engineering',
+        cheerTeam() { console.log('You got this!') }
+        },
+    'chief officer': {
+        name: 'Dan',
+        degree: 'Aerospace Engineering',
+        agree() { console.log('I agree, captain!') }
+        },
+    medic: {
+        name: 'Clementine',
+        degree: 'Physics',
+        announce() { console.log(`Jets on!`) } },
+    translator: {
+        name: 'Shauna',
+        degree: 'Conservation Science',
+        powerFuel() { console.log('The tank is full!') }
+        }
+    }
+};
+
+// Using for...in, iterate through the spaceship.crew object in the code editor and console.log() a list of crew roles and names in the following format: '[crew member's role]: [crew member's name]', e.g.,'chief officer: Dan'.
+for (let crewMember in spaceship.crew) {
+  console.log(`${crewMember}: ${spaceship.crew[crewMember].name}`)
+};
+
+//Using for...in, iterate through the spaceship.crew object in the code editor and console.log() a list of crew names and degrees in the following format: '[crew member's name]: [crew member's degree]', i.e.,'Lily: Computer Engineering'.
+for (let crewMember in spaceship.crew) {
+  console.log(`${spaceship.crew[crewMember].name}: ${spaceship.crew[crewMember].degree} `)
+};
+
+//advantage objects
+
+//The this Keyword
+
+//In main.js there is an object robot, add a property of model and assign to it a value of '1E78V2'. Add another property, energyLevel and assign to it a value of 100. Inside the robot object, add a method named provideInfo. Inside the body of provideInfo(), return the following string by using interpolation: I am MODEL and my current energy level is ENERGYLEVEL. Replace 'MODEL' and 'ENERGYLEVEL' with the calling object's model and energyLevel property. Remember, to get the access to the calling object's properties inside a method, you have to use the this keyword!
+const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  provideInfo(){
+  	return `I am ${this.model} and my current energy level is ${this.energyLevel}.`
+	}
+};
+
+//Now to check .provideInfo() has access to the internal properties of robot. Log the result of calling .provideInfo() method on robot to the console.
+console.log(robot.provideInfo());
+
+//Arrow Functions and this
+
+//Currently the .checkEnergy() method is not producing the correct output because it is using arrow function syntax. Refactor, or change, the method to use a function expression. You can write the function using either longhand or shorthand format. After refactoring the method, notice that .checkEnergy() has access to the other internal properties of the robot object.
+const robot = {
+  energyLevel: 100,
+  checkEnergy(){
+    console.log(`Energy is currently at ${this.energyLevel}%.`)
+  }
+}
+
+robot.checkEnergy();
+
+//Privacy
+
+const robot = {
+  _energyLevel: 100,
+  recharge(){
+    this._energyLevel += 30;
+    console.log(`Recharged! Energy is currently at ${this._energyLevel}%.`)
+  }
+};
+
+//Below the robot object, reassign the _energyLevel property to 'high'.
+robot._energyLevel = 'high';
+
+//Now take a look at the new recharge method in robot. .recharge() will add 30 to _energyLevel. What will happen now that _energyLevel isn't a number? Call .recharge() on robot to find out. Notice that a funky string is printed to the console! This is known as a side-effect of type-coercion. No need to worry about what this means for now, but it's important to understand that you can cause unwanted side-effects when mutating objects and their properties.
+robot.recharge();
+
+//Getters
+
+//In robot, create a getter method named energyLevel using the get keyword. Leave function body blank for now.Inside the getter method, add an if statement to check if this._energyLevel is a number using the typeof operator. If that condition is truthy, return 'My current energy level is ENERGYLEVEL'. Replace ENERGYLEVEL with the value of this._energyLevel. Make sure you return the string and not logging it to the console. If this._energyLevel isn't a number it could be that the _energyLevel property was altered. Let's add a default return statement for when such a scenario arises. Add an else statement that returns 'System malfunction: cannot retrieve energy level'. Log the result of calling the getter method energyLevel on robot to the console. Notice that the method will return a formatted response rather than just accessing a property!
+const robot = {
+  _model: '1E78V2',
+  _energyLevel: 100,
+  get energyLevel(){
+    if(typeof this._energyLevel === 'number') {
+      return `My current energy level is ${this._energyLevel}`
+    } else {
+      return "System malfunction: cannot retrieve energy level"
+    }
+  }
+};
+
+console.log(robot.energyLevel);
+
+//Setters
+
+const robot = {
+  _model: '1E78V2',
+  _energyLevel: 100,
+  _numOfSensors: 15,
+  get numOfSensors(){
+    if(typeof this._numOfSensors === 'number'){
+      return this._numOfSensors;
+    } else {
+      return 'Sensors are currently down.'
+    }
+  },
+  //Currently, in robot there is a getter method for numOfSensors but no setter method! What if we need to add or remove some sensors? Let's fix that problem. Add a setter method named numOfSensors using the set keyword. Provide a parameter of num. Leave the function body empty for now.Add a check to see if num is a number using the typeof operator. num should also be greater than or equal to 0. If both conditions are met, reassign this._numOfSensors to num.
+  set numOfSensors(num){
+    if(typeof num === 'number' && num >= 0){
+      this._numOfSensors = num;
+    }else{
+      console.log('Pass in a number that is greater than or equal to 0');
+    }
+  }
+};
+
+//Use the numOfSensors setter method on robot to assign _numOfSensors to 100.
+robot.numOfSensors = 100
+console.log(robot.numOfSensors);
+
+//Factory Functions
+
+//Instead of making individual robots like we've been doing, let's make a factory function to make robots as we please! Create a factory function named robotFactory that has two parameters model and mobile. Make the function return an object. In the object, add a key of model with the value of the model parameter. Add another property that has a key of mobile with a value of the mobile parameter. Then add a method named beep without a parameter that will log 'Beep Boop' to the console.
+let robotFactory = (model, mobile) => {
+  return{
+    model: model,
+    mobile: mobile,
+    beep(){
+      console.log('Beep Boop');
+    }
+  }
+};
+
+//Use your factory function by declaring a const variable named tinCan. Assign to tinCan the value of calling robotFactory with the first argument of 'P-500' and the second argument of true.
+const tinCan = robotFactory('P-500', true);
+
+tinCan.beep();
+
+console.log(tinCan);
+
+//Property Value Shorthand
+
+//Use the property value shorthand and refactor the factory function in main.js
+function robotFactory(model, mobile){
+  return {
+    model,
+    mobile,
+    beep() {
+      console.log('Beep Boop');
+    }
+  }
+}
+
+// To check that the property value shorthand technique worked:
+const newRobot = robotFactory('P-501', false)
+console.log(newRobot.model)
+console.log(newRobot.mobile)
+
+//Destructured Assignment
+
+const robot = {
+  model: '1E78V2',
+  energyLevel: 100,
+  functionality: {
+    beep() {
+      console.log('Beep Boop');
+    },
+    fireLaser() {
+      console.log('Pew Pew');
+    },
+  }
+};
+
+//Use destructured assignment to create a const variable named functionality that extracts the functionality property of robot. If you need a reminder on how to use destructured assignment, review the example in the narrative or check the hint.
+const {functionality} = robot;
+
+//Since functionality is referencing robot.functionality we can call the methods available to robot.functionality simply through functionality. Take advantage of this shortcut and call the .beep() method on functionality.
+functionality.beep();
+
+//Built-in Object Methods
+
+//In main.js there is an object, robot. We'd like to grab the property names, otherwise known as keys, and save the keys in an array which is assigned to robotKeys. However, there's something missing in the method call.
+const robot = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+
+// What is missing in the following method call?
+const robotKeys = Object.keys(robot);
+
+console.log(robotKeys);
+
+// Declare robotEntries below this line:
+//Object.entries() will also return an array, but the array will contain more arrays that have both the key and value of the properties in an object. Declare a const variable named robotEntries and assign to it the entries of robot by calling Object.entries().
+const robotEntries = Object.entries(robot);
+
+console.log(robotEntries);
+
+// Declare newRobot below this line:
+//Now what if we want another object that has the properties of robot but with a few additional properties. Object.assign() sounds like a great method to use, but like the previous examples we should check Object.assign() documentation at MDN. Declare a const variable named newRobot. newRobot will be a new object that has all the properties of robot and the properties in the following object: {laserBlaster: true, voiceRecognition: true}. Make sure that you are not changing the robot object!
+const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot)
+console.log(newRobot);
