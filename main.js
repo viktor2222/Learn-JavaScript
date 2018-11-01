@@ -1281,3 +1281,41 @@ class Surgeon {
 
 const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
 const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+
+
+//Methods calls
+
+//In the Surgeon constructor, prepend the name and department properties with an underscore (_).
+class Surgeon {
+  constructor(name, department) {
+    this._name = name;
+    this._department = department;
+    this._remainingVacationDays = 20;
+  }
+  //Under the constructor(), create a getter called name that returns the value saved to _name.
+  get name(){
+    return this._name;
+  }
+  //Under the name getter, create a getter called department that returns the value saved to _department.
+  get department(){
+    return this._department;
+  }
+  //Under the department getter, create a getter called remainingVacationDays that returns the value saved to _remainingVacationDays
+  get remainingVacationDays(){
+    return this._remainingVacationDays;
+  }
+  //Under the remainingVacationDays getter, create a method called takeVacationDays that accepts one argument named daysOff. Inside of the method, subtract daysOff from the number saved to _remainingVacationDays. Set _remainingVacationDays to the result.
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
+const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+//At the bottom of main.js, use console.log() to print the value saved to thename property of the surgeonCurry object.
+console.log(surgeonCurry.name);
+//Call .takeVacationDays() on surgeonCurry, with an input of 3.
+surgeonCurry.takeVacationDays(3);
+
+//After the call to .takeVacationDays(), use console.log() to print the value saved to the remainingVacationDays property of the surgeonCurry instance.
+console.log(surgeonCurry.remainingVacationDays);
