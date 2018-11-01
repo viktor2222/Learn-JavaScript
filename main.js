@@ -1320,7 +1320,7 @@ surgeonCurry.takeVacationDays(3);
 //After the call to .takeVacationDays(), use console.log() to print the value saved to the remainingVacationDays property of the surgeonCurry instance.
 console.log(surgeonCurry.remainingVacationDays);
 
-//Inheritance
+//Inheritance II
 
 //In the next few exercises, you will create two subclasses (Doctor and Nurse) from a parent class named HospitalEmployee. Below, we have listed the properties and methods you will find in the Doctor and Nurse classes. Doctor Properties: _name, _remainingVacationDays (set to 20 inside the constructor()), _insurance Methods: .takeVacationDays() Nurse Properties: _name, _remainingVacationDays (set to 20 inside constructor()), _certifications Methods: .takeVacationDays(), .addCertification() In main.js, create a parent class named HospitalEmployee. Add a constructor with name as an argument.
 class HospitalEmployee {
@@ -1341,3 +1341,34 @@ class HospitalEmployee {
     this._remainingVacationDays -= daysOff;
   }
 }
+
+//Inheritance III
+
+class HospitalEmployee {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+//In this exercise, you will begin to create the Nurse class as a child of the HospitalEmployee class. Remember the Nurse class has the following properties and methods: Nurse Properties: _name, _remainingVacationDays (set to 20 inside constructor()), _certifications Methods: .takeVacationDays(), .addCertification() Under HospitalEmployee, create an empty class named Nurse that extends HospitalEmployee.
+class Nurse extends HospitalEmployee {
+  constructor(name, certifications) {
+    super(name);
+    this._certifications = certifications;
+  }
+}
+//Under the Nurse class, create a new instance of Nurse and save it to a constant variable named nurseOlynyk. Pass in the following values for each property: name: 'Olynyk' certifications: ['Trauma', 'Pediatrics']
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
