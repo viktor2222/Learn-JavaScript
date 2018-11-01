@@ -132,10 +132,10 @@
 
 <h2>Description-01-11-2018</h2>
 
-<h4></h4>
+<h4>Classes</h4>
 
 <ul>
-  <li></li>
+  <li>Inheritance I - With inheritance, you can create a parent class (also known as a superclass) with properties and methods that multiple child classes (also known as subclasses) share. The child classes inherit the properties and methods from their parent class.</li>
   <li></li>
   <li></li>
   <li></li>
