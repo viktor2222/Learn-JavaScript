@@ -17,10 +17,10 @@
 
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/4f84adcea9c43cf7b3cd5fce9e093781b07b8051">Methods Calls</a> - in classes</li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d7e42c2ea4118e8ff19dbe7c1afc89b850655247">Inheritance</a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
