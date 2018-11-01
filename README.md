@@ -16,7 +16,7 @@
 <h2>Learned-01-11-2018</h2>
 
 <ul>
-  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/4f84adcea9c43cf7b3cd5fce9e093781b07b8051">Methods Calls</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/4f84adcea9c43cf7b3cd5fce9e093781b07b8051">Methods Calls</a> - in classes</li>
   <li></li>
   <li></li>
   <li></li>
