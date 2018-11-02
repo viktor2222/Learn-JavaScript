@@ -19,6 +19,14 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/4f84adcea9c43cf7b3cd5fce9e093781b07b8051">Methods Calls</a> - in classes</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d7e42c2ea4118e8ff19dbe7c1afc89b850655247">Inheritance II</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/9d210256f4a69d3a1fa7e4cd72be5e76cad56c6c">Inheritance III</a></li>
+</ul>
+
+<h2>Learned-02-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/fbc4e40a726a38299238db0275acf2e6728b52ff">Inheritance IV</a> - in classes</li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
   <li><a href=""></a></li>
   <li><a href=""></a></li>
 </ul>
