@@ -1372,3 +1372,37 @@ class Nurse extends HospitalEmployee {
 }
 //Under the Nurse class, create a new instance of Nurse and save it to a constant variable named nurseOlynyk. Pass in the following values for each property: name: 'Olynyk' certifications: ['Trauma', 'Pediatrics']
 const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
+
+//Inheritance IV
+
+class HospitalEmployee {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+class Nurse extends HospitalEmployee {
+ constructor(name, certifications) {
+   super(name);
+   this._certifications = certifications;
+ }
+}
+
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']);
+
+//Call .takeVacationDays() with an input of 5 on your nurseOlynyk instance.
+nurseOlynyk.takeVacationDays(5);
+console.log(nurseOlynyk);
