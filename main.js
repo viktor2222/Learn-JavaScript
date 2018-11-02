@@ -1511,3 +1511,16 @@ esFivePercentageSupport = 95.93;
 
 //Look up the percentage of browsers that support "Template Literals", a feature that was introduced in ES6. Save the value, as a number, to the variable esSixTemplateLiterals.
 esSixTemplateLiterals = 	88.51;
+
+
+//Why ES6?
+
+//In these tasks, you will manually change the code in main.js to ES5 syntax. The let and const keywords were introduced in ES6. Before that, we declared all variables with the var keyword. Change the let and const keywords in main.js to var.
+var pasta = "Spaghetti"; // ES5 syntax
+
+var meat = "Pancetta"; // ES6 syntax
+
+var sauce = "Eggs and cheese"; // ES6 syntax
+
+// Template literals, like the one below, were introduced in ES6
+var carbonara = "You can make carbonara with" + pasta + meat + "and a sauce made with" + sauce;
