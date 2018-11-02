@@ -152,6 +152,12 @@
 
 <ul>
   <li>Static Methods - these are methods that are only available in the class in which they were called and can still be visited through the class in which they are declared (syntax: static nameMethod(){...})</li>
+</ul>
+
+<h4>Browser compatibility and transpilation</h4>
+
+<ul>
+  <li>Browser compatibility and transpilation - in 2015 a new version of javascript ES6 has been released which is not supported by all browsers. To solve this problem, there is a Bable that compiles the ES6 syntax to the old ES5</li>
   <li></li>
 </ul>
 
