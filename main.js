@@ -1281,3 +1281,94 @@ class Surgeon {
 
 const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
 const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+
+
+//Methods calls
+
+//In the Surgeon constructor, prepend the name and department properties with an underscore (_).
+class Surgeon {
+  constructor(name, department) {
+    this._name = name;
+    this._department = department;
+    this._remainingVacationDays = 20;
+  }
+  //Under the constructor(), create a getter called name that returns the value saved to _name.
+  get name(){
+    return this._name;
+  }
+  //Under the name getter, create a getter called department that returns the value saved to _department.
+  get department(){
+    return this._department;
+  }
+  //Under the department getter, create a getter called remainingVacationDays that returns the value saved to _remainingVacationDays
+  get remainingVacationDays(){
+    return this._remainingVacationDays;
+  }
+  //Under the remainingVacationDays getter, create a method called takeVacationDays that accepts one argument named daysOff. Inside of the method, subtract daysOff from the number saved to _remainingVacationDays. Set _remainingVacationDays to the result.
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
+const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
+//At the bottom of main.js, use console.log() to print the value saved to thename property of the surgeonCurry object.
+console.log(surgeonCurry.name);
+//Call .takeVacationDays() on surgeonCurry, with an input of 3.
+surgeonCurry.takeVacationDays(3);
+
+//After the call to .takeVacationDays(), use console.log() to print the value saved to the remainingVacationDays property of the surgeonCurry instance.
+console.log(surgeonCurry.remainingVacationDays);
+
+//Inheritance II
+
+//In the next few exercises, you will create two subclasses (Doctor and Nurse) from a parent class named HospitalEmployee. Below, we have listed the properties and methods you will find in the Doctor and Nurse classes. Doctor Properties: _name, _remainingVacationDays (set to 20 inside the constructor()), _insurance Methods: .takeVacationDays() Nurse Properties: _name, _remainingVacationDays (set to 20 inside constructor()), _certifications Methods: .takeVacationDays(), .addCertification() In main.js, create a parent class named HospitalEmployee. Add a constructor with name as an argument.
+class HospitalEmployee {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+//Inheritance III
+
+class HospitalEmployee {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+//In this exercise, you will begin to create the Nurse class as a child of the HospitalEmployee class. Remember the Nurse class has the following properties and methods: Nurse Properties: _name, _remainingVacationDays (set to 20 inside constructor()), _certifications Methods: .takeVacationDays(), .addCertification() Under HospitalEmployee, create an empty class named Nurse that extends HospitalEmployee.
+class Nurse extends HospitalEmployee {
+  constructor(name, certifications) {
+    super(name);
+    this._certifications = certifications;
+  }
+}
+//Under the Nurse class, create a new instance of Nurse and save it to a constant variable named nurseOlynyk. Pass in the following values for each property: name: 'Olynyk' certifications: ['Trauma', 'Pediatrics']
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);

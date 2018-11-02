@@ -13,6 +13,16 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/30c582cce04375c71f386538138b3780b99cffb0">Classes</a></li>
 </ul>
 
+<h2>Learned-01-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/4f84adcea9c43cf7b3cd5fce9e093781b07b8051">Methods Calls</a> - in classes</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d7e42c2ea4118e8ff19dbe7c1afc89b850655247">Inheritance II</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/9d210256f4a69d3a1fa7e4cd72be5e76cad56c6c">Inheritance III</a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+</ul>
+
 <h2>Description-31-10-2018</h2>
 
 <h4>Introduction includes:</h4>
@@ -118,4 +128,15 @@
 <ul>
   <li>Introduction to Classes - Classes are in fact "special functions", and just as you can define function expressions and function declarations, the class syntax has two components: class expressions and class declarations.</li>
   <li>Constructor - the constructor method is a special way to create and initialize an object created using a class.</li>
+</ul>
+
+<h2>Description-01-11-2018</h2>
+
+<h4>Classes</h4>
+
+<ul>
+  <li>Inheritance - With inheritance, you can create a parent class (also known as a superclass) with properties and methods that multiple child classes (also known as subclasses) share. The child classes inherit the properties and methods from their parent class.</li>
+  <li></li>
+  <li></li>
+  <li></li>
 </ul>
