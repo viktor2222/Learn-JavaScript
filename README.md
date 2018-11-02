@@ -27,7 +27,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/fbc4e40a726a38299238db0275acf2e6728b52ff">Inheritance IV</a> - in classes</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/03009736bffd8c7c10acb7fcae1b3dbac725d028">Inheritance V</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b6b3cc9f954825d8aaeb0cf24960dc31f055372b">Static Methods</a></li>
-  <li><a href=""></a></li>
+  <li><a href="https://caniuse.com">caniuse.com II</a></li>
   <li><a href=""></a></li>
 </ul>
 
@@ -158,7 +158,7 @@
 
 <ul>
   <li>Browser compatibility and transpilation - in 2015 a new version of javascript ES6 has been released which is not supported by all browsers. To solve this problem, there is a Bable that compiles the ES6 syntax to the old ES5</li>
-  <li></li>
+  <li>caniuse.com - this is a site where statistics are maintained by browsers HTML, Css, JavaScript</li>
 </ul>
 
 <h2>Question-02-11-2018</h2>
