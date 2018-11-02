@@ -28,7 +28,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/03009736bffd8c7c10acb7fcae1b3dbac725d028">Inheritance V</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b6b3cc9f954825d8aaeb0cf24960dc31f055372b">Static Methods</a></li>
   <li><a href="https://caniuse.com">caniuse.com II</a></li>
-  <li><a href=""></a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b5d34b91aeee576429898c606bca64cf14aa965f">Redefine the syntax ES6 to ES5</a></li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
