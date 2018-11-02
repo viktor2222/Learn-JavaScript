@@ -26,7 +26,7 @@
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/fbc4e40a726a38299238db0275acf2e6728b52ff">Inheritance IV</a> - in classes</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/03009736bffd8c7c10acb7fcae1b3dbac725d028">Inheritance V</a></li>
-  <li><a href=""></a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b6b3cc9f954825d8aaeb0cf24960dc31f055372b">Static Methods</a></li>
   <li><a href=""></a></li>
   <li><a href=""></a></li>
 </ul>
@@ -144,7 +144,17 @@
 
 <ul>
   <li>Inheritance - With inheritance, you can create a parent class (also known as a superclass) with properties and methods that multiple child classes (also known as subclasses) share. The child classes inherit the properties and methods from their parent class.</li>
-  <li></li>
-  <li></li>
+</ul>
+
+<h2>Description-02-11-2018</h2>
+
+<h4>Classes</h4>
+
+<ul>
+  <li>Static Methods - these are methods that are only available in the class in which they were called and can still be visited through the class in which they are declared (syntax: static nameMethod(){...})</li>
   <li></li>
 </ul>
+
+<h2>Question-02-11-2018</h2>
+
+<p>Did I correctly understand the static methods? <h5>Description-02-11-2018 > Static Methods</h5></p>
