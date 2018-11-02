@@ -1495,3 +1495,19 @@ nurseOlynyk.takeVacationDays(5);
 console.log(nurseOlynyk.remainingVacationDays);
 nurseOlynyk.addCertification('Genetics');
 console.log(nurseOlynyk.certifications);
+
+//BROWSER COMPATIBILITY AND TRANSPILATION
+
+//caniuse.com II
+
+// Set the variable below to a number
+let esFivePercentageSupport;
+
+// Set the variable below to a number
+let esSixTemplateLiterals;
+
+//Look up the percentage of browsers that support JavaScript ES5. Save the value, as a number, to the variable esFivePercentageSupport.
+esFivePercentageSupport = 95.93;
+
+//Look up the percentage of browsers that support "Template Literals", a feature that was introduced in ES6. Save the value, as a number, to the variable esSixTemplateLiterals.
+esSixTemplateLiterals = 	88.51;
