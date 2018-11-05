@@ -152,7 +152,7 @@
 <h4>Classes</h4>
 
 <ul>
-  <li>Static Methods - these are methods that are only available in the class in which they were called and can still be visited through the class in which they are declared (syntax: static nameMethod(){...})</li>
+  <li>Static Methods - calls are made directly on the class and are not callable on instances of the class. The static keyword defines a static method for a class. These are often utility functions, such as functions to create or clone objects.(syntax: static nameMethod(){...})</li>
 </ul>
 
 <h4>Browser compatibility and transpilation</h4>
