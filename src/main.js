@@ -1582,3 +1582,15 @@ Airplane.availableAirplanes = [
   }
 ];
 export default Airplane;
+
+//import
+
+//In missionControl.js we'll use the module Airplane to display the fuel capacity of both our airplanes. Use the import keyword to import the Airplane module.Within the body of the displayFuelCapacity function, use forEach() to iterate over the Airplane.availableAirplanes array.Within the displayFuelCapacity function, use console.log() to output the element's name and its fuel capacity.
+import Airplane from './airplane';
+
+function displayFuelCapacity(){
+  Airplane.availableAirplanes.forEach(function(element){
+    console.log('Fuel Capacity of ' + element.name + ': ' + element.fuelCapacity);
+  });
+}
+console.log(displayFuelCapacity());
