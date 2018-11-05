@@ -1525,4 +1525,14 @@ var sauce = "Eggs and cheese"; // ES6 syntax
 // Template literals, like the one below, were introduced in ES6
 var carbonara = "You can make carbonara with" + pasta + meat + "and a sauce made with" + sauce;
 
-//
+//INTERMEDIATE JAVASCRIPT MODULES
+
+//module.exports
+//Let's begin by implementing the pattern above in an example. In 1-airplane.js create an object named Airplane.
+let Airplane = {};
+
+//Within the same file, add a property to the Airplane object named myAirplane and set it equal to "StarJet".
+Airplane.myAirplane = "StarJet";
+
+//Export the module.
+module.exports = Airplane;
