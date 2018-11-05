@@ -177,6 +177,19 @@
       <li>lib - babel writes the transpiled code to a directory called lib</li>
     </ul>
   </li>
+  <li>
+    <ul>To create a project 
+      <li>Initialize your project using npm init and create a directory called src</li>
+      <li>Install babel dependencies by running: npm install babel-cli -D...........npm install babel-preset-env -D</li>
+      <li>Create a .babelrc file inside your project and add the following code inside it:
+{
+  "presets": ["env"]
+}</li>
+      <li>Add the following script to your scripts object in package.json:
+"build": "babel src -d lib"</li>
+      <li>Run npm run build whenever you want to transpile your code from your src to lib directories.</li>  
+   </ul>
+  </li>
 </ul>
 
 <h2>Question-02-11-2018</h2>
