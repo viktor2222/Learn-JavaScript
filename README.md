@@ -162,6 +162,16 @@
   <li>caniuse.com - this is a site where statistics are maintained by browsers HTML, Css, JavaScript</li>
 </ul>
 
+<h2>Description-05-11-2018</h2>
+
+<h4>Browser compatibility and transpilation</h4>
+
+<ul>
+  <li>npm install babel-cli - package includes command line Babel tools</li>
+  <li>npm install babel-preset-env - package has the code that maps any JavaScript feature, ES6 and above (ES6+), to ES5.</li>
+  <li></li>
+</ul>
+
 <h2>Question-02-11-2018</h2>
 
 <p>Did I correctly understand the static methods? > Description-02-11-2018 > Static Methods</p>
