@@ -169,7 +169,14 @@
 <ul>
   <li>npm install babel-cli - package includes command line Babel tools</li>
   <li>npm install babel-preset-env - package has the code that maps any JavaScript feature, ES6 and above (ES6+), to ES5.</li>
-  <li></li>
+  <li>"babel src -d lib"
+    <ul>
+      <li>babel - the Babel command call responsible for transpiling code.</li>
+      <li>src - instructs Babel to transpile all JavaScript code inside the src directory.</li>
+      <li>-d - instructs Babel to write the transpiled code to a directory.</li>
+      <li>lib - babel writes the transpiled code to a directory called lib</li>
+    </ul>
+  </li>
 </ul>
 
 <h2>Question-02-11-2018</h2>
