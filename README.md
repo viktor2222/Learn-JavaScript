@@ -32,6 +32,12 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/868d2e0192a37e49a8a796d00f1622f33c009b87">npm init</a></li>
 </ul>
 
+<h2>Learned-05-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/ff2ce6d06366fb4377b61941dda07352525606a1">module.exports</a></li>
+</ul>
+
 <h2>Description-31-10-2018</h2>
 
 <h4>Introduction includes:</h4>
@@ -189,6 +195,18 @@
 "build": "babel src -d lib"</li>
       <li>Run npm run build whenever you want to transpile your code from your src to lib directories.</li>  
    </ul>
+  </li>
+</ul>
+
+<h4>INTERMEDIATE JAVASCRIPT MODULES</h4>
+
+<ul>
+  <li>The pattern we use to export modules is thus:
+    <ul>
+      <li>Define an object to represent the module.</li>
+      <li>Add data or behavior to the module.</li>
+      <li>Export the module.</li>
+    </ul>
   </li>
 </ul>
 
