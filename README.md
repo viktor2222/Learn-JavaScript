@@ -37,6 +37,7 @@
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/ff2ce6d06366fb4377b61941dda07352525606a1">module.exports</a></li>
    <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/872ddbc4ad48be8287575a06c6e9c41fb354eff8">require()</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/15fdd8910b21e22815470f1bf248105bb20eca3f">module.exports II</a></li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
