@@ -1564,3 +1564,21 @@ module.exports = {
 const Airplane = require('./2-airplane.js');
 
 console.log(Airplane.displayAirplane());
+
+//export default
+
+//In airplane.js, let's again create an Airplane module from scratch, this time exporting the module with export default. Create an object to represent the module called Airplane.
+let Airplane = {};
+
+//Now that we have an object Airplane, we can continue by adding data in the form of properties and values to the Airplane module. Create an availableAirplanes variable and set it equal to an empty array. Be sure that availableAirplanes is a property of the Airplane object. In the availableAirplanes array, add two array elements that are both of type object. The first object should contain a property name with a value 'AeroJet' and a property fuelCapacity with a value of 800. The second object should have a property name with a value of SkyJet and a property fuelCapacity with a value of 500.
+Airplane.availableAirplanes = [
+  {
+    name: 'AeroJet',
+    fuelCapacity: 800
+  },
+  {
+  	name: 'SkyJet',
+    fuelCapacity: 500
+  }
+];
+export default Airplane;
