@@ -15,5 +15,7 @@
   "bugs": {
     "url": "https://github.com/viktor2222/Learn-JavaScript/issues"
   },
-  "homepage": "https://github.com/viktor2222/Learn-JavaScript#readme"
+  "homepage": "https://github.com/viktor2222/Learn-JavaScript#readme",
+  "dependencies": {},
+  "devDependencies": {}
 }
