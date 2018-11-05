@@ -1372,3 +1372,157 @@ class Nurse extends HospitalEmployee {
 }
 //Under the Nurse class, create a new instance of Nurse and save it to a constant variable named nurseOlynyk. Pass in the following values for each property: name: 'Olynyk' certifications: ['Trauma', 'Pediatrics']
 const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
+
+//Inheritance IV
+
+class HospitalEmployee {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+class Nurse extends HospitalEmployee {
+ constructor(name, certifications) {
+   super(name);
+   this._certifications = certifications;
+ }
+}
+
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']);
+
+//Call .takeVacationDays() with an input of 5 on your nurseOlynyk instance.
+nurseOlynyk.takeVacationDays(5);
+console.log(nurseOlynyk);
+
+//Inheritance V
+
+class HospitalEmployee {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+}
+
+class Nurse extends HospitalEmployee {
+  constructor(name, certifications) {
+    super(name);
+    this._certifications = certifications;
+  }
+//Use the properties and methods below to help you complete the tasks that follow. Nurse Properties: _name, _remainingVacationDays (set to 20 inside the constructor()), _certifications Methods: .takeVacationDays(), .addCertification() Under the Nurse constructor(), add a getter that returns the value saved to the Nurse instance's _certifications.
+  get certifications(){
+    return this._certifications;
+  }
+  addCertification(newCertification){
+    this._certifications.push(newCertification);
+  }
+}
+
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']);
+nurseOlynyk.takeVacationDays(5);
+console.log(nurseOlynyk.remainingVacationDays);
+
+//At the bottom of main.js call the .addCertification() method on nurseOlynyk with a parameter of 'Genetics'.
+nurseOlynyk.addCertification('Genetics');
+console.log(nurseOlynyk.certifications);
+
+//Static Methods
+
+class HospitalEmployee {
+  constructor(name) {
+    this._name = name;
+    this._remainingVacationDays = 20;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get remainingVacationDays() {
+    return this._remainingVacationDays;
+  }
+
+  takeVacationDays(daysOff) {
+    this._remainingVacationDays -= daysOff;
+  }
+  //Inside of your HospitalEmployee class, create a static method called generatePassword. When it's called, this method should return a random integer between zero and 10,000.
+  static generatePassword(){
+    return Math.floor(Math.random() * 10000);
+  }
+}
+
+class Nurse extends HospitalEmployee {
+  constructor(name, certifications) {
+    super(name);
+    this._certifications = certifications;
+  }
+
+  get certifications() {
+    return this._certifications;
+  }
+
+  addCertification(newCertification) {
+    this.certifications.push(newCertification);
+  }
+}
+
+const nurseOlynyk = new Nurse('Olynyk', ['Trauma','Pediatrics']);
+nurseOlynyk.takeVacationDays(5);
+console.log(nurseOlynyk.remainingVacationDays);
+nurseOlynyk.addCertification('Genetics');
+console.log(nurseOlynyk.certifications);
+
+//BROWSER COMPATIBILITY AND TRANSPILATION
+
+//caniuse.com II
+
+// Set the variable below to a number
+let esFivePercentageSupport;
+
+// Set the variable below to a number
+let esSixTemplateLiterals;
+
+//Look up the percentage of browsers that support JavaScript ES5. Save the value, as a number, to the variable esFivePercentageSupport.
+esFivePercentageSupport = 95.93;
+
+//Look up the percentage of browsers that support "Template Literals", a feature that was introduced in ES6. Save the value, as a number, to the variable esSixTemplateLiterals.
+esSixTemplateLiterals = 	88.51;
+
+
+//Why ES6?
+
+//In these tasks, you will manually change the code in main.js to ES5 syntax. The let and const keywords were introduced in ES6. Before that, we declared all variables with the var keyword. Change the let and const keywords in main.js to var.
+var pasta = "Spaghetti"; // ES5 syntax
+
+var meat = "Pancetta"; // ES6 syntax
+
+var sauce = "Eggs and cheese"; // ES6 syntax
+
+// Template literals, like the one below, were introduced in ES6
+var carbonara = "You can make carbonara with" + pasta + meat + "and a sauce made with" + sauce;
+
+//

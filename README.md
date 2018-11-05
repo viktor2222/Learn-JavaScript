@@ -19,8 +19,17 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/4f84adcea9c43cf7b3cd5fce9e093781b07b8051">Methods Calls</a> - in classes</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d7e42c2ea4118e8ff19dbe7c1afc89b850655247">Inheritance II</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/9d210256f4a69d3a1fa7e4cd72be5e76cad56c6c">Inheritance III</a></li>
-  <li><a href=""></a></li>
-  <li><a href=""></a></li>
+</ul>
+
+<h2>Learned-02-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/fbc4e40a726a38299238db0275acf2e6728b52ff">Inheritance IV</a> - in classes</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/03009736bffd8c7c10acb7fcae1b3dbac725d028">Inheritance V</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b6b3cc9f954825d8aaeb0cf24960dc31f055372b">Static Methods</a></li>
+  <li><a href="https://caniuse.com">caniuse.com II</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b5d34b91aeee576429898c606bca64cf14aa965f">Redefine the syntax ES6 to ES5</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/868d2e0192a37e49a8a796d00f1622f33c009b87">npm init</a></li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
@@ -136,7 +145,23 @@
 
 <ul>
   <li>Inheritance - With inheritance, you can create a parent class (also known as a superclass) with properties and methods that multiple child classes (also known as subclasses) share. The child classes inherit the properties and methods from their parent class.</li>
-  <li></li>
-  <li></li>
-  <li></li>
 </ul>
+
+<h2>Description-02-11-2018</h2>
+
+<h4>Classes</h4>
+
+<ul>
+  <li>Static Methods - calls are made directly on the class and are not callable on instances of the class. The static keyword defines a static method for a class. These are often utility functions, such as functions to create or clone objects.(syntax: static nameMethod(){...})</li>
+</ul>
+
+<h4>Browser compatibility and transpilation</h4>
+
+<ul>
+  <li>Browser compatibility and transpilation - in 2015 a new version of javascript ES6 has been released which is not supported by all browsers. To solve this problem, there is a Bable that compiles the ES6 syntax to the old ES5</li>
+  <li>caniuse.com - this is a site where statistics are maintained by browsers HTML, Css, JavaScript</li>
+</ul>
+
+<h2>Question-02-11-2018</h2>
+
+<p>Did I correctly understand the static methods? > Description-02-11-2018 > Static Methods</p>
