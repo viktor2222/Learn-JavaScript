@@ -212,7 +212,6 @@
     </ul>
   </li>
   <li>To make use of the exported module and the behavior we define within it, we import the module. A common way to do this is with the require() function.</li>
-  <li></li>
 </ul>
 
 <h2>Question-02-11-2018</h2>
