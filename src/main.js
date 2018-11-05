@@ -1548,3 +1548,19 @@ function displayAirplane(){
 }
 
 displayAirplane();
+
+//module.exports II
+
+//We'll start writing a new module from scratch. Again, in 2-airplane.js create an object named Airplane.
+let Airplane = {};
+
+//Set module.exports equal to an empty object. Within the object, create a key called myAirplane and set it to a value "CloudJet".
+module.exports = {
+  myAirplane: "CloudJet",
+  displayAirplane: function(){
+    return this.myAirplane;
+  }
+};
+const Airplane = require('./2-airplane.js');
+
+console.log(Airplane.displayAirplane());
