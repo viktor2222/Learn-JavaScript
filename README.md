@@ -47,7 +47,7 @@
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/f12b3f477e0c6584b13ddfe90f88dfb75d7050ee">Named Exports</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/fbc01087e989a8c4e251038644b622feedec161b">Named Imports</a></li>
-  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e1ee80cd166cba6a2c0c8f65b95ea789e71f4d81">Export Named Exports</a><</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e1ee80cd166cba6a2c0c8f65b95ea789e71f4d81">Export Named Exports</a></li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
