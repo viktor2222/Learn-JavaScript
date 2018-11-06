@@ -32,6 +32,16 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/868d2e0192a37e49a8a796d00f1622f33c009b87">npm init</a></li>
 </ul>
 
+<h2>Learned-05-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/ff2ce6d06366fb4377b61941dda07352525606a1">module.exports</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/872ddbc4ad48be8287575a06c6e9c41fb354eff8">require()</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/15fdd8910b21e22815470f1bf248105bb20eca3f">module.exports II</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/21b077247674a00a023885a9047a640c8fb77c10">export default</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/35650f59cc03e84deeb731ed75cefa0b23904570">import</a></li>
+</ul>
+
 <h2>Description-31-10-2018</h2>
 
 <h4>Introduction includes:</h4>
@@ -160,6 +170,49 @@
 <ul>
   <li>Browser compatibility and transpilation - in 2015 a new version of javascript ES6 has been released which is not supported by all browsers. To solve this problem, there is a Bable that compiles the ES6 syntax to the old ES5</li>
   <li>caniuse.com - this is a site where statistics are maintained by browsers HTML, Css, JavaScript</li>
+</ul>
+
+<h2>Description-05-11-2018</h2>
+
+<h4>Browser compatibility and transpilation</h4>
+
+<ul>
+  <li>npm install babel-cli - package includes command line Babel tools</li>
+  <li>npm install babel-preset-env - package has the code that maps any JavaScript feature, ES6 and above (ES6+), to ES5.</li>
+  <li>"babel src -d lib"
+    <ul>
+      <li>babel - the Babel command call responsible for transpiling code.</li>
+      <li>src - instructs Babel to transpile all JavaScript code inside the src directory.</li>
+      <li>-d - instructs Babel to write the transpiled code to a directory.</li>
+      <li>lib - babel writes the transpiled code to a directory called lib</li>
+    </ul>
+  </li>
+  <li>
+    <ul>To create a project 
+      <li>Initialize your project using npm init and create a directory called src</li>
+      <li>Install babel dependencies by running: npm install babel-cli -D...........npm install babel-preset-env -D</li>
+      <li>Create a .babelrc file inside your project and add the following code inside it:
+{
+  "presets": ["env"]
+}</li>
+      <li>Add the following script to your scripts object in package.json:
+"build": "babel src -d lib"</li>
+      <li>Run npm run build whenever you want to transpile your code from your src to lib directories.</li>  
+   </ul>
+  </li>
+</ul>
+
+<h4>INTERMEDIATE JAVASCRIPT MODULES</h4>
+
+<ul>
+  <li>The pattern we use to export modules is thus:
+    <ul>
+      <li>Define an object to represent the module.</li>
+      <li>Add data or behavior to the module.</li>
+      <li>Export the module.</li>
+    </ul>
+  </li>
+  <li>To make use of the exported module and the behavior we define within it, we import the module. A common way to do this is with the require() function.</li>
 </ul>
 
 <h2>Question-02-11-2018</h2>

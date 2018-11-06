@@ -1525,4 +1525,72 @@ var sauce = "Eggs and cheese"; // ES6 syntax
 // Template literals, like the one below, were introduced in ES6
 var carbonara = "You can make carbonara with" + pasta + meat + "and a sauce made with" + sauce;
 
-//
+//INTERMEDIATE JAVASCRIPT MODULES
+
+//module.exports
+//Let's begin by implementing the pattern above in an example. In 1-airplane.js create an object named Airplane.
+let Airplane = {};
+
+//Within the same file, add a property to the Airplane object named myAirplane and set it equal to "StarJet".
+Airplane.myAirplane = "StarJet";
+
+//Export the module.
+module.exports = Airplane;
+
+// require()
+
+//In 1-missionControl.js use the require() function to import the Airplane module from 1-airplane.js. Recall that you will need to use the precise name of the file that contains the module.
+const Airplane = require('./1-airplane.js');
+
+//In 1-missionControl.js, define a function displayAirplane(). In the function, log the value of the module and its property to the console.
+function displayAirplane(){
+  console.log(Airplane.myAirplane);
+}
+
+displayAirplane();
+
+//module.exports II
+
+//We'll start writing a new module from scratch. Again, in 2-airplane.js create an object named Airplane.
+let Airplane = {};
+
+//Set module.exports equal to an empty object. Within the object, create a key called myAirplane and set it to a value "CloudJet".
+module.exports = {
+  myAirplane: "CloudJet",
+  displayAirplane: function(){
+    return this.myAirplane;
+  }
+};
+const Airplane = require('./2-airplane.js');
+
+console.log(Airplane.displayAirplane());
+
+//export default
+
+//In airplane.js, let's again create an Airplane module from scratch, this time exporting the module with export default. Create an object to represent the module called Airplane.
+let Airplane = {};
+
+//Now that we have an object Airplane, we can continue by adding data in the form of properties and values to the Airplane module. Create an availableAirplanes variable and set it equal to an empty array. Be sure that availableAirplanes is a property of the Airplane object. In the availableAirplanes array, add two array elements that are both of type object. The first object should contain a property name with a value 'AeroJet' and a property fuelCapacity with a value of 800. The second object should have a property name with a value of SkyJet and a property fuelCapacity with a value of 500.
+Airplane.availableAirplanes = [
+  {
+    name: 'AeroJet',
+    fuelCapacity: 800
+  },
+  {
+  	name: 'SkyJet',
+    fuelCapacity: 500
+  }
+];
+export default Airplane;
+
+//import
+
+//In missionControl.js we'll use the module Airplane to display the fuel capacity of both our airplanes. Use the import keyword to import the Airplane module.Within the body of the displayFuelCapacity function, use forEach() to iterate over the Airplane.availableAirplanes array.Within the displayFuelCapacity function, use console.log() to output the element's name and its fuel capacity.
+import Airplane from './airplane';
+
+function displayFuelCapacity(){
+  Airplane.availableAirplanes.forEach(function(element){
+    console.log('Fuel Capacity of ' + element.name + ': ' + element.fuelCapacity);
+  });
+}
+console.log(displayFuelCapacity());

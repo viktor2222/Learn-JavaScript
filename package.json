@@ -4,7 +4,7 @@
   "description": "Use Babel to transpile JavaScript ES6 to ES5",
   "main": "\u001b[D\u001b[D\u001b[D\u001bmain\u001b[3~\u001b[3~",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src -d lib"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,7 @@
   "bugs": {
     "url": "https://github.com/viktor2222/Learn-JavaScript/issues"
   },
-  "homepage": "https://github.com/viktor2222/Learn-JavaScript#readme"
+  "homepage": "https://github.com/viktor2222/Learn-JavaScript#readme",
+  "dependencies": {},
+  "devDependencies": {}
 }
