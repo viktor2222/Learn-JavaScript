@@ -1594,3 +1594,36 @@ function displayFuelCapacity(){
   });
 }
 console.log(displayFuelCapacity());
+
+//Named Exports
+
+//Modify the availableAirplanes array such that it is a variable defined with let and no longer a property on the Airplane object. Let's add some more data to the availableAirplanes array. In the first object, AeroJet, add a property availableStaff, and set it equal to an array with the elements 'pilots', 'flightAttendants', 'engineers', 'medicalAssistance', and 'sensorOperators'. In the second object, SkyJet, add a property availableStaff, and set it equal to an array with the elements 'pilots' and 'flightAttendants'.
+let availableAirplanes = [
+  {
+    name: 'AeroJet',
+    fuelCapacity: 800,
+    availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators']
+  },
+  {
+  	name: 'SkyJet',
+    fuelCapacity: 500,
+    availableStaff: ['pilots', 'flightAttendants']
+  }
+];
+
+//Define a new variable with let named flightRequirements, and set it equal to an empty object.
+let flightRequirements = {
+  requiredStaff: 4,
+};
+
+//Define a function with the name meetsStaffRequirements() that takes availableStaff and requiredStaff as parameters. In the body of the meetsStaffRequirements() function, write logic to check if the length of the availableStaff array is greater than or equal to requiredStaff.
+function meetsStaffRequirements(availableStaff, requiredStaff){
+  if(availableStaff.length >= requiredStaff){
+    return true;
+  } else{
+    return false;
+  }
+}
+
+//Using the export keyword, export the variables availableAirplanes, flightRequirements and meetsStaffRequirements.
+export {availableAirplanes, flightRequirements, meetsStaffRequirements};
