@@ -1719,3 +1719,46 @@ function displaySpeedRangeStatus(){
   });
 }
 displaySpeedRangeStatus();
+
+//Export as
+
+//Let's add some additional data to our airplane.js file. Continue by adding more data to objects within the availableAirplanes variable. To the first object AeroJet, add a property maxSpeed with a value of 1200 and a property minSpeed with a value of 300. To the second object SkyJet, add a property maxSpeed with a value of 800 and a property minSpeed with a value of 200.
+let availableAirplanes = [{
+ name: 'AeroJet',
+ fuelCapacity: 800,
+ maxSpeed: 1200,
+ minSpeed: 300,
+ availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators'],
+},
+{name: 'SkyJet',
+ fuelCapacity: 500,
+ maxSpeed: 800,
+ minSpeed: 200,
+ availableStaff: ['pilots', 'flightAttendants']
+}];
+
+let flightRequirements = {
+  requiredStaff: 4,
+  requiredSpeedRange: 700,
+};
+
+function meetsStaffRequirements(availableStaff, requiredStaff) {
+  if (availableStaff.length >= requiredStaff) {
+    return true;
+  } else {
+    return false;
+  }
+};
+//Continuing with the same file, add a new function meetsSpeedRangeRequirements() that takes three arguments maxSpeed, minSpeed and requiredSpeedRange.Within the meetsSpeedRangeRequirements function, create a variable range, and set it to the difference between maxSpeed and minSpeed. In the body of the meetsSpeedRangeRequirements() function, create logic to check if the range is greater than the requiredSpeedRange.
+function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange){
+  let range = maxSpeed - minSpeed;
+  if(range > requiredSpeedRange){
+     return true
+  } else{
+    return false
+  }
+}
+//Use export to export the variables as soon as they are declared, and remove the export statement at the bottom of the file.
+
+//Add an export statement to export the availableAirplanes object as aircrafts, flightRequirements as flightReqs, the meetsStaffRequirements method as meetsStaffReqs and meetsSpeedRangeRequirements as meetsSpeedRangeReqs.
+export {availableAirplanes as aircrafts, flightRequirements as flightReqs, meetsStaffRequirements as meetsStaffReqs, meetsSpeedRangeRequirements as meetsSpeedRangeReqs};
