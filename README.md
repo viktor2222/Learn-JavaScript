@@ -42,6 +42,14 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/35650f59cc03e84deeb731ed75cefa0b23904570">import</a></li>
 </ul>
 
+<h2>Learned-06-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/f12b3f477e0c6584b13ddfe90f88dfb75d7050ee">Named Exports</a></li>
+  <li></li>
+  <li></li>
+</ul>
+
 <h2>Description-31-10-2018</h2>
 
 <h4>Introduction includes:</h4>
