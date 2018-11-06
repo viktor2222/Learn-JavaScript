@@ -1611,7 +1611,7 @@ let availableAirplanes = [
   }
 ];
 
-//Define a new variable with let named flightRequirements, and set it equal to an empty object.
+//Define a new variable with let named flightRequirements, and set it equal to an empty object
 let flightRequirements = {
   requiredStaff: 4,
 };
