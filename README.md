@@ -50,6 +50,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e1ee80cd166cba6a2c0c8f65b95ea789e71f4d81">Export Named Exports</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/14273406a26b1f4f3f46e053e815709c37eb6030">Import Named Imports</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/c7ae2293f2454adf81a7942aacbcd00f62f824b1">Export as</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e3fb8de5b0b3a1dfc64ecb4041debe59108921d3">Import as</a></li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
