@@ -1594,3 +1594,200 @@ function displayFuelCapacity(){
   });
 }
 console.log(displayFuelCapacity());
+
+//Named Exports
+
+//Modify the availableAirplanes array such that it is a variable defined with let and no longer a property on the Airplane object. Let's add some more data to the availableAirplanes array. In the first object, AeroJet, add a property availableStaff, and set it equal to an array with the elements 'pilots', 'flightAttendants', 'engineers', 'medicalAssistance', and 'sensorOperators'. In the second object, SkyJet, add a property availableStaff, and set it equal to an array with the elements 'pilots' and 'flightAttendants'.
+let availableAirplanes = [
+  {
+    name: 'AeroJet',
+    fuelCapacity: 800,
+    availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators']
+  },
+  {
+  	name: 'SkyJet',
+    fuelCapacity: 500,
+    availableStaff: ['pilots', 'flightAttendants']
+  }
+];
+
+//Define a new variable with let named flightRequirements, and set it equal to an empty object
+let flightRequirements = {
+  requiredStaff: 4,
+};
+
+//Define a function with the name meetsStaffRequirements() that takes availableStaff and requiredStaff as parameters. In the body of the meetsStaffRequirements() function, write logic to check if the length of the availableStaff array is greater than or equal to requiredStaff.
+function meetsStaffRequirements(availableStaff, requiredStaff){
+  if(availableStaff.length >= requiredStaff){
+    return true;
+  } else{
+    return false;
+  }
+}
+
+//Using the export keyword, export the variables availableAirplanes, flightRequirements and meetsStaffRequirements.
+export {availableAirplanes, flightRequirements, meetsStaffRequirements};
+
+//Named Imports
+
+//Change the import statement such that it imports the availableAirplanes, flightRequirements, and meetsStaffRequirements variables. Now, modify any instance of the Airplane.availableAirplanes variable, so that you only use availableAirplanes.
+import {availableAirplanes, flightRequirements, meetsStaffRequirements} from './airplane';
+
+function displayFuelCapacity() {
+  availableAirplanes.forEach(function(element) {
+    console.log('Fuel Capacity of ' + element['name'] + ': ' + element['fuelCapacity']);
+  });
+}
+
+displayFuelCapacity();
+
+//Define a function displayStaffStatus() Within the body of the displayStaffStatus() function, use the forEach to iterate over the availableAirplanes array. Specifically, the forEach() should take a function as a parameter. The function should in turn take element as a parameter. Within the displayStaffStatus() function, use console.log() to output the element's name. We'll add more in the next step.
+function displayStaffStatus(){
+  availableAirplanes.forEach(function(element){
+    console.log(element.name + ' meets staff requirements: ' + meetsStaffRequirements(element.availableStaff, flightRequirements.requiredStaff) );
+  });
+}
+
+displayStaffStatus();
+
+//Export Named Exports
+
+//Let's add some additional data to our airplane.js file. Continue by adding more data to objects within the availableAirplanes variable. To the first object AeroJet, add a property maxSpeed with a value of 1200 and a property minSpeed with a value of 300. To the second object SkyJet, add a property maxSpeed with a value of 800 and a property minSpeed with a value of 200.
+export let availableAirplanes = [{
+ name: 'AeroJet',
+ fuelCapacity: 800,
+ maxSpeed: 1200,
+ minSpeed: 300,
+ availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators'],
+},
+{name: 'SkyJet',
+ fuelCapacity: 500,
+ maxSpeed: 800,
+ minSpeed: 200,
+ availableStaff: ['pilots', 'flightAttendants']
+}];
+
+export let flightRequirements = {
+  requiredStaff: 4,
+  requiredSpeedRange: 700,
+};
+
+export function meetsStaffRequirements(availableStaff, requiredStaff) {
+  if (availableStaff.length >= requiredStaff) {
+    return true;
+  } else {
+    return false;
+  }
+};
+//Continuing with the same file, add a new function meetsSpeedRangeRequirements() that takes three arguments maxSpeed, minSpeed and requiredSpeedRange.Within the meetsSpeedRangeRequirements function, create a variable range, and set it to the difference between maxSpeed and minSpeed. In the body of the meetsSpeedRangeRequirements() function, create logic to check if the range is greater than the requiredSpeedRange.
+export function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange){
+  let range = maxSpeed - minSpeed;
+  if(range > requiredSpeedRange){
+     return true
+  } else{
+    return false
+  }
+}
+//Use export to export the variables as soon as they are declared, and remove the export statement at the bottom of the file.
+
+//Import Named Imports
+
+//Add meetsSpeedRangeRequirements to the the import statement at the top of the file.
+import {availableAirplanes, flightRequirements, meetsStaffRequirements, meetsSpeedRangeRequirements} from './airplane';
+
+function displayFuelCapacity() {
+  availableAirplanes.forEach(function(element) {
+    console.log('Fuel Capacity of ' + element['name'] + ': ' + element['fuelCapacity']);
+  });
+}
+
+displayFuelCapacity();
+
+//Define a function displayStaffStatus() Within the body of the displayStaffStatus() function, use the forEach to iterate over the availableAirplanes array. Specifically, the forEach() should take a function as a parameter. The function should in turn take element as a parameter. Within the displayStaffStatus() function, use console.log() to output the element's name. We'll add more in the next step.
+function displayStaffStatus(){
+  availableAirplanes.forEach(function(element){
+    console.log(element.name + ' meets staff requirements: ' + meetsStaffRequirements(element.availableStaff, flightRequirements.requiredStaff) );
+  });
+}
+
+displayStaffStatus();
+
+//Define a function displaySpeedRangeStatus(). Within the displaySpeedRangeStatus() function, use the forEach method to iterate over each element in the availableAirplanes array. Again, the forEach() should take a function as a parameter; this function should take element as a parameter.Within the displaySpeedRangeStatus() function, use console.log() to output the element's name.Continuing within the displaySpeedRangeStatus() function, modify the console.log() statement to output a statement like this: (element name) + 'meets speed range requirements: ' + (true/false) To do this, we can call the meetsSpeedRangeRequirements method, passing in three parameters element.maxSpeed, element.minSpeed and flightRequirements.requiredSpeedRange.
+function displaySpeedRangeStatus(){
+  availableAirplanes.forEach(function(element){
+    console.log(element.name + 'meets speed range requirements: ' + meetsSpeedRangeRequirements(element.maxSpeed, element.minSpeed, flightRequirements.requiredSpeedRange));
+  });
+}
+displaySpeedRangeStatus();
+
+//Export as
+
+//Let's add some additional data to our airplane.js file. Continue by adding more data to objects within the availableAirplanes variable. To the first object AeroJet, add a property maxSpeed with a value of 1200 and a property minSpeed with a value of 300. To the second object SkyJet, add a property maxSpeed with a value of 800 and a property minSpeed with a value of 200.
+let availableAirplanes = [{
+ name: 'AeroJet',
+ fuelCapacity: 800,
+ maxSpeed: 1200,
+ minSpeed: 300,
+ availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators'],
+},
+{name: 'SkyJet',
+ fuelCapacity: 500,
+ maxSpeed: 800,
+ minSpeed: 200,
+ availableStaff: ['pilots', 'flightAttendants']
+}];
+
+let flightRequirements = {
+  requiredStaff: 4,
+  requiredSpeedRange: 700,
+};
+
+function meetsStaffRequirements(availableStaff, requiredStaff) {
+  if (availableStaff.length >= requiredStaff) {
+    return true;
+  } else {
+    return false;
+  }
+};
+//Continuing with the same file, add a new function meetsSpeedRangeRequirements() that takes three arguments maxSpeed, minSpeed and requiredSpeedRange.Within the meetsSpeedRangeRequirements function, create a variable range, and set it to the difference between maxSpeed and minSpeed. In the body of the meetsSpeedRangeRequirements() function, create logic to check if the range is greater than the requiredSpeedRange.
+function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange){
+  let range = maxSpeed - minSpeed;
+  if(range > requiredSpeedRange){
+     return true
+  } else{
+    return false
+  }
+}
+//Use export to export the variables as soon as they are declared, and remove the export statement at the bottom of the file.
+
+//Add an export statement to export the availableAirplanes object as aircrafts, flightRequirements as flightReqs, the meetsStaffRequirements method as meetsStaffReqs and meetsSpeedRangeRequirements as meetsSpeedRangeReqs.
+export {availableAirplanes as aircrafts, flightRequirements as flightReqs, meetsStaffRequirements as meetsStaffReqs, meetsSpeedRangeRequirements as meetsSpeedRangeReqs};
+
+//Import as
+
+//Within the body of missionControl.js, change each variable to its alias, with the exception of the variable in the import statement. In the body, change: availableAirplanes to aircrafts flightRequirements to flightReqs meetsStaffRequirements to meetsStaffReqs meetsSpeedRangeRequirements to meetsSpeedRangeReqs You will see an error in the console, but we'll fix this in the next exercise. Now modify the import statement to import aircrafts, flightReqs, meetsStaffReqs, meetsSpeedRangeReqs.
+import {aircrafts, flightReqs, meetsStaffReqs, meetsSpeedRangeReqs} from './airplane';
+
+function displayFuelCapacity() {
+  aircrafts.forEach(function(element) {
+    console.log('Fuel Capacity of ' + element['name'] + ': ' + element['fuelCapacity']);
+  });
+}
+
+displayFuelCapacity();
+
+function displayStaffStatus() {
+  aircrafts.forEach(function(element) {
+   console.log(element['name'] + ' meets staff requirements: ' + meetsStaffReqs(element['availableStaff'], flightReqs['requiredStaff']) );
+  });
+}
+
+displayStaffStatus();
+
+function displaySpeedRangeStatus() {
+  aircrafts.forEach(function(element) {
+   console.log(element['name'] + ' meets speed range requirements:' + meetsSpeedRangeReqs(element['maxSpeed'], element['minSpeed'], flightReqs['requiredSpeedRange']));
+  });
+}
+
+displaySpeedRangeStatus();
