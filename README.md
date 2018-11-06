@@ -46,7 +46,7 @@
 
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/f12b3f477e0c6584b13ddfe90f88dfb75d7050ee">Named Exports</a></li>
-  <li></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/fbc01087e989a8c4e251038644b622feedec161b">Named Imports</a></li>
   <li></li>
 </ul>
 
