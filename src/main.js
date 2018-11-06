@@ -1762,3 +1762,32 @@ function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange){
 
 //Add an export statement to export the availableAirplanes object as aircrafts, flightRequirements as flightReqs, the meetsStaffRequirements method as meetsStaffReqs and meetsSpeedRangeRequirements as meetsSpeedRangeReqs.
 export {availableAirplanes as aircrafts, flightRequirements as flightReqs, meetsStaffRequirements as meetsStaffReqs, meetsSpeedRangeRequirements as meetsSpeedRangeReqs};
+
+//Import as
+
+//Within the body of missionControl.js, change each variable to its alias, with the exception of the variable in the import statement. In the body, change: availableAirplanes to aircrafts flightRequirements to flightReqs meetsStaffRequirements to meetsStaffReqs meetsSpeedRangeRequirements to meetsSpeedRangeReqs You will see an error in the console, but we'll fix this in the next exercise. Now modify the import statement to import aircrafts, flightReqs, meetsStaffReqs, meetsSpeedRangeReqs.
+import {aircrafts, flightReqs, meetsStaffReqs, meetsSpeedRangeReqs} from './airplane';
+
+function displayFuelCapacity() {
+  aircrafts.forEach(function(element) {
+    console.log('Fuel Capacity of ' + element['name'] + ': ' + element['fuelCapacity']);
+  });
+}
+
+displayFuelCapacity();
+
+function displayStaffStatus() {
+  aircrafts.forEach(function(element) {
+   console.log(element['name'] + ' meets staff requirements: ' + meetsStaffReqs(element['availableStaff'], flightReqs['requiredStaff']) );
+  });
+}
+
+displayStaffStatus();
+
+function displaySpeedRangeStatus() {
+  aircrafts.forEach(function(element) {
+   console.log(element['name'] + ' meets speed range requirements:' + meetsSpeedRangeReqs(element['maxSpeed'], element['minSpeed'], flightReqs['requiredSpeedRange']));
+  });
+}
+
+displaySpeedRangeStatus();
