@@ -1689,3 +1689,33 @@ export function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRan
   }
 }
 //Use export to export the variables as soon as they are declared, and remove the export statement at the bottom of the file.
+
+//Import Named Imports
+
+//Add meetsSpeedRangeRequirements to the the import statement at the top of the file.
+import {availableAirplanes, flightRequirements, meetsStaffRequirements, meetsSpeedRangeRequirements} from './airplane';
+
+function displayFuelCapacity() {
+  availableAirplanes.forEach(function(element) {
+    console.log('Fuel Capacity of ' + element['name'] + ': ' + element['fuelCapacity']);
+  });
+}
+
+displayFuelCapacity();
+
+//Define a function displayStaffStatus() Within the body of the displayStaffStatus() function, use the forEach to iterate over the availableAirplanes array. Specifically, the forEach() should take a function as a parameter. The function should in turn take element as a parameter. Within the displayStaffStatus() function, use console.log() to output the element's name. We'll add more in the next step.
+function displayStaffStatus(){
+  availableAirplanes.forEach(function(element){
+    console.log(element.name + ' meets staff requirements: ' + meetsStaffRequirements(element.availableStaff, flightRequirements.requiredStaff) );
+  });
+}
+
+displayStaffStatus();
+
+//Define a function displaySpeedRangeStatus(). Within the displaySpeedRangeStatus() function, use the forEach method to iterate over each element in the availableAirplanes array. Again, the forEach() should take a function as a parameter; this function should take element as a parameter.Within the displaySpeedRangeStatus() function, use console.log() to output the element's name.Continuing within the displaySpeedRangeStatus() function, modify the console.log() statement to output a statement like this: (element name) + 'meets speed range requirements: ' + (true/false) To do this, we can call the meetsSpeedRangeRequirements method, passing in three parameters element.maxSpeed, element.minSpeed and flightRequirements.requiredSpeedRange.
+function displaySpeedRangeStatus(){
+  availableAirplanes.forEach(function(element){
+    console.log(element.name + 'meets speed range requirements: ' + meetsSpeedRangeRequirements(element.maxSpeed, element.minSpeed, flightRequirements.requiredSpeedRange));
+  });
+}
+displaySpeedRangeStatus();
