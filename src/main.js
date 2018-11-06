@@ -1627,3 +1627,25 @@ function meetsStaffRequirements(availableStaff, requiredStaff){
 
 //Using the export keyword, export the variables availableAirplanes, flightRequirements and meetsStaffRequirements.
 export {availableAirplanes, flightRequirements, meetsStaffRequirements};
+
+//Named Imports
+
+//Change the import statement such that it imports the availableAirplanes, flightRequirements, and meetsStaffRequirements variables. Now, modify any instance of the Airplane.availableAirplanes variable, so that you only use availableAirplanes.
+import {availableAirplanes, flightRequirements, meetsStaffRequirements} from './airplane';
+
+function displayFuelCapacity() {
+  availableAirplanes.forEach(function(element) {
+    console.log('Fuel Capacity of ' + element['name'] + ': ' + element['fuelCapacity']);
+  });
+}
+
+displayFuelCapacity();
+
+//Define a function displayStaffStatus() Within the body of the displayStaffStatus() function, use the forEach to iterate over the availableAirplanes array. Specifically, the forEach() should take a function as a parameter. The function should in turn take element as a parameter. Within the displayStaffStatus() function, use console.log() to output the element's name. We'll add more in the next step.
+function displayStaffStatus(){
+  availableAirplanes.forEach(function(element){
+    console.log(element.name + ' meets staff requirements: ' + meetsStaffRequirements(element.availableStaff, flightRequirements.requiredStaff) );
+  });
+}
+
+displayStaffStatus();
