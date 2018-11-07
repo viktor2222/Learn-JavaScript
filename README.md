@@ -53,6 +53,17 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e3fb8de5b0b3a1dfc64ecb4041debe59108921d3">Import as</a></li>
 </ul>
 
+<h2>Learned-07-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/7e087f3063fb4714f3c183a9a66f8bb79e4ca3ac">Combining Export Statements</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/254028b6d587a89ac3a162f99a7bed832cf12158">Combining Import Statements</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b5bae1e626e6bd49231530362b7ff6ed3bcd09be">HTTP Requests</a> - REQUESTS I</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e6d4ad51b0243dd50fb8b545d4a7b323592ea49d">XHR GET Requests II</a> - REQUESTS I</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/305e90b12113e57118b5db45d4662f9cab5b3da0">XHR GET Requests III</a> - REQUESTS I</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/228e89d2f17208151b7a6d39dc4302720179b737">XHR GET Requests IV</a> - REQUESTS I</li>
+</ul>
+
 <h2>Description-31-10-2018</h2>
 
 <h4>Introduction includes:</h4>
@@ -224,6 +235,17 @@
     </ul>
   </li>
   <li>To make use of the exported module and the behavior we define within it, we import the module. A common way to do this is with the require() function.</li>
+</ul>
+
+<h2>Description-07-11-2018</h2>
+
+<ul>
+  <li>Modules in JavaScript are reusable pieces of code that can be exported from one program and imported for use in another program.</li>
+  <li>module.exports exports the module for use in another program.</li>
+  <li>require() imports the module for use in the current program.</li>
+  <li>ES6 introduced a more flexible, easier syntax to export modules: default exports use export default to export JavaScript objects, functions, and primitive data types.</li>
+  <li>named exports use the export keyword to export data in variables.</li>
+  <li>import is a keyword that imports any object, function, or data type.</li>
 </ul>
 
 <h2>Question-02-11-2018</h2>

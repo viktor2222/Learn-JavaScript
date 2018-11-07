@@ -1791,3 +1791,197 @@ function displaySpeedRangeStatus() {
 }
 
 displaySpeedRangeStatus();
+
+//Combining Export Statements
+
+//In airplanes.js, use the export keyword to export availableAirplanes, flightRequirements, and meetsStaffRequirements as soon as they are declared.
+export let availableAirplanes = [
+{name: 'AeroJet',
+ fuelCapacity: 800,
+ availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators'],
+ maxSpeed: 1200,
+ minSpeed: 300
+},
+{name: 'SkyJet',
+ fuelCapacity: 500,
+ availableStaff: ['pilots', 'flightAttendants'],
+ maxSpeed: 800,
+ minSpeed: 200
+}
+];
+
+export let flightRequirements = {
+  requiredStaff: 4,
+  requiredSpeedRange: 700
+};
+
+export function meetsStaffRequirements(availableStaff, requiredStaff) {
+  if (availableStaff.length >= requiredStaff) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange) {
+  let range = maxSpeed - minSpeed;
+  if (range > requiredSpeedRange) {
+    return true;
+    } else {
+    return false;
+  }
+};
+//Use export default to export meetsSpeedRangeRequirements.
+export default meetsSpeedRangeRequirements;
+
+export { availableAirplanes as aircrafts, flightRequirements as flightReqs, meetsStaffRequirements as meetsStaffReqs, meetsSpeedRangeRequirements as meetsSpeedRangeReqs };
+
+//Combining Import Statements
+
+//Remove the import statement at the top of missionControl.js. Once you have removed import, change each variable to its original, unaliased name within the rest of the file. aircrafts to availableAirplanes flightReqs to flightRequirements meetsStaffReqs to meetsStaffRequirements meetsSpeedRangeReqs to meetsSpeedRangeRequirements If you see errors in the console, not to worry. We'll resolve this in our last step! At the top of the file, we'll now import all variables from the module. Use import to import availableAirplanes, flightRequirements, and meetsStaffRequirements between a set of {} Use import to import meetsSpeedRangeRequirements
+
+import { availableAirplanes, flightRequirements, meetsStaffRequirements} from './airplane';
+
+import meetsSpeedRangeRequirements from './airplane';
+
+function displayFuelCapacity() {
+  availableAirplanes.forEach(function(element) {
+    console.log('Fuel Capacity of ' + element.name + ': ' + element['fuelCapacity']);
+  });
+}
+
+displayFuelCapacity();
+
+function displayStaffStatus() {
+  availableAirplanes.forEach(function(element) {
+   console.log(element.name + ' meets staff requirements: ' + meetsStaffRequirements(element.availableStaff, flightRequirements.requiredStaff) );
+  });
+}
+
+displayStaffStatus();
+
+function displaySpeedRangeStatus() {
+  availableAirplanes.forEach(function(element) {
+   console.log(element.name + ' meets speed range requirements:' + meetsSpeedRangeRequirements(element.maxSpeed, element.minSpeed, flightRequirements.requiredSpeedRange));
+  });
+}
+
+displaySpeedRangeStatus();
+
+
+//REQUESTS I
+
+
+//HTTP Requests
+
+//To get a glimpse of how the event loop works, take a look at the code in the code editor. We'll be using setTimeout(), which will pass a function call to the queue. The first argument is a callback and the second argument is the number of milliseconds the program must wait before the callback can be run. The other console.log() calls are run from the stack.
+console.log('First message!');
+setTimeout(() => {
+   console.log('This message will always run last...');
+}, 0);
+console.log('Second message!');
+//Interesting right? What if we change the 2500 in setTimeout() to be 0? Essentially the callback doesn't need to wait before it can be called. Do you think that this change will affect the order?
+
+//XHR GET Requests II
+
+//First, we need to create the XMLHttpRequest object using the new operator. Save this object in a const called xhr.
+const xhr = new XMLHttpRequest();
+
+//Next, save the following URL to a const called url. Make sure the URL is wrapped in quotes so that it is a string. https://api-to-call.com/endpoint
+const url = 'https://api-to-call.com/endpoint';
+
+//Set the responseType property of the xhr object to equal 'json'. JSON is JavaScript Object Notation, which is how the response is going to be formatted.
+xhr.responseType = 'json';
+
+//Set the xhr.onreadystatechange event handler equal to an anonymous arrow function. Leave the function empty.In the code block of the conditional statement, return the response property of xhr.
+xhr.onreadystatechange = () =>{
+  if (xhr.readyState === XMLHttpRequest.DONE) {
+    return xhr.response;
+	}
+}
+
+//Below the function you created in the previous two steps, call the .open() method on the xhr object and pass it 'GET' and url as arguments. .open() creates a new request and the arguments passed in determine the type and URL of the request.
+xhr.open('GET', url);
+
+//On the following line, call the .send() method on the xhr object. Do not pass it any arguments.
+xhr.send();
+
+//XHR GET Requests III
+
+// Information to reach APIAt the top of main.js, create a const named url and save to it the following URL (as a string): https://api.datamuse.com/words? You'll be using this URL to direct your request.Underneath const url, create another const named queryParams and assign it to 'rel_rhy=' 'rel_rhy=' is the start of a parameter for the query string. This parameter will narrow your search to words that rhyme.
+const url = 'https://api.datamuse.com/words?';
+
+const queryParams = 'rel_rhy=';
+// Selecting page elements
+const inputField = document.querySelector('#input');
+const submit = document.querySelector('#submit');
+const responseField = document.querySelector('#responseField');
+
+// AJAX functionIn the function getSuggestions(), create a const named wordQuery and assign it to be inputField.value. inputField.value grabs what is in the inputField and assigns it to the variable wordQuery. You'll be working in getSuggestions() for the rest of the exercise.Now create another const named endpoint, and assign equal to a string that concatenates url, queryParams, and wordQuery. endpoint will store the value of the entire URL and query string.You can now start on the XMLHttpRequest object. Declare a const named xhr and use the new operator to create the XMLHttpRequest object.Set the responseType of xhr to 'json'.Assign an anonymous arrow function to the onreadystatechange event handler of xhr. Below the anonymous arrow function you just created (but still inside of getSuggestions()), call the .open() method on the XHR object and pass it 'GET' and endpoint as respective arguments. This method call will create a new request using the two arguments: 'GET' sets the method and url sets the destination. Underneath .open(), call the .send() method on xhr and pass it no arguments. The .send() method will send the request to the server. Then run your code. Type in a word in the input field and click the submit button. If all went well, the response field in the browser will display the raw response from the API!
+const getSuggestions = () => {
+	const wordQuery = inputField.value;
+  const endpoint = url + queryParams + wordQuery;
+  const xhr = new XMLHttpRequest();
+  xhr.responseType = 'json';
+  xhr.onreadystatechange = () => {
+  	if (xhr.readyState === XMLHttpRequest.DONE) {
+      renderResponse(xhr.response)
+    }
+	}
+  xhr.open('GET', endpoint);
+  xhr.send();
+}
+
+// Clear previous results and display results to webpage
+const displaySuggestions = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild);
+  };
+  getSuggestions();
+}
+
+submit.addEventListener('click', displaySuggestions);
+
+//XHR GET Requests IV
+
+// Information to reach API Let's do something else besides finding words that rhyme. Have const queryParams store the value 'rel_jjb='. This will search for words that describe another word. Since we want to retrieve more specific results, we should create another parameter. Create another const additionalParams underneath queryParams, and assign it '&topics='. Reminder: the & character at the start of the string is used to separate our parameters. The = character will join the key 'topics' to a value. In the code block of getSuggestions(), under wordQuery, declare a const topicQuery, and assign it to the value of topicField.
+const url = 'https://api.datamuse.com/words?';
+const queryParams = 'rel_jjb=';
+const additionalParams = '&topics=';
+
+// Selecting page elements
+const inputField = document.querySelector('#input');
+const topicField = document.querySelector('#topic');
+const submit = document.querySelector('#submit');
+const responseField = document.querySelector('#responseField');
+
+// AJAX function In getSuggestions(), change the value of endpoint to a concatenated string of url, queryParams, wordQuery, additionalParams, and topicQuery.
+const getSuggestions = () => {
+  const wordQuery = inputField.value;
+  const topicQuery = topicField.value;
+  const endpoint = `${url}${queryParams}${wordQuery}${additionalParams}${topicQuery}`;
+
+  const xhr = new XMLHttpRequest();
+  xhr.responseType = 'json';
+
+  xhr.onreadystatechange = () => {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      renderResponse(xhr.response);
+    }
+  }
+
+  xhr.open('GET', endpoint);
+  xhr.send();
+}
+
+// Clear previous results and display results to webpage
+const displaySuggestions = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild);
+  }
+  getSuggestions();
+}
+
+submit.addEventListener('click', displaySuggestions);
