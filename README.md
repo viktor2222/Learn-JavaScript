@@ -234,6 +234,17 @@
   <li>To make use of the exported module and the behavior we define within it, we import the module. A common way to do this is with the require() function.</li>
 </ul>
 
+<h2>Description-07-11-2018</h2>
+
+<ul>
+  <li>Modules in JavaScript are reusable pieces of code that can be exported from one program and imported for use in another program.</li>
+  <li>module.exports exports the module for use in another program.</li>
+  <li>require() imports the module for use in the current program.</li>
+  <li>ES6 introduced a more flexible, easier syntax to export modules: default exports use export default to export JavaScript objects, functions, and primitive data types.</li>
+  <li>named exports use the export keyword to export data in variables.</li>
+  <li>import is a keyword that imports any object, function, or data type.</li>
+</ul>
+
 <h2>Question-02-11-2018</h2>
 
 <p>Did I correctly understand the static methods? > Description-02-11-2018 > Static Methods</p>
