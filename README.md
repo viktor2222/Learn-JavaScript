@@ -53,6 +53,14 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e3fb8de5b0b3a1dfc64ecb4041debe59108921d3">Import as</a></li>
 </ul>
 
+<h2>Learned-07-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/7e087f3063fb4714f3c183a9a66f8bb79e4ca3ac">Combining Export Statements</a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+</ul>
+
 <h2>Description-31-10-2018</h2>
 
 <h4>Introduction includes:</h4>
