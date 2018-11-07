@@ -1835,3 +1835,35 @@ function meetsSpeedRangeRequirements(maxSpeed, minSpeed, requiredSpeedRange) {
 export default meetsSpeedRangeRequirements;
 
 export { availableAirplanes as aircrafts, flightRequirements as flightReqs, meetsStaffRequirements as meetsStaffReqs, meetsSpeedRangeRequirements as meetsSpeedRangeReqs };
+
+//Combining Import Statements
+
+//Remove the import statement at the top of missionControl.js. Once you have removed import, change each variable to its original, unaliased name within the rest of the file. aircrafts to availableAirplanes flightReqs to flightRequirements meetsStaffReqs to meetsStaffRequirements meetsSpeedRangeReqs to meetsSpeedRangeRequirements If you see errors in the console, not to worry. We'll resolve this in our last step! At the top of the file, we'll now import all variables from the module. Use import to import availableAirplanes, flightRequirements, and meetsStaffRequirements between a set of {} Use import to import meetsSpeedRangeRequirements
+
+import { availableAirplanes, flightRequirements, meetsStaffRequirements} from './airplane';
+
+import meetsSpeedRangeRequirements from './airplane';
+
+function displayFuelCapacity() {
+  availableAirplanes.forEach(function(element) {
+    console.log('Fuel Capacity of ' + element.name + ': ' + element['fuelCapacity']);
+  });
+}
+
+displayFuelCapacity();
+
+function displayStaffStatus() {
+  availableAirplanes.forEach(function(element) {
+   console.log(element.name + ' meets staff requirements: ' + meetsStaffRequirements(element.availableStaff, flightRequirements.requiredStaff) );
+  });
+}
+
+displayStaffStatus();
+
+function displaySpeedRangeStatus() {
+  availableAirplanes.forEach(function(element) {
+   console.log(element.name + ' meets speed range requirements:' + meetsSpeedRangeRequirements(element.maxSpeed, element.minSpeed, flightRequirements.requiredSpeedRange));
+  });
+}
+
+displaySpeedRangeStatus();
