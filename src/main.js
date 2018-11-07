@@ -1881,3 +1881,27 @@ setTimeout(() => {
 }, 0);
 console.log('Second message!');
 //Interesting right? What if we change the 2500 in setTimeout() to be 0? Essentially the callback doesn't need to wait before it can be called. Do you think that this change will affect the order?
+
+//XHR GET Requests II
+
+//First, we need to create the XMLHttpRequest object using the new operator. Save this object in a const called xhr.
+const xhr = new XMLHttpRequest();
+
+//Next, save the following URL to a const called url. Make sure the URL is wrapped in quotes so that it is a string. https://api-to-call.com/endpoint
+const url = 'https://api-to-call.com/endpoint';
+
+//Set the responseType property of the xhr object to equal 'json'. JSON is JavaScript Object Notation, which is how the response is going to be formatted.
+xhr.responseType = 'json';
+
+//Set the xhr.onreadystatechange event handler equal to an anonymous arrow function. Leave the function empty.In the code block of the conditional statement, return the response property of xhr.
+xhr.onreadystatechange = () =>{
+  if (xhr.readyState === XMLHttpRequest.DONE) {
+    return xhr.response;
+	}
+}
+
+//Below the function you created in the previous two steps, call the .open() method on the xhr object and pass it 'GET' and url as arguments. .open() creates a new request and the arguments passed in determine the type and URL of the request.
+xhr.open('GET', url);
+
+//On the following line, call the .send() method on the xhr object. Do not pass it any arguments.
+xhr.send();
