@@ -59,7 +59,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/7e087f3063fb4714f3c183a9a66f8bb79e4ca3ac">Combining Export Statements</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/254028b6d587a89ac3a162f99a7bed832cf12158">Combining Import Statements</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b5bae1e626e6bd49231530362b7ff6ed3bcd09be">HTTP Requests</a> - REQUESTS I</li>
-  <li><a href=""></a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e6d4ad51b0243dd50fb8b545d4a7b323592ea49d">XHR GET Requests II</a> - REQUESTS I</li>
   <li><a href=""></a></li>
 </ul>
 
