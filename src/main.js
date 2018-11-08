@@ -2074,3 +2074,40 @@ fetch('https://api-to-call.com/endpoint').then(response =>{
 }).then(jsonResponse =>{
   return jsonResponse;
 });
+
+//fetch() GET Requests III
+
+// Information to reach API. At the top of main.js, create a const called url. Assign url to the following URL as a string: https://api.datamuse.com/words Below url, create another const and call it queryParams. Assign it a value of '?sl='
+const url = 'https://api.datamuse.com/words';
+const queryParams = '?sl=';
+
+// Selects page elements
+const inputField = document.querySelector('#input');
+const submit = document.querySelector('#submit');
+const responseField = document.querySelector('#responseField');
+
+// AJAX function Inside the getSuggestions() function, create a const called wordQuery and assign it inputField.value.You'll need wordQuery to store the value of what is being typed into the input field. You will be working inside getSuggestions() for the remainder of this exercise.Call the fetch() function and pass in endpoint as an argument. Chain a .then() method to the fetch() function. Pass it a success arrow callback function as an argument. The callback function should take response as its single parameter. Delete renderJsonResponse(response) and replace it with return response.json(). By returning response.json(), the next function that is .then() chained to it will receive a Promise with JSON data.
+const getSuggestions = () => {
+  const wordQuery = inputField.value;
+  const endpoint = url + queryParams + wordQuery;
+  fetch(endpoint).then((response =>{
+    if(response.ok){
+      return response.json();
+    }
+    //Below the condition's code block, add this code to raise an exception if the request failed: throw new Error('Request failed!');
+  throw new Error('Request failed!');
+  }), (networkError) => {
+
+	});
+}
+
+// Clears previous results and display results to webpage
+const displaySuggestions = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild);
+  }
+  getSuggestions();
+};
+
+submit.addEventListener('click', displaySuggestions);
