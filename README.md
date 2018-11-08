@@ -70,6 +70,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/7fafc2cee61ec32a5031d28142b634ce68eaf14f">XHR POST Requests II</a> - REQUESTS I</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/3d15e6abe2f343490bf771a3aee7ced42a8762c5">XHR Post Requests III</a> - REQUESTS I</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/27113f104df2f8f1455cbe4fa44612ef8c74d538">fetch() GET Requests II</a> - REQUESTS II</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b1059b8409f6a956b1a36a8b0f7f61b3b6266a15">fetch() GET Requests III</a> - REQUESTS II</li>
   <li><a href=""></a></li>
 </ul>
 
