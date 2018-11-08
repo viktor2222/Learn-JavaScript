@@ -278,8 +278,6 @@
       <li>Returns a promise that ultimately resolves to a response object, which contains the status of the promise with information the API sent back.</li>
     </ul>
   </li>
-  <li></li>
-  <li></li>
 </ul>
 
 <h2>Question-02-11-2018</h2>
