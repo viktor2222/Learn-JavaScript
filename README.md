@@ -248,6 +248,20 @@
   <li>import is a keyword that imports any object, function, or data type.</li>
 </ul>
 
+<h2>Description-08-11-2018</h2>
+
+<ul>
+  <li>GET is simpler and faster than POST, and can be used in most cases.</li>
+  <li>However, always use POST requests when:
+    <ul>
+      <li>A cached file is not an option (update a file or database on the server).</li>
+      <li>Sending a large amount of data to the server (POST has no size limitations).</li>
+      <li>Sending user input (which can contain unknown characters), POST is more robust and secure than GET.</li>
+    </ul>
+  </li>
+  <li></li>
+</ul>
+
 <h2>Question-02-11-2018</h2>
 
 <p>Did I correctly understand the static methods? > Description-02-11-2018 > Static Methods</p>
