@@ -64,6 +64,15 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/228e89d2f17208151b7a6d39dc4302720179b737">XHR GET Requests IV</a> - REQUESTS I</li>
 </ul>
 
+<h2>Learned-08-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/7fafc2cee61ec32a5031d28142b634ce68eaf14f">XHR POST Requests II</a> - REQUESTS I</li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+</ul>
+
 <h2>Description-31-10-2018</h2>
 
 <h4>Introduction includes:</h4>
