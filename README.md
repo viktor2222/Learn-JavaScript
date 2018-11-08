@@ -268,6 +268,9 @@
       <li>Sending user input (which can contain unknown characters), POST is more robust and secure than GET.</li>
     </ul>
   </li>
+  <li>JavaScript is the language of the web because of its asynchronous capabilities. AJAX, which stands for Asynchronous JavaScript and XML, is a set of tools that are used together to take advantage of JavaScript's asynchronous capabilities.</li>
+  <li>To add a query string to a URL endpoint you can use ? and include a parameter.</li>
+  <li>To provide additional parameters, use & and then include a key-value pair, joined by =.</li>
   <li></li>
 </ul>
 
