@@ -64,6 +64,15 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/228e89d2f17208151b7a6d39dc4302720179b737">XHR GET Requests IV</a> - REQUESTS I</li>
 </ul>
 
+<h2>Learned-08-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/7fafc2cee61ec32a5031d28142b634ce68eaf14f">XHR POST Requests II</a> - REQUESTS I</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/3d15e6abe2f343490bf771a3aee7ced42a8762c5">XHR Post Requests III</a> - REQUESTS I</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/27113f104df2f8f1455cbe4fa44612ef8c74d538">fetch() GET Requests II</a> - REQUESTS II</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b1059b8409f6a956b1a36a8b0f7f61b3b6266a15">fetch() GET Requests III</a> - REQUESTS II</li>
+</ul>
+
 <h2>Description-31-10-2018</h2>
 
 <h4>Introduction includes:</h4>
@@ -246,6 +255,29 @@
   <li>ES6 introduced a more flexible, easier syntax to export modules: default exports use export default to export JavaScript objects, functions, and primitive data types.</li>
   <li>named exports use the export keyword to export data in variables.</li>
   <li>import is a keyword that imports any object, function, or data type.</li>
+</ul>
+
+<h2>Description-08-11-2018</h2>
+
+<ul>
+  <li>GET is simpler and faster than POST, and can be used in most cases.</li>
+  <li>However, always use POST requests when:
+    <ul>
+      <li>A cached file is not an option (update a file or database on the server).</li>
+      <li>Sending a large amount of data to the server (POST has no size limitations).</li>
+      <li>Sending user input (which can contain unknown characters), POST is more robust and secure than GET.</li>
+    </ul>
+  </li>
+  <li>JavaScript is the language of the web because of its asynchronous capabilities. AJAX, which stands for Asynchronous JavaScript and XML, is a set of tools that are used together to take advantage of JavaScript's asynchronous capabilities.</li>
+  <li>To add a query string to a URL endpoint you can use ? and include a parameter.</li>
+  <li>To provide additional parameters, use & and then include a key-value pair, joined by =.</li>
+  <li>The fetch() function:
+    <ul>
+      <li>Creates a request object that contains relevant information that an API needs.</li>
+      <li>Sends that request object to the API endpoint provided.</li>
+      <li>Returns a promise that ultimately resolves to a response object, which contains the status of the promise with information the API sent back.</li>
+    </ul>
+  </li>
 </ul>
 
 <h2>Question-02-11-2018</h2>

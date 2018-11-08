@@ -1985,3 +1985,129 @@ const displaySuggestions = (event) => {
 }
 
 submit.addEventListener('click', displaySuggestions);
+
+//XHR POST Requests II
+
+//Create a new XMLHttpRequest object using the new operator, and save it in a const called xhr.
+const xhr = new XMLHttpRequest();
+
+//Next, save the following URL to a const called url. Make sure the URL is wrapped in quotes so that it is a string.
+const url = 'https://api-to-call.com/endpoint';
+
+//Create a new const called data, and save this line of code to it: JSON.stringify({id: '200'}); JSON.stringify() will convert a value to a JSON string. By converting the value to a string, we can then send the data to a server.
+const data = JSON.stringify({id: '200'});
+
+//Set the responseType property of the xhr object to be 'json'.
+xhr.responseType = 'json';
+
+//Set the xhr.onreadystatechange event handler equal to an anonymous arrow function. Leave the function empty until the next step. .onreadystatechange will contain the event handler that will be called when xhr's state changes.In the code block of the function you created in the previous step, add a conditional statement that checks to see if the readyState of xhr is equal to XMLHttpRequest.DONE.
+xhr.onreadystatechange = () => {
+  if(xhr.readyState === XMLHttpRequest.DONE){
+     return xhr.response;
+  }
+}
+
+//Below the function you created in the previous two steps, call the .open() method on the xhr object and pass it 'POST' and url as arguments. .open() creates a new request and the arguments passed in determine what type of request is being made and where it's being made to.
+xhr.open('POST', url);
+
+//On the following line, call the .send() method on the xhr object and pass data as an argument. .send() will send the request to the server. Nice work! You've written the boilerplate code for an AJAX POST request using an XMLHttpRequest object.
+xhr.send(data);
+
+//XHR Post Requests III
+
+// Information to reach API
+const apiKey = '<d16eb188835242829c7ed28be9a1c790>';
+const url = 'https://api.rebrandly.com/v1/links';
+
+// Some page elements
+const inputField = document.querySelector('#input');
+const shortenButton = document.querySelector('#shorten');
+const responseField = document.querySelector('#responseField');
+
+// AJAX functions Within the code block of shortenUrl(), create a const called urlToShorten, and save inputField.value to it. urlToShorten will now save the value of the input field Note: for the remainder of this exercise's instructions we will be working inside the code block of shortenUrl()! Create a const called data, and save the following code to it: JSON.stringify({destination: urlToShorten}); Create a new XMLHttpRequest object using the new operator, and save it to a const called xhr. Set the responseType property of the xhr object to be 'json'.Save an empty anonymous arrow function to the onreadystatechange event handler of the xhr object. This function will not take in any parameters. Inside the anonymous function's code block, include the following code inside of its code block: if (xhr.readyState === XMLHttpRequest.DONE) { renderRawResponse(xhr.response); } The renderRawResponse function can be viewed at public/helperFunctions.js.Below the anonymous function you just created, call the .open() method on xhr, and pass it 'POST' and url as respective arguments.
+const shortenUrl = () => {
+  const urlToShorten = inputField.value;
+  const data = JSON.stringify({destination: urlToShorten});
+  const xhr = new XMLHttpRequest();
+  xhr.responseType = 'json';
+  xhr.onreadystatechange = () => {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      renderResponse(xhr.response);
+    }
+  }
+  xhr.open('POST', url);
+//To access the Rebrandly API, we need a header with two key-value pairs. In the header, you must include values for 'Content-type' and an 'apikey'. To set the header, we have to include the following code below our .open() method.
+  xhr.setRequestHeader('Content-type', 'application/json');
+  xhr.setRequestHeader('apikey', apiKey);
+
+//On xhr, call the .send() method, and pass it data as an argument.
+  xhr.send(data);
+}
+
+
+// Clear page and call AJAX functions
+const displayShortUrl = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild);
+  }
+  shortenUrl();
+}
+
+shortenButton.addEventListener('click', displayShortUrl);
+
+//Enter this URL into the input field, and click the shorten button in the web page. https://medium.com/@codecademy/breaking-the-coding-language-barrier-bf24652c3c60 Notice the object that came back! Now replace renderRawResponse(xhr.response) with renderResponse(xhr.response). Run the code. Paste the URL again and click "Shorten". Isn't it much cleaner?
+
+
+//REQUESTS II
+
+//fetch() GET Requests II
+
+//First, call the fetch() function and pass it this URL as a string: https://api-to-call.com/endpoint This first argument determines the endpoint of the request. Chain a .then() method to the end of the fetch() function and pass it the success callback arrow function as its first argument. The success callback function takes one parameter, response. .then() will fire only after the promise status of fetch() has been resolved.Inside of the response callback function, check the ok property of response inside of a conditional statement. In the code block of the conditional statement, return response.json(). The reason we're testing the ok property of the response object is that it will be a Boolean value. If there were no errors response.ok will be true and then your code will return response.json(). Below the curly braces of the conditional statement, create a new error with this code: throw new Error('Request failed!');Add a second argument to .then(), it will be an arrow function that will handle our failures. Separate the first callback function from the second with a comma. The second callback function takes a single parameter, networkError. In the code block of the second callback function, log networkError.message to the console. If we could not reach the endpoint at all, e.g., the server is down, then we would get this networkError.
+fetch('https://api-to-call.com/endpoint').then(response =>{
+  if(response.ok){
+    return response.json();
+  }
+  throw new Error('Request failed!');
+}, networkError =>{
+  console.log(networkError.message);
+}).then(jsonResponse =>{
+  return jsonResponse;
+});
+
+//fetch() GET Requests III
+
+// Information to reach API. At the top of main.js, create a const called url. Assign url to the following URL as a string: https://api.datamuse.com/words Below url, create another const and call it queryParams. Assign it a value of '?sl='
+const url = 'https://api.datamuse.com/words';
+const queryParams = '?sl=';
+
+// Selects page elements
+const inputField = document.querySelector('#input');
+const submit = document.querySelector('#submit');
+const responseField = document.querySelector('#responseField');
+
+// AJAX function Inside the getSuggestions() function, create a const called wordQuery and assign it inputField.value.You'll need wordQuery to store the value of what is being typed into the input field. You will be working inside getSuggestions() for the remainder of this exercise.Call the fetch() function and pass in endpoint as an argument. Chain a .then() method to the fetch() function. Pass it a success arrow callback function as an argument. The callback function should take response as its single parameter. Delete renderJsonResponse(response) and replace it with return response.json(). By returning response.json(), the next function that is .then() chained to it will receive a Promise with JSON data.
+const getSuggestions = () => {
+  const wordQuery = inputField.value;
+  const endpoint = url + queryParams + wordQuery;
+  fetch(endpoint).then((response =>{
+    if(response.ok){
+      return response.json();
+    }
+    //Below the condition's code block, add this code to raise an exception if the request failed: throw new Error('Request failed!');
+  throw new Error('Request failed!');
+  }), (networkError) => {
+
+	});
+}
+
+// Clears previous results and display results to webpage
+const displaySuggestions = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild);
+  }
+  getSuggestions();
+};
+
+submit.addEventListener('click', displaySuggestions);
