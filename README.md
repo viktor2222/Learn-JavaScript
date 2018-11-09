@@ -83,6 +83,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/0e9ab7f9fe4c82f18f8497aa913da07f5c33027e">fetch() POST Requests V</a> - In fact, this time I add another .then() to the chain to finally make the information available to in the webpage!</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/73e11a6c1b4fea4a4c0072a9c0942db49224f6cd">async GET Requests II</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/dafa35d8f61f3dd423ed9535813f01ebd763079f">async GET Requests III</a> - in this exercise,I to build on previously created boilerplate code to get nouns that describe the inputted word from the Datamuse API</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/3a417e9996d03bc87dfd6a19d83839830ccea426">async POST Requests II</a> - POST request using async and wait.</li>
   <li><a href=""></a></li>
 </ul>
 
