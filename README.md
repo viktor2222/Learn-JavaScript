@@ -305,6 +305,13 @@
       <li>In a try...catch statement, code in the try block will be run and in the event of an exception/error, the code in the catch statement will run.</li>
     </ul>
   </li>
+  <li>Use AJAX to asynchronously request data from APIs. fetch() and async/await are new functionalities developed in ES6 (promises) and ES8 respectively.
+</li>
+  <li>Promises are a new type of JavaScript object that represent data that will eventually be returned from a request.</li>
+  <li>We can chain .then() methods to handle promises returned by fetch().</li>
+  <li>The .json() method converts a returned promise to a JSON object.</li>
+  <li>async is a keyword that is used to create functions that will return promises.</li>
+  <li>await is a keyword that is used to tell a program to continue moving through the message queue while a promise resolves.</li>
 </ul>
 
 <h2>Question-02-11-2018</h2>
