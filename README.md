@@ -85,7 +85,6 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/dafa35d8f61f3dd423ed9535813f01ebd763079f">async GET Requests III</a> - in this exercise,I to build on previously created boilerplate code to get nouns that describe the inputted word from the Datamuse API</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/3a417e9996d03bc87dfd6a19d83839830ccea426">async POST Requests II</a> - POST request using async and wait.</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e73dc3b767aacd8303478a19885d6f0387995dc5">async POST Requests III</a> - get the Rebrandly API key to access the Rebrandly API.</li>
-  <li><a href=""></a></li>
 </ul>
 
 <h2>Description-31-10-2018</h2>
