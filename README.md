@@ -288,6 +288,14 @@
   </li>
 </ul>
 
+<h2>Description-09-11-2018</h2>
+
+<ul>
+  <li>fetch() POST - the initial call takes two arguments: an endpoint and an object that contains information needed for the POST request. The rest of the request is identical to the GET request.</li>
+  <li></li>
+  <li></li>
+</ul>
+
 <h2>Question-02-11-2018</h2>
 
 <p>Did I correctly understand the static methods? > Description-02-11-2018 > Static Methods</p>
