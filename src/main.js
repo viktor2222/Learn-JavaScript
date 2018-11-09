@@ -2320,3 +2320,42 @@ const getData = async () => {
 		console.log(error);//Inside the catch code block, log error to the console. Since this exercise is an example, we’re using console.log() to view the error.
   }
 }
+
+//async GET Requests III
+
+// Information to reach API
+const url = 'https://api.datamuse.com/words?';
+const queryParams = 'rel_jja=';
+
+// Selecting page elements
+const inputField = document.querySelector('#input');
+const submit = document.querySelector('#submit');
+const responseField = document.querySelector('#responseField');
+
+// AJAX function Under the comment "AJAX function", create a new arrow function called getSuggestions() using the async keyword. You'll be coding inside the arrow function of const getSuggestions for the remainder of this exercise.
+const getSuggestions = async () => {
+  const wordQuery = inputField.value;//Inside the code block of the async arrow function, create a const variable named wordQuery and assign it inputField.value.
+  const endpoint = [url + queryParams + wordQuery]; //Create another const called endpoint, assign it value of a string that is url, queryParams, and wordQuery concatenated in that order.
+  try{
+    const response = await fetch(endpoint);//Inside the try code block, using const, create a variable named response and assign it to await the result of calling fetch() with an argument of endpoint.
+    if(response.ok){
+      const jsonResponse = await response.json();//Below the variable response from the previous step, create a conditional statement that the checks if the ok property of the response evaluates to a truthy value. Inside the code block of the conditional statement, await response.json() and save it to a variable called jsonResponse using the const keyword.
+      renderResponse(jsonResponse);//Call the function renderRawResponse() and pass in jsonResponse. Then, run the code. Now that you can see the body of response, you should clean it up to display on the webpage. Delete renderRawResponse(jsonResponse) and replace it with renderResponse(jsonResponse). Run the code. Then type in another word and click the submit button. Great, now you have an organized list of words and you finished your GET request!
+    }
+  } catch(error) {
+    console.log(error);
+  }
+}
+// Code goes here
+
+
+// Clear previous results and display results to webpage
+const displaySuggestions = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild)
+  }
+  getSuggestions();
+}
+
+submit.addEventListener('click', displaySuggestions);
