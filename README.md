@@ -305,7 +305,6 @@
       <li>In a try...catch statement, code in the try block will be run and in the event of an exception/error, the code in the catch statement will run.</li>
     </ul>
   </li>
-  <li></li>
 </ul>
 
 <h2>Question-02-11-2018</h2>
