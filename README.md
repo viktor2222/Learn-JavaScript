@@ -73,6 +73,14 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b1059b8409f6a956b1a36a8b0f7f61b3b6266a15">fetch() GET Requests III</a> - REQUESTS II</li>
 </ul>
 
+<h2>Learned-09-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/da7b0026cbf21776faaacba61d32836329c58729">fetch() GET Requests IV</a> - REQUESTS II</li>
+  <li><a href=""></a></li>
+  <li><a href=""></a></li>
+</ul>
+
 <h2>Description-31-10-2018</h2>
 
 <h4>Introduction includes:</h4>
