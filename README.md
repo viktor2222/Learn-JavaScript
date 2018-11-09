@@ -76,7 +76,7 @@
 <h2>Learned-09-11-2018</h2>
 
 <ul>
-  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/da7b0026cbf21776faaacba61d32836329c58729">fetch() GET Requests IV</a> - REQUESTS II</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/da7b0026cbf21776faaacba61d32836329c58729">fetch() GET Requests IV</a> - In this exercise, I take the information that was returned with the promise.</li>
   <li><a href=""></a></li>
   <li><a href=""></a></li>
 </ul>
