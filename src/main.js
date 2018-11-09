@@ -2111,3 +2111,42 @@ const displaySuggestions = (event) => {
 };
 
 submit.addEventListener('click', displaySuggestions);
+
+//fetch() GET Requests IV
+
+// Information to reach API
+const url = 'https://api.datamuse.com/words';
+const queryParams = '?sl=';
+
+// Selects page elements
+const inputField = document.querySelector('#input');
+const submit = document.querySelector('#submit');
+const responseField = document.querySelector('#responseField');
+
+// AJAX function
+const getSuggestions = () => {
+  const wordQuery = inputField.value;
+  const endpoint = `${url}${queryParams}${wordQuery}`;
+  //At the end of the .then() method, chain another .then() method. Pass .then() an anonymous arrow callback function that takes jsonResponse as its single parameter. Time to clean up that response a bit. Delete renderRawResponse(jsonResponse) and replace it with renderResponse(jsonResponse). Run your code. Try the webpage again with another word!
+  fetch(endpoint).then(response => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Request failed!');
+  }, networkError => {
+    console.log(networkError.message)
+  }).then(jsonResponse => {
+    renderResponse(jsonResponse);
+  })
+}
+
+// Clears previous results and display results to webpage
+const displaySuggestions = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild);
+  }
+  getSuggestions();
+};
+
+submit.addEventListener('click', displaySuggestions);
