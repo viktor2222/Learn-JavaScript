@@ -77,7 +77,7 @@
 
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/da7b0026cbf21776faaacba61d32836329c58729">fetch() GET Requests IV</a> - In this exercise, I take the information that was returned with the promise.</li>
-  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e32e5e906397183d0dbcf560747d03eb2c820e53">fetch() POST Requests II</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e32e5e906397183d0dbcf560747d03eb2c820e53">fetch() POST Requests II</a> - created the boilerplate code for making a POST request using fetch () and .then ().</li>
   <li><a href=""></a></li>
 </ul>
 
