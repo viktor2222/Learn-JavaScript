@@ -81,7 +81,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/005aaf4b0776e8cbaba67856f7b9d77b233da571">fetch() Post Requests III</a> - in this exercise, I going to update that boilerplate code to allow you to shorten a URL using the Rebrandly URL Shortener API.</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/715121449ebc92fa13c6d51e21d1416ae574bf92">fetch() POST Requests IV</a> - In this exercise I handle the response</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/0e9ab7f9fe4c82f18f8497aa913da07f5c33027e">fetch() POST Requests V</a> - In fact, this time I add another .then() to the chain to finally make the information available to in the webpage!</li>
-  <li><a href=""></a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/73e11a6c1b4fea4a4c0072a9c0942db49224f6cd">async GET Requests II</a></li>
   <li><a href=""></a></li>
 </ul>
 
@@ -296,7 +296,13 @@
 
 <ul>
   <li>fetch() POST - the initial call takes two arguments: an endpoint and an object that contains information needed for the POST request. The rest of the request is identical to the GET request.</li>
-  <li></li>
+  <li>Here are some key points to keep in mind as we walk through the code request using the async:
+    <ul>
+      <li>Using an async function that will return a promise.</li>
+      <li>await can only be used in an async function. await allows a program to run while waiting for a promise to resolve.</li>
+      <li>In a try...catch statement, code in the try block will be run and in the event of an exception/error, the code in the catch statement will run.</li>
+    </ul>
+  </li>
   <li></li>
 </ul>
 
