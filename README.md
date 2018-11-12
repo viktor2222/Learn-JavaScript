@@ -35,7 +35,7 @@
 <h4>Reference and Specifications</h4>
 
 <ul>There are three basic javascript references in English:
-  <li>[Mozilla Developer Network] (https://developer.mozilla.org/en-US/) - contains information that is correct for the main browsers. Also, there are only extensions for Firefox (they are marked). When I need to quickly find the “standard” information on the RegExp - I enter “RegExp MDN” into Google, and the keyword “MDN” (Mozilla Developer Network) leads to information from this directory.</li>
-  <li>[MSDN] (https://msdn.microsoft.com/en-us/) - reference book from Microsoft. There is a lot of information there, including JavaScript (they call it “JScript”). If you need something that is specific to IE, it’s better to go right there. For example, for information about the features of RegExp in IE - a useful combination: "RegExp msdn". Sometimes it is better to add the term “JScript” to the search phrase: “RegExp msdn jscript”.</li>
-  <li>[Safari Developer Library] (https://developer.apple.com/safari/resources/) is less well known and less common, but you can also find valuable information in it.</li>
+  <li><a href="https://developer.mozilla.org/en-US/">Mozilla Developer Network</a> - contains information that is correct for the main browsers. Also, there are only extensions for Firefox (they are marked). When I need to quickly find the “standard” information on the RegExp - I enter “RegExp MDN” into Google, and the keyword “MDN” (Mozilla Developer Network) leads to information from this directory.</li>
+  <li><a href="https://msdn.microsoft.com/en-us/">MSDN</a> - reference book from Microsoft. There is a lot of information there, including JavaScript (they call it “JScript”). If you need something that is specific to IE, it’s better to go right there. For example, for information about the features of RegExp in IE - a useful combination: "RegExp msdn". Sometimes it is better to add the term “JScript” to the search phrase: “RegExp msdn jscript”.</li>
+  <li><a href="https://developer.apple.com/safari/resources/">Safari Developer Library</a> - is less well known and less common, but you can also find valuable information in it.</li>
 </ul>
