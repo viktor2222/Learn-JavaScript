@@ -41,6 +41,11 @@
   <li>The specification is the most important, defining document in which it is written how JavaScript behaves, browser, CSS, etc.</li>
   <li>If something is not clear, and the directory does not give an answer, then the specification, as a rule, reveals the topic much deeper and allows you to dot the i.</li>
   <li>The specification (a formal description of the syntax, basic objects and algorithms) of the Javascript language is called <a href="http://www.ecma-international.org/publications/standards/Ecma-262.htm">ECMAScript.</a></li>
+</ul>
+
+<h4>External scripts, execution order</h4>
+
+<ul>
   <li>Alert - displays a message box and waits until the visitor clicks OK.</li>
   <li>As a rule, only the simplest scripts are written in HTML, and complex ones are put into a separate file.</li>
   <li>The browser will only download it for the first time and, if the server is properly configured, it will be taken from its cache.</li>
