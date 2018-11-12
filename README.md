@@ -4,7 +4,6 @@
 
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e23e21e344b10c8ce6e6f59bc7e4938e27c96dae">Display an alert</a></li>
-  <li><a href=""></a></li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
