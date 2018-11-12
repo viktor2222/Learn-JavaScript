@@ -45,4 +45,6 @@
   <li>As a rule, only the simplest scripts are written in HTML, and complex ones are put into a separate file.</li>
   <li>The browser will only download it for the first time and, if the server is properly configured, it will be taken from its cache.</li>
   <li>Due to this, the same large script, containing, for example, a library of functions, can be used on different pages without a complete reload from the server.</li>
+  <li>If the src attribute is specified, the contents of the tag are ignored.
+In one SCRIPT tag it is impossible to simultaneously connect an external script and specify the code.</li>
 </ul>
