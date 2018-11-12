@@ -47,4 +47,7 @@
   <li>Due to this, the same large script, containing, for example, a library of functions, can be used on different pages without a complete reload from the server.</li>
   <li>If the src attribute is specified, the contents of the tag are ignored.
 In one SCRIPT tag it is impossible to simultaneously connect an external script and specify the code.</li>
+  <li>Scripts are inserted into the page as text in the <script> tag, or as an external file via <script src = "path"> </ script></li>
+  <li>The special attributes async and defer are used so that while the external script is loaded - the browser shows the rest (next to it) of the page. Without them, this does not happen.</li>
+  <li>The difference between async and defer: the defer attribute preserves the relative sequence of scripts, but async does not. In addition, defer is always waiting for the entire HTML document to be ready, but async is not.</li>
 </ul>
