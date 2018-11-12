@@ -73,6 +73,20 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b1059b8409f6a956b1a36a8b0f7f61b3b6266a15">fetch() GET Requests III</a> - REQUESTS II</li>
 </ul>
 
+<h2>Learned-09-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/da7b0026cbf21776faaacba61d32836329c58729">fetch() GET Requests IV</a> - In this exercise, I take the information that was returned with the promise.</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e32e5e906397183d0dbcf560747d03eb2c820e53">fetch() POST Requests II</a> - created the boilerplate code for making a POST request using fetch () and .then ().</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/005aaf4b0776e8cbaba67856f7b9d77b233da571">fetch() Post Requests III</a> - in this exercise, I going to update that boilerplate code to allow you to shorten a URL using the Rebrandly URL Shortener API.</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/715121449ebc92fa13c6d51e21d1416ae574bf92">fetch() POST Requests IV</a> - In this exercise I handle the response</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/0e9ab7f9fe4c82f18f8497aa913da07f5c33027e">fetch() POST Requests V</a> - In fact, this time I add another .then() to the chain to finally make the information available to in the webpage!</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/73e11a6c1b4fea4a4c0072a9c0942db49224f6cd">async GET Requests II</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/dafa35d8f61f3dd423ed9535813f01ebd763079f">async GET Requests III</a> - in this exercise,I to build on previously created boilerplate code to get nouns that describe the inputted word from the Datamuse API</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/3a417e9996d03bc87dfd6a19d83839830ccea426">async POST Requests II</a> - POST request using async and wait.</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e73dc3b767aacd8303478a19885d6f0387995dc5">async POST Requests III</a> - get the Rebrandly API key to access the Rebrandly API.</li>
+</ul>
+
 <h2>Description-31-10-2018</h2>
 
 <h4>Introduction includes:</h4>
@@ -278,6 +292,26 @@
       <li>Returns a promise that ultimately resolves to a response object, which contains the status of the promise with information the API sent back.</li>
     </ul>
   </li>
+</ul>
+
+<h2>Description-09-11-2018</h2>
+
+<ul>
+  <li>fetch() POST - the initial call takes two arguments: an endpoint and an object that contains information needed for the POST request. The rest of the request is identical to the GET request.</li>
+  <li>Here are some key points to keep in mind as we walk through the code request using the async:
+    <ul>
+      <li>Using an async function that will return a promise.</li>
+      <li>await can only be used in an async function. await allows a program to run while waiting for a promise to resolve.</li>
+      <li>In a try...catch statement, code in the try block will be run and in the event of an exception/error, the code in the catch statement will run.</li>
+    </ul>
+  </li>
+  <li>Use AJAX to asynchronously request data from APIs. fetch() and async/await are new functionalities developed in ES6 (promises) and ES8 respectively.
+</li>
+  <li>Promises are a new type of JavaScript object that represent data that will eventually be returned from a request.</li>
+  <li>We can chain .then() methods to handle promises returned by fetch().</li>
+  <li>The .json() method converts a returned promise to a JSON object.</li>
+  <li>async is a keyword that is used to create functions that will return promises.</li>
+  <li>await is a keyword that is used to tell a program to continue moving through the message queue while a promise resolves.</li>
 </ul>
 
 <h2>Question-02-11-2018</h2>

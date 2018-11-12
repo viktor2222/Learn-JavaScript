@@ -2111,3 +2111,312 @@ const displaySuggestions = (event) => {
 };
 
 submit.addEventListener('click', displaySuggestions);
+
+//fetch() GET Requests IV
+
+// Information to reach API
+const url = 'https://api.datamuse.com/words';
+const queryParams = '?sl=';
+
+// Selects page elements
+const inputField = document.querySelector('#input');
+const submit = document.querySelector('#submit');
+const responseField = document.querySelector('#responseField');
+
+// AJAX function
+const getSuggestions = () => {
+  const wordQuery = inputField.value;
+  const endpoint = `${url}${queryParams}${wordQuery}`;
+  //At the end of the .then() method, chain another .then() method. Pass .then() an anonymous arrow callback function that takes jsonResponse as its single parameter. Time to clean up that response a bit. Delete renderRawResponse(jsonResponse) and replace it with renderResponse(jsonResponse). Run your code. Try the webpage again with another word!
+  fetch(endpoint).then(response => {
+    if (response.ok) {
+      return response.json();
+    }
+    throw new Error('Request failed!');
+  }, networkError => {
+    console.log(networkError.message)
+  }).then(jsonResponse => {
+    renderResponse(jsonResponse);
+  })
+}
+
+// Clears previous results and display results to webpage
+const displaySuggestions = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild);
+  }
+  getSuggestions();
+};
+
+submit.addEventListener('click', displaySuggestions);
+
+//fetch() POST Requests II
+
+//Call the fetch() function, pass it the URL below as a string as its first argument, and pass it an empty object ({}) as its second argument. https://api-to-call.com/endpoint We’re calling fetch() and providing an endpoint. In the next step we’ll fill in the empty object with the necessary information. The settings object you passed to the fetch() function will contain two properties: method, with a value of 'POST', and body, with a value of JSON.stringify({id: '200'}). This second argument determines that this request is a POST request and what information will be sent to the API. Chain a .then() method to the fetch() function and pass it the success callback function as its first parameter. Pass in response as an argument for the callback function. Leave the code block of the callback function empty for now. The code inside .then() will execute when the promise returned from fetch() is resolved.
+fetch('https://api-to-call.com/endpoint', {
+  method: 'POST',
+  body: JSON.stringify({id: "200"})
+}).then(response => {
+//Inside the callback function's code block, check the ok property of the response object inside of a conditional statement. In the code block of the conditional statement, return response.json(). When returned, this information will be passed on to the next .then() callback function.
+  if(response.ok){
+	  return response.json();
+  }
+	throw new Error('Request failed!');
+
+  //Create the failure callback function. This function takes a single parameter, networkError. Separate the first callback function from the second with a comma. This function is still inside of the .then() method. In the code block of the function you just made, log networkError.message to the console.
+}, networkError => {
+  console.log(networkError.message);
+  //Chain another .then() method to the end of the first .then() method. In the new .then() method, create an arrow callback function that takes jsonResponse as its parameter. Then in the code block return jsonResponse. The purpose of this step is to view the JSON that was returned from the previous .then().
+}).then(jsonResponse => {
+  console.log(jsonResponse);
+})
+
+//fetch() Post Requests III
+
+// Information to reach API
+const apiKey = '<Your API Key>';
+const url = 'https://api.rebrandly.com/v1/links';
+
+// Some page elements
+const inputField = document.querySelector('#input');
+const shortenButton = document.querySelector('#shorten');
+const responseField = document.querySelector('#responseField');
+
+// AJAX functions
+const shortenUrl = () => {
+  const urlToShorten = inputField.value;
+  const data = JSON.stringify({destination: urlToShorten})
+
+	fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+      'apikey': apiKey
+    },
+    body: data
+  })
+}
+
+// Clear page and call AJAX functions
+const displayShortUrl = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild)
+  }
+  shortenUrl();
+}
+
+shortenButton.addEventListener('click', displayShortUrl);
+
+//fetch() POST Requests IV
+
+// Information to reach API
+const apiKey = 'd16eb188835242829c7ed28be9a1c790';
+const url = 'https://api.rebrandly.com/v1/links';
+
+// Some page elements
+const inputField = document.querySelector('#input');
+const shortenButton = document.querySelector('#shorten');
+const responseField = document.querySelector('#responseField');
+
+// AJAX functions Chain a .then() method to the end of the fetch() function you wrote in the previous exercise. As its first argument, pass it an arrow function as a callback that takes response as its single parameter.
+const shortenUrl = () => {
+  const urlToShorten = inputField.value;
+  const data = JSON.stringify({destination: urlToShorten})
+
+	fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+      'apikey': apiKey
+    },
+    body: data
+    //Inside the block of the function you made in Step 1, use a conditional statement to check the value of the ok property of response. If it evaluates to a truthy value, call renderJsonResponse() and pass in response. Run the code. Now, if you post a URL, you should see the object that was sent back! renderJsonResponse() is a helper function found in public/helperFunctions.js.
+  }).then(response => {
+    if(response.ok) {
+      //Great, now that you see the raw object, you will need to pass the JSON to the next .then(). Delete renderJsonResponse(response) and replace it with return response.json()
+      return response.json();
+    }
+    //Below the curly braces of the conditional statement, throw a new Error in case response.ok is falsy. The message the error should raise is ‘Request failed!’.
+    throw new Error('Request failed!');
+  }, networkError => console.log(networkError.message)//Outside of the code block from the first callback function you wrote, add another arrow callback function that takes networkError as a single parameter. console.log() the networkError.message inside of the callback function you just wrote. By adding this second callback, you’re safeguarding yourself in the rare event that the network returns an error!
+  )
+
+}
+
+// Clear page and call AJAX functions
+const displayShortUrl = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild)
+  }
+  shortenUrl();
+}
+
+shortenButton.addEventListener('click', displayShortUrl);
+
+//fetch() POST Requests V
+
+// Information to reach API
+const apiKey = 'd16eb188835242829c7ed28be9a1c790';
+const url = 'https://api.rebrandly.com/v1/links';
+
+// Some page elements
+const inputField = document.querySelector('#input');
+const shortenButton = document.querySelector('#shorten');
+const responseField = document.querySelector('#responseField');
+
+// AJAX functions Chain a .then() method to the end of the fetch() function you wrote in the previous exercise. As its first argument, pass it an arrow function as a callback that takes response as its single parameter.
+const shortenUrl = () => {
+  const urlToShorten = inputField.value;
+  const data = JSON.stringify({destination: urlToShorten})
+
+	fetch(url, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+      'apikey': apiKey
+    },
+    body: data
+    //Inside the block of the function you made in Step 1, use a conditional statement to check the value of the ok property of response. If it evaluates to a truthy value, call renderJsonResponse() and pass in response. Run the code. Now, if you post a URL, you should see the object that was sent back! renderJsonResponse() is a helper function found in public/helperFunctions.js.
+  }).then(response => {
+    if(response.ok) {
+      //Great, now that you see the raw object, you will need to pass the JSON to the next .then(). Delete renderJsonResponse(response) and replace it with return response.json()
+      return response.json();
+    }
+    //Below the curly braces of the conditional statement, throw a new Error in case response.ok is falsy. The message the error should raise is Request failed!.
+    throw new Error('Request failed!');
+  }, networkError => console.log(networkError.message)//Outside of the code block from the first callback function you wrote, add another arrow callback function that takes networkError as a single parameter. console.log() the networkError.message inside of the callback function you just wrote. By adding this second callback, youre safeguarding yourself in the rare event that the network returns an error!
+  ).then(jsonResponse => {
+    renderResponse(jsonResponse);
+  })//Chain a .then() method to the end of the original .then() method. Pass in an anonymous arrow function as an argument for .then(). This callback function will take jsonResponse as its single parameter. Inside the callback function, call renderRawResponse() and pass in jsonResponse. Run the code. Put in any URL in the text field, and then click the shorten button on the webpage. Make sure you include the entire link, including 'http://' or 'https://'. You’ll see the JSON of the response sent back from the API. The renderRawResponse() helper function can be viewed at public/helperFunctions.js.
+
+}
+
+// Clear page and call AJAX functions
+const displayShortUrl = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild)
+  }
+  shortenUrl();
+}
+
+shortenButton.addEventListener('click', displayShortUrl);
+
+//async GET Requests II
+
+//In main.js, create an arrow function using the async keyword and save it to a const getData. The async keyword will ensure that the function returns a promise.
+const getData = async () => {
+  try {
+    const response = await fetch('https://api-to-call.com/endpoint');//In the code block for getData, we should add a try statement with an empty code block. Below the try statement's code block, add a catch(error) statement. The code in the try block will send a request and handle the response. The catch statement will then take care of an error if it is thrown. Now we have to consider what to do inside of the code block of the try statement. We should start by using the await keyword before calling fetch(). Pass in the following URL, as a string, to the function as its first argument: https://api-to-call.com/endpoint We’ll have to save the returned promise in a variable called response using the const keyword. response will save the the response of endpoint once that information has been sent back.
+    if (response.ok) {
+      const jsonResponse = await response.json();//Inside the code block of the conditional statement, await the resolution of calling the .json() method on response. Save the returned object to a variable called jsonResponse using the keyword const. Since .json() is an asynchronous method we have to await until the promise status is resolved. Then we store the value to know what data the JSON holds.
+      return jsonResponse; //Return jsonResponse directly below the code you wrote in the previous step. Normally, we'd want to use the information from jsonResponse in a different manner. In this exercise, we're practicing how to write the boilerplate code.
+    }
+    throw new Error('Request failed!');
+  } catch (error) {
+		console.log(error);//Inside the catch code block, log error to the console. Since this exercise is an example, we’re using console.log() to view the error.
+  }
+}
+
+//async GET Requests III
+
+// Information to reach API
+const url = 'https://api.datamuse.com/words?';
+const queryParams = 'rel_jja=';
+
+// Selecting page elements
+const inputField = document.querySelector('#input');
+const submit = document.querySelector('#submit');
+const responseField = document.querySelector('#responseField');
+
+// AJAX function Under the comment "AJAX function", create a new arrow function called getSuggestions() using the async keyword. You'll be coding inside the arrow function of const getSuggestions for the remainder of this exercise.
+const getSuggestions = async () => {
+  const wordQuery = inputField.value;//Inside the code block of the async arrow function, create a const variable named wordQuery and assign it inputField.value.
+  const endpoint = [url + queryParams + wordQuery]; //Create another const called endpoint, assign it value of a string that is url, queryParams, and wordQuery concatenated in that order.
+  try{
+    const response = await fetch(endpoint);//Inside the try code block, using const, create a variable named response and assign it to await the result of calling fetch() with an argument of endpoint.
+    if(response.ok){
+      const jsonResponse = await response.json();//Below the variable response from the previous step, create a conditional statement that the checks if the ok property of the response evaluates to a truthy value. Inside the code block of the conditional statement, await response.json() and save it to a variable called jsonResponse using the const keyword.
+      renderResponse(jsonResponse);//Call the function renderRawResponse() and pass in jsonResponse. Then, run the code. Now that you can see the body of response, you should clean it up to display on the webpage. Delete renderRawResponse(jsonResponse) and replace it with renderResponse(jsonResponse). Run the code. Then type in another word and click the submit button. Great, now you have an organized list of words and you finished your GET request!
+    }
+  } catch(error) {
+    console.log(error);
+  }
+}
+// Code goes here
+
+
+// Clear previous results and display results to webpage
+const displaySuggestions = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild)
+  }
+  getSuggestions();
+}
+
+submit.addEventListener('click', displaySuggestions);
+
+//async POST Requests II
+
+//At the top of main.js create an async arrow function and save it to a const getData(). The async keyword will ensure that the function returns a promise.
+const getData = async () => {
+  try {
+    const response = await fetch('https://api-to-call.com/endpoint', {
+      method: 'POST',
+      body: JSON.stringify({id: 200})//Let’s now fill in the request options in our second argument. First, add the method property and the value is 'POST'. Then we have to include a body property and the value is JSON.stringify({id: 200}).
+    }); //We now have to consider what we want to do inside of the try code block. Since we are making a POST request, we should start by using the await keyword before calling the fetch() function. We will have to save the returned promise in a variable called response using the const keyword.
+    if(response.ok) {
+    	const jsonResponse = await response.json();//After the code block of response, we should create an if statement that checks the ok property of the response object. Inside the code block of the conditional statement, await the resolution of calling the .json() method on response. Save the returned object to a variable called jsonResponse using the keyword const.
+      return jsonResponse;//Now that we have what we want, we should return jsonResponse directly below the code written in the previous step. Like with previous boilerplate exercises, we're practicing writing code. Normally, we would want to do more beyond this step of returning jsonResponse.
+    }
+  	throw new Error('Request failed!');//Below the if conditional, throw a new Error() with the message 'Request failed!'
+  } catch(error){
+    console.log(error);//In the code block for getData, we should add a try statement with an empty code block. In case things go wrong, we need to some code to handle that. Below the try code block, add a catch statement and pass in error as an argument. Then, in the catch statement code block, log error to the console.
+  }
+};
+
+//async POST Requests III
+
+// information to reach API At the top of main.js, assign apiKey to your Rebrandly API key.
+const apiKey = 'd16eb188835242829c7ed28be9a1c790';
+const url = 'https://api.rebrandly.com/v1/links';
+
+// Some page elements
+const inputField = document.querySelector('#input');
+const shortenButton = document.querySelector('#shorten');
+const responseField = document.querySelector('#responseField');
+
+// AJAX functions Under the comment "AJAX functions", create a new arrow function and assign it to a const shortenUrl() using the async keyword. Inside the code block of the arrow function of shortenUrl create two consts: One named urlToShorten and assign it inputField.value. The other named data and assign it the value of calling JSON.stringify() and passing in {destination: urlToShorten}. Please note, we will be working inside shortenUrl() for the remainder of the exercise.
+const shortenUrl = async () => {
+  const urlToShorten = inputField.value;
+  const data = JSON.stringify({destination: urlToShorten});
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      body: data,
+      headers: { 'Content-type': 'application/json', 'apikey': apiKey }
+    });//Inside the try code block, using const, create a variable named response and assign it to await the value of calling calling fetch().
+  	if(response.ok){//Below the variable response from the previous step, create a conditional statement that the checks if the ok property of response evaluates to a truthy value.
+    	const jsonResponse = await response.json();
+      renderResponse(jsonResponse);//Call the function renderRawResponse() and pass in jsonResponse. Then, run the code. Now it’s time to clean up the response sent back. Delete renderRawResponse(jsonResponse) and replace it with renderResponse(jsonResponse). Run the code. Then paste in the URL again and click the shorten button.
+    }
+  } catch(error) {
+    console.log(error);//Add a try statement and leave the code block empty for now. After the try code block, create a catch statement and pass in error. In the code block of catch(error), log error to the console.
+  }
+}
+// Code goes here
+
+// Clear page and call AJAX functions
+const displayShortUrl = (event) => {
+  event.preventDefault();
+  while(responseField.firstChild){
+    responseField.removeChild(responseField.firstChild);
+  }
+  shortenUrl();
+}
+
+shortenButton.addEventListener('click', displayShortUrl);
