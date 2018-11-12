@@ -30,5 +30,4 @@
       <li>Supported by all common browsers and enabled by default.</li>
     </ul>
   </li>
-  <li></li>
 </ul>
