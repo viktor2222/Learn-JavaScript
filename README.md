@@ -87,3 +87,9 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
    </ul>
   </li>
 </ul>
+
+<h4>Logical operators</h4>
+
+<ul>
+  <li>Chain of OR "||" returns the first truthy value or the last one if no such value is found.</li>
+</ul>
