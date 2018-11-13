@@ -59,7 +59,17 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
 <h4>User interaction: notifications, prompt, confirm</h4>
 
 <ul>
-  <li></li>
-  <li></li>
+  <li>alert - displays a window with a message and pauses the execution of the script until the user clicks "OK". The mini-window with the message is called a modal window. The word “modal” means that the visitor can’t interact with the rest of the page, press other buttons etc, until they have dealt with the window. In this case – until they press “OK”.</li>
+  <li>Function prompt accepts two arguments:
+
+    result = prompt(title, default);
+    
+  <ul>
+    <li>It shows a modal window with a text message, an input field for the visitor and buttons OK/CANCEL.</li>
+    <li>title - the text to show to the visitor.</li>
+    <li>default - an optional second parameter, the initial value for the input field.</li>
+    <li>The visitor may type something in the prompt input field and press OK. Or they can cancel the input by pressing the CANCEL button or hitting the Esc key.</li>
+  </ul>
+  </li>
   <li></li>
 </ul>
