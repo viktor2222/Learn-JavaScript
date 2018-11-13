@@ -13,6 +13,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/67de0e767d1e50876f7e2cb78824a2917a109d3b">A simple page</a> - create a web-page that asks for a name and outputs it.</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d4a961c251b106e0798e03f280f1e656aa5856d3">The name of JavaScript</a> - using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’ If the visitor enters “ECMAScript”, then output “Right!”, otherwise – output: “Didn’t know? ECMAScript!”</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/3641026f9bab05845d98322048beefce0868667b">Show the sign</a> - using if..else, write the code which gets a number via prompt and then shows in alert: 1, if the value is greater than zero, -1, if less than zero, 0, if equals zero.</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/ef872d3d7d08db2717c44f44acb86c1ef46cebde">Check the login</a> - Write the code which asks for a login with prompt. If the visitor enters "Admin", then prompt for a password, if the input is an empty line or Esc – show “Canceled.”, if it’s another string – then show “I don’t know you”. The password is checked as follows: If it equals “TheMaster”, then show “Welcome!”, Another string – show “Wrong password”, For an empty string or cancelled input, show “Canceled.”</li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
