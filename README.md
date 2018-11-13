@@ -93,7 +93,7 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
 <ul>
   <li>Chain of OR "||" returns the first truthy value or the last one if no such value is found.</li>
   <li>AND "&&" returns the first falsy value or the last value if none were found.</li>
-  <li>The operator accepts a single argument and does the following:
+  <li>The operator !(NOT) accepts a single argument and does the following:
     <ul>
       <li>Converts the operand to boolean type: true/false.</li>
       <li>Returns an inverse value.</li>
