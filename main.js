@@ -5,6 +5,13 @@
 // admin = name;
 // alert(admin);
 
-let name = prompt('What is your name', '');
+// let name = prompt('What is your name', '');
+//
+// alert('Your name: ' + name);
+let officialNameScript = prompt('What is the “official” name of JavaScript?','');
 
-alert('Your name: ' + name);
+if(officialNameScript == 'ECMAScript'){
+  alert('Right!');
+} else{
+  alert('Didn’t know? ECMAScript!');
+}
