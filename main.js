@@ -15,11 +15,28 @@
 // } else{
 //   alert('Didn’t know? ECMAScript!');
 // }
-let number = prompt('Please enter number','');
-if(number > 0){
-  alert(1);
-} else if (number < 0) {
-  alert(-1);
+// let number = prompt('Please enter number','');
+// if(number > 0){
+//   alert(1);
+// } else if (number < 0) {
+//   alert(-1);
+// } else {
+//   alert(0);
+// }
+let userName = prompt('Please enter your login');
+
+if(userName == 'Admin'){
+  let password = prompt('enter your password', '');
+
+  if(password == 'TheMaster'){
+    alert('Welcome!');
+  } else if (password == null) {
+    alert('Canceled.');
+  } else {
+    alert('Wrong password');
+  }
+} else if (userName == null){
+  alert('Canceled.');
 } else {
-  alert(0);
+  alert('I don’t know you');
 }
