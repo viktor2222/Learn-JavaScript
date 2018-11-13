@@ -10,6 +10,7 @@
 
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/991fa43a96ce0690c9b51d03d11d25b3e4eb68d1">Print alert with external script</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/67de0e767d1e50876f7e2cb78824a2917a109d3b">A simple page</a> - create a web-page that asks for a name and outputs it.</li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
