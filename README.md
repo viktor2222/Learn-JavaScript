@@ -6,6 +6,18 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e23e21e344b10c8ce6e6f59bc7e4938e27c96dae">Display an alert</a></li>
 </ul>
 
+<h2>Learned-13-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/991fa43a96ce0690c9b51d03d11d25b3e4eb68d1">Print alert with external script</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/67de0e767d1e50876f7e2cb78824a2917a109d3b">A simple page</a> - create a web-page that asks for a name and outputs it.</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d4a961c251b106e0798e03f280f1e656aa5856d3">The name of JavaScript</a> - using the if..else construct, write the code which asks: ‘What is the “official” name of JavaScript?’ If the visitor enters “ECMAScript”, then output “Right!”, otherwise – output: “Didn’t know? ECMAScript!”</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/3641026f9bab05845d98322048beefce0868667b">Show the sign</a> - using if..else, write the code which gets a number via prompt and then shows in alert: 1, if the value is greater than zero, -1, if less than zero, 0, if equals zero.</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/ef872d3d7d08db2717c44f44acb86c1ef46cebde">Check the login</a> - Write the code which asks for a login with prompt. If the visitor enters "Admin", then prompt for a password, if the input is an empty line or Esc – show “Canceled.”, if it’s another string – then show “I don’t know you”. The password is checked as follows: If it equals “TheMaster”, then show “Welcome!”, Another string – show “Wrong password”, For an empty string or cancelled input, show “Canceled.”</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/4049b7b4d391d216496b9c693cc1368f916b043b">Rewrite 'if' into '?'t</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/1b521e6a96ffcd0b0d56601b61f387f85e45682e">Rewrite 'if..else' into '?'</a></li>
+</ul>
+
 <h2>Description-12-11-2018</h2>
 
 <h4>Introduction</h4>
@@ -46,4 +58,45 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>Scripts are inserted into the page as text in the <script> tag, or as an external file via <script src = "path"> </ script></li>
   <li>The special attributes async and defer are used so that while the external script is loaded - the browser shows the rest (next to it) of the page. Without them, this does not happen.</li>
   <li>The difference between async and defer: the defer attribute preserves the relative sequence of scripts, but async does not. In addition, defer is always waiting for the entire HTML document to be ready, but async is not.</li>
+</ul>
+
+<h2>Description-13-11-2018</h2>
+
+<h4>User interaction: notifications, prompt, confirm</h4>
+
+<ul>
+  <li>alert - displays a window with a message and pauses the execution of the script until the user clicks "OK". The mini-window with the message is called a modal window. The word “modal” means that the visitor can’t interact with the rest of the page, press other buttons etc, until they have dealt with the window. In this case – until they press “OK”.</li>
+  <li>Function prompt accepts two arguments:
+
+    result = prompt(title, default);
+    
+  <ul>
+    <li>It shows a modal window with a text message, an input field for the visitor and buttons OK/CANCEL.</li>
+    <li>title - the text to show to the visitor.</li>
+    <li>default - an optional second parameter, the initial value for the input field.</li>
+    <li>The visitor may type something in the prompt input field and press OK. Or they can cancel the input by pressing the CANCEL button or hitting the Esc key.</li>
+  </ul>
+  </li>
+  <li>confirm
+
+    result = confirm(question);
+    
+   <ul>
+    <li>Function confirm shows a modal window with a question and two buttons: OK and CANCEL.</li>
+    <li>The result is true if OK is pressed and false otherwise.</li>
+   </ul>
+  </li>
+</ul>
+
+<h4>Logical operators</h4>
+
+<ul>
+  <li>Chain of OR "||" returns the first truthy value or the last one if no such value is found.</li>
+  <li>AND "&&" returns the first falsy value or the last value if none were found.</li>
+  <li>The operator !(NOT) accepts a single argument and does the following:
+    <ul>
+      <li>Converts the operand to boolean type: true/false.</li>
+      <li>Returns an inverse value.</li>
+    </ul>
+  </li>
 </ul>
