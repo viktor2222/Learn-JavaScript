@@ -71,5 +71,13 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
     <li>The visitor may type something in the prompt input field and press OK. Or they can cancel the input by pressing the CANCEL button or hitting the Esc key.</li>
   </ul>
   </li>
-  <li></li>
+  <li>confirm
+
+    result = confirm(question);
+    
+   <ul>
+    <li>Function confirm shows a modal window with a question and two buttons: OK and CANCEL.</li>
+    <li>The result is true if OK is pressed and false otherwise.</li>
+   </ul>
+  </li>
 </ul>
