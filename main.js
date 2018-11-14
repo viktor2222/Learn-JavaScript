@@ -1,66 +1,40 @@
-// alert('Я – JavaScript!');
+//Rewrite the function using '?' or '||'
+// function checkAge(age) {
+//   if (age > 18) {
+//     return true;
+//   } else {
+//     return confirm('Родители разрешили?');
+//   }
+// }
+// function checkAge(age){
+//   return (age > 18) ? true : confirm('Родители разрешили?');
+// }
 //
-// let admin;
-// let name = "John";
-// admin = name;
-// alert(admin);
-
-// let name = prompt('What is your name', '');
+// function checkAge(age){
+//   return (age > 18) || confirm('Родители разрешили?');
+// }
+//Function min(a, b)
+// function min(a, b) {
+//   if(a < b){
+//     return a;
+//   } else {
+//     return b;
+//   }
+// }
+// //Функция pow(x,n)
+// function pow(x, n){
+//   let result = x;
 //
-// alert('Your name: ' + name);
-// let officialNameScript = prompt('What is the “official” name of JavaScript?','');
+//   for(a = 1; a < n; a++){
+//     result *= x;
+//   }
+//   return result;
+// }
+// let x = prompt('enter x');
+// let n = prompt('enter n');
 //
-// if(officialNameScript == 'ECMAScript'){
-//   alert('Right!');
+// if(n <= 1){
+//   alert('Power ' + n + ' not supported, please enter good power and > 1');
 // } else{
-//   alert('Didn’t know? ECMAScript!');
+//   alert(pow(x, n));
 // }
-// let number = prompt('Please enter number','');
-// if(number > 0){
-//   alert(1);
-// } else if (number < 0) {
-//   alert(-1);
-// } else {
-//   alert(0);
-// }
-let userName = prompt('Please enter your login');
-
-if(userName == 'Admin'){
-  let password = prompt('enter your password', '');
-
-  if(password == 'TheMaster'){
-    alert('Welcome!');
-  } else if (password == null) {
-    alert('Canceled.');
-  } else {
-    alert('Wrong password');
-  }
-} else if (userName == null){
-  alert('Canceled.');
-} else {
-  alert('I don’t know you');
-}
-
-if (a + b < 4) {
-  result = 'Below';
-} else {
-  result = 'Over';
-}
-result = (a + b < 4) ? 'Below' : 'Over';
-
-let message;
-
-if (login == 'Employee') {
-  message = 'Hello';
-} else if (login == 'Director') {
-  message = 'Greetings';
-} else if (login == '') {
-  message = 'No login';
-} else {
-  message = '';
-}
-
-message = (login == 'Employee') ? 'Hello' :
-  (login == 'Director') ? 'Greetings' :
-  (login == '') ? 'No login' :
-  '';

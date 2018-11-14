@@ -18,6 +18,19 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/1b521e6a96ffcd0b0d56601b61f387f85e45682e">Rewrite 'if..else' into '?'</a></li>
 </ul>
 
+
+<h2>Learned-14-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/eb80403846f0625063fc463ea6db89e2ccd4645a">Logical operators</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/bb14582d6858fae91ee80b91db97b34fab7935d8">Loops: while and for</a> - output even numbers in the loop</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/6291efaccaf64c38f56385d7f6a42d3bd6db2b8a">Loops: while and for</a> - output prime numbers</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/a7b5881118f7caabd989a5a15e2b72d6f6ef1bc3">Rewrite the "switch" into an "if"</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e8e9dd41f22aff70002fd504e710d8f576332b0c">Rewrite "if" into "switch"</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/5d0930fa7ec18a26d4c9264cf61a7752965f02ec">Rewrite the function using '?' or '||'</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/7caa00630cc6fc8eccce103eca7722205153b107">Function min(a, b) and Function pow(x,n)</a> - min(a, b) -returns the least of two numbers a and b. pow(x, n) -returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.</li>
+</ul>
+
 <h2>Description-12-11-2018</h2>
 
 <h4>Introduction</h4>
@@ -99,4 +112,53 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
       <li>Returns an inverse value.</li>
     </ul>
   </li>
+</ul>
+
+<h2>Description-14-11-2018</h2>
+
+<ul>
+  <li>We covered 3 types of loops:
+    <ul>
+      <li>while – The condition is checked before each iteration.</li>
+      <li>do..while – The condition is checked after each iteration.</li>
+      <li>for (;;) – The condition is checked before each iteration, additional settings available.</li>
+    </ul>
+  </li>
+  <li>The "switch" statement
+    
+    switch(x) {
+      case 'value1':  // if (x === 'value1')
+        ...
+        break;
+      case 'value2':  // if (x === 'value2')
+        ...
+        break;
+      default:
+        ...
+        break;
+    }
+    
+  <ul>
+    <li>The value of x is checked for a strict equality to the value from the first case (that is, value1) then to the second (value2) and so on.</li>
+    <li>If the equality is found, switch starts to execute the code starting from the corresponding case, until the nearest break (or until the end of switch).</li>
+    <li>If no case is matched then the default code is executed (if it exists).</li>
+  </ul>
+  </li>
+</ul>
+
+<h4>Functions</h4>
+
+    function name(parameters, delimited, by, comma) {
+      /* code */
+    }
+    
+<ul>
+  <li>Values passed to a function as parameters are copied to its local variables.</li>
+  <li>A function may access outer variables. But it works only from inside out. The code outside of the function doesn’t see its local variables.</li>
+  <li>A function can return a value. If it doesn’t, then its result is undefined.</li>
+  <li>A name should clearly describe what the function does. When we see a function call in the code, a good name instantly gives us an understanding what it does and returns.</li>
+  <li>A function is an action, so function names are usually verbal.</li>
+  <li>There exist many well-known function prefixes like create…, show…, get…, check… and so on. Use them to hint what a function does.</li>
+  <li>Function Declaration: a function, declared as a separate statement, in the main code flow.</li>
+  <li>Function Expression: a function, created inside an expression or inside another syntax construct. Here, the function is created at the right side of the “assignment expression” = </li>
 </ul>
