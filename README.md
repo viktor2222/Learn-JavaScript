@@ -159,4 +159,6 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>A name should clearly describe what the function does. When we see a function call in the code, a good name instantly gives us an understanding what it does and returns.</li>
   <li>A function is an action, so function names are usually verbal.</li>
   <li>There exist many well-known function prefixes like create…, show…, get…, check… and so on. Use them to hint what a function does.</li>
+  <li>Function Declaration: a function, declared as a separate statement, in the main code flow.</li>
+  <li>Function Expression: a function, created inside an expression or inside another syntax construct. Here, the function is created at the right side of the “assignment expression” = </li>
 </ul>
