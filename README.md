@@ -142,5 +142,19 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
     <li>If no case is matched then the default code is executed (if it exists).</li>
   </ul>
   </li>
-  <li></li>
+</ul>
+
+<h4>Functions</h4>
+
+    function name(parameters, delimited, by, comma) {
+      /* code */
+    }
+    
+<ul>
+  <li>Values passed to a function as parameters are copied to its local variables.</li>
+  <li>A function may access outer variables. But it works only from inside out. The code outside of the function doesn’t see its local variables.</li>
+  <li>A function can return a value. If it doesn’t, then its result is undefined.</li>
+  <li>A name should clearly describe what the function does. When we see a function call in the code, a good name instantly gives us an understanding what it does and returns.</li>
+  <li>A function is an action, so function names are usually verbal.</li>
+  <li>There exist many well-known function prefixes like create…, show…, get…, check… and so on. Use them to hint what a function does.</li>
 </ul>
