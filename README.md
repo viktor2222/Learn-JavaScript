@@ -118,9 +118,27 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
       <li>while – The condition is checked before each iteration.</li>
       <li>do..while – The condition is checked after each iteration.</li>
       <li>for (;;) – The condition is checked before each iteration, additional settings available.</li>
-      <li></li>
     </ul>
   </li>
-  <li></li>
+  <li>The "switch" statement
+    
+    switch(x) {
+      case 'value1':  // if (x === 'value1')
+        ...
+        break;
+      case 'value2':  // if (x === 'value2')
+        ...
+        break;
+      default:
+        ...
+        break;
+    }
+    
+  <ul>
+    <li>The value of x is checked for a strict equality to the value from the first case (that is, value1) then to the second (value2) and so on.</li>
+    <li>If the equality is found, switch starts to execute the code starting from the corresponding case, until the nearest break (or until the end of switch).</li>
+    <li>If no case is matched then the default code is executed (if it exists).</li>
+  </ul>
+  </li>
   <li></li>
 </ul>
