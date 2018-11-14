@@ -107,3 +107,18 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
     </ul>
   </li>
 </ul>
+
+<h2>Description-14-11-2018</h2>
+
+<ul>
+  <li>We covered 3 types of loops:
+    <ul>
+      <li>while – The condition is checked before each iteration.</li>
+      <li>do..while – The condition is checked after each iteration.</li>
+      <li>for (;;) – The condition is checked before each iteration, additional settings available.</li>
+      <li></li>
+    </ul>
+  </li>
+  <li></li>
+  <li></li>
+</ul>
