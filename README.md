@@ -27,6 +27,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/6291efaccaf64c38f56385d7f6a42d3bd6db2b8a">Loops: while and for</a> - output prime numbers</li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/a7b5881118f7caabd989a5a15e2b72d6f6ef1bc3">Rewrite the "switch" into an "if"</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e8e9dd41f22aff70002fd504e710d8f576332b0c">Rewrite "if" into "switch"</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/5d0930fa7ec18a26d4c9264cf61a7752965f02ec">Rewrite the function using '?' or '||'</a></li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
