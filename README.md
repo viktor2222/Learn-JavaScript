@@ -28,6 +28,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/a7b5881118f7caabd989a5a15e2b72d6f6ef1bc3">Rewrite the "switch" into an "if"</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e8e9dd41f22aff70002fd504e710d8f576332b0c">Rewrite "if" into "switch"</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/5d0930fa7ec18a26d4c9264cf61a7752965f02ec">Rewrite the function using '?' or '||'</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/7caa00630cc6fc8eccce103eca7722205153b107">Function min(a, b) and Function pow(x,n)</a> - min(a, b) -returns the least of two numbers a and b. pow(x, n) -returns x in power n. Or, in other words, multiplies x by itself n times and returns the result.</li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
