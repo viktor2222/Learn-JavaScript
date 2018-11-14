@@ -23,7 +23,8 @@
 
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/eb80403846f0625063fc463ea6db89e2ccd4645a">Logical operators</a></li>
-  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/bb14582d6858fae91ee80b91db97b34fab7935d8">Loops: while and for</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/bb14582d6858fae91ee80b91db97b34fab7935d8">Loops: while and for</a> - output even numbers in the loop</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/6291efaccaf64c38f56385d7f6a42d3bd6db2b8a">Loops: while and for</a> - output prime numbers</li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
