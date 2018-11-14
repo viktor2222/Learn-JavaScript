@@ -23,44 +23,52 @@
 // } else {
 //   alert(0);
 // }
-let userName = prompt('Please enter your login');
+// let userName = prompt('Please enter your login');
+//
+// if(userName == 'Admin'){
+//   let password = prompt('enter your password', '');
+//
+//   if(password == 'TheMaster'){
+//     alert('Welcome!');
+//   } else if (password == null) {
+//     alert('Canceled.');
+//   } else {
+//     alert('Wrong password');
+//   }
+// } else if (userName == null){
+//   alert('Canceled.');
+// } else {
+//   alert('I don’t know you');
+// }
+//
+// if (a + b < 4) {
+//   result = 'Below';
+// } else {
+//   result = 'Over';
+// }
+// result = (a + b < 4) ? 'Below' : 'Over';
+//
+// let message;
+//
+// if (login == 'Employee') {
+//   message = 'Hello';
+// } else if (login == 'Director') {
+//   message = 'Greetings';
+// } else if (login == '') {
+//   message = 'No login';
+// } else {
+//   message = '';
+// }
+//
+// message = (login == 'Employee') ? 'Hello' :
+//   (login == 'Director') ? 'Greetings' :
+//   (login == '') ? 'No login' :
+//   '';
 
-if(userName == 'Admin'){
-  let password = prompt('enter your password', '');
+//Check the range between
+let age;
+if(age >= 14 && age <= 90) {}
 
-  if(password == 'TheMaster'){
-    alert('Welcome!');
-  } else if (password == null) {
-    alert('Canceled.');
-  } else {
-    alert('Wrong password');
-  }
-} else if (userName == null){
-  alert('Canceled.');
-} else {
-  alert('I don’t know you');
-}
-
-if (a + b < 4) {
-  result = 'Below';
-} else {
-  result = 'Over';
-}
-result = (a + b < 4) ? 'Below' : 'Over';
-
-let message;
-
-if (login == 'Employee') {
-  message = 'Hello';
-} else if (login == 'Director') {
-  message = 'Greetings';
-} else if (login == '') {
-  message = 'No login';
-} else {
-  message = '';
-}
-
-message = (login == 'Employee') ? 'Hello' :
-  (login == 'Director') ? 'Greetings' :
-  (login == '') ? 'No login' :
-  '';
+//Check the range outside
+if(!(age >=14 && age <=90)){}
+if(age <=14 && age >=90){}
