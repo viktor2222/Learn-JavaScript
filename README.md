@@ -18,6 +18,13 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/1b521e6a96ffcd0b0d56601b61f387f85e45682e">Rewrite 'if..else' into '?'</a></li>
 </ul>
 
+
+<h2>Learned-14-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/eb80403846f0625063fc463ea6db89e2ccd4645a">Logical operators</a></li>
+</ul>
+
 <h2>Description-12-11-2018</h2>
 
 <h4>Introduction</h4>
