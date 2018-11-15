@@ -162,3 +162,14 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>Function Declaration: a function, declared as a separate statement, in the main code flow.</li>
   <li>Function Expression: a function, created inside an expression or inside another syntax construct. Here, the function is created at the right side of the “assignment expression” = </li>
 </ul>
+
+<h2>Description-15-11-2018</h2>
+
+<h4>Debugging in Chrome</h4>
+
+<ul>There are three main ways to pause a script:
+  <li>A breakpoint.</li>
+  <li>The debugger statements.</li>
+  <li>An error (if dev tools are open and the button  is “on”)</li>
+  <li>Then we can examine variables and step on to see where the execution goes wrong.</li>
+</ul>
