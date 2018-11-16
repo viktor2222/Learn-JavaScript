@@ -187,7 +187,7 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>The <head> – add third-party libraries and styles for tests.</li>
   <li>The <script> with the function to test, in our case – with the code for pow.</li>
   <li>The tests – in our case an external script test.js that has describe("pow", ...) from above.</li>
-  <li>The HTML element <div id="mocha"> will be used by Mocha to output results.</li>
+  <li>The HTML element "<div id="mocha">" will be used by Mocha to output results.</li>
   <li>The tests are started by the command mocha.run().</li>
 </ul>
 <h4>JavaScript libraries for tests:</h4>
