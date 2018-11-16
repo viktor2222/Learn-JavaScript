@@ -182,20 +182,23 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
 
 <h4>Automated testing with mocha</h4>
 
-<ul>The page (index.html) can be divided into five parts:
+<h4>The page (index.html) can be divided into five parts:</h4>
+<ul>
   <li>The <head> – add third-party libraries and styles for tests.</li>
   <li>The <script> with the function to test, in our case – with the code for pow.</li>
   <li>The tests – in our case an external script test.js that has describe("pow", ...) from above.</li>
   <li>The HTML element <div id="mocha"> will be used by Mocha to output results.</li>
   <li>The tests are started by the command mocha.run().</li>
 </ul>
-<ul>JavaScript libraries for tests:
+<h4>JavaScript libraries for tests:</h4>
+<ul>
   <li><a href="">Mocha</a> - the core framework: it provides common testing functions including describe and it and the main function that runs tests.</li>
   <li><a href="https://www.chaijs.com/">Chai</a> - the library with many assertions. It allows to use a lot of different assertions, for now we need only assert.equal.</li>
   <li><a href="https://sinonjs.org/">Sinon</a> - a library to spy over functions, emulate built-in functions and more, we’ll need it much later.</li>
   <li>These libraries are suitable for both in-browser and server-side testing. Here we’ll consider the browser variant.</li>
 </ul>
-<ul>The flow of development usually looks like this:
+<h4>The flow of development usually looks like this:</h4>
+<ul>
   <li>An initial spec is written, with tests for the most basic functionality.</li>
   <li>An initial implementation is created.</li>
   <li>To check whether it works, we run the testing framework Mocha (more details soon) that runs the spec. Errors are displayed. We make corrections until everything works.</li>
@@ -204,7 +207,8 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>Go to 3, update the implementation till tests give no errors.</li>
   <li>Repeat steps 3-6 till the functionality is ready.</li>
 </ul>
-<ul>There are other assertions in Chai as well, for instance:
+<h4>There are other assertions in Chai as well, for instance:</h4>
+<ul>
   <li>assert.equal(value1, value2) – checks the equality value1 == value2.</li>
   <li>assert.strictEqual(value1, value2) – checks the strict equality value1 === value2.</li>
   <li>assert.notEqual, assert.notStrictEqual – inverse checks to the ones above.</li>
