@@ -164,3 +164,14 @@
 // goods.push("arr", "str");
 //
 // alert(goods);
+//Creating an array
+let styles = ["Jazz", "Bluz"];
+
+styles.push("Rock and roll");
+
+styles[styles.length - 2] = "Classic";
+
+alert(styles.shift());
+
+styles.unshift("Rap", "Regy");
+alert(styles);
