@@ -49,6 +49,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/43a9e5a3caac4b85aa4bb23ad5048930b7d3b85a">The property with the highest value</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/93c0cd09d919211cd0105e3e3a81c2345bfdbc1f">Multiply numerical properties by 2</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/a31a490368ccf08c418098aee79079e00e07a994">Get the last element of an array</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/ff02995667896953fd9d25b87bffca7ac0866624">Add a new element to the end of the array</a></li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
