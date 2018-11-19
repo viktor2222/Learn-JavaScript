@@ -159,3 +159,8 @@
 // let lastItem = goods[goods.length - 1];
 //
 // alert(lastItem);
+//add an element to the end of an arbitrary array
+let goods = [2, 3, 5, 6, "str"];
+goods.push("arr", "str");
+
+alert(goods);
