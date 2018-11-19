@@ -66,3 +66,18 @@
 //   });
 //
 // });
+describe("multiplyNumeric", function() {
+
+  it("Multiply numerical properties by 2", function(){
+    let menu = {
+      width: 200,
+      height: 300,
+      title: "My menu"
+    };
+    multiplyNumeric(menu);
+    assert.equal(menu.width, 400);
+    assert.equal(menu.height, 600);
+    assert.equal(menu.title, "My menu");
+  });
+
+});
