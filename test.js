@@ -53,3 +53,16 @@
 //   });
 //
 // });
+describe("isEmpty", function() {
+
+  it("the object is now empty", function(){
+    assert.isTrue(isEmpty({}));
+  });
+
+  it("the object now is not empty", function(){
+    assert.isFalse(isEmpty({
+      anything: false
+    }));
+  });
+
+});

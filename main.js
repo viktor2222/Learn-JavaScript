@@ -87,8 +87,23 @@
 //
 // alert( truncate("Happy New Year New String old", 20) );
 // alert( truncate("Hello all!", 20) );
-let user = {};
-user.name = "Ahmeed";
-user.surname = "Ahmedow";
-user.name = "Mahmud"
-delete user.name;
+// let user = {};
+// user.name = "Ahmeed";
+// user.surname = "Ahmedow";
+// user.name = "Mahmud"
+// delete user.name;
+
+function isEmpty(obj) {
+  for (let key in obj) {
+    return false;
+  }
+  return true;
+}
+
+let schedule = {};
+
+alert(isEmpty(schedule));
+
+schedule["8:30"] = "подъём";
+
+alert( isEmpty(schedule) );
