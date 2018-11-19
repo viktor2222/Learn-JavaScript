@@ -43,13 +43,13 @@
 //     assert.isFalse(checkSpam('innocent rabbit'));
 //   });
 // });
-describe("truncate", function() {
-  it('cuts the string to the specified length (including the ellipsis)', function() {
-    assert.equal(truncate('Happy New Year New String old', 20), 'Happy New Year Ne...');
-  });
-
-  it('does not change short lines', function() {
-    assert.equal(truncate('Hello all!', 20), 'Hello all!');
-  });
-
-});
+// describe("truncate", function() {
+//   it('cuts the string to the specified length (including the ellipsis)', function() {
+//     assert.equal(truncate('Happy New Year New String old', 20), 'Happy New Year Ne...');
+//   });
+//
+//   it('does not change short lines', function() {
+//     assert.equal(truncate('Hello all!', 20), 'Hello all!');
+//   });
+//
+// });

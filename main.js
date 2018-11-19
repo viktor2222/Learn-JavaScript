@@ -73,17 +73,22 @@
 // alert( checkSpam('buy ViAgRA now') );
 // alert( checkSpam('free xxxxx') );
 // alert( checkSpam("innocent rabbit") );
-let str;
-let maxLength;
-
-function truncate(str, maxLength) {
-
-  if(str.length > maxLength) {
-    return str.slice(0, maxLength - 3) + '...';
-  }
-
-  return str;
-}
-
-alert( truncate("Happy New Year New String old", 20) );
-alert( truncate("Hello all!", 20) );
+// let str;
+// let maxLength;
+//
+// function truncate(str, maxLength) {
+//
+//   if(str.length > maxLength) {
+//     return str.slice(0, maxLength - 3) + '...';
+//   }
+//
+//   return str;
+// }
+//
+// alert( truncate("Happy New Year New String old", 20) );
+// alert( truncate("Hello all!", 20) );
+let user = {};
+user.name = "Ahmeed";
+user.surname = "Ahmedow";
+user.name = "Mahmud"
+delete user.name;
