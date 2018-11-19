@@ -46,6 +46,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/fcf96ffa0b0b1951c2b673eb816d9bb7c1c36e6f">Plain object</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/15f1540eeede72b666f6cce4d8501ed9aa29c220">Determine if the object is empty</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e82a4393c2503058e7fc6609ee7c417c50dc6c62">Sum of properties in object</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/43a9e5a3caac4b85aa4bb23ad5048930b7d3b85a">The property with the highest value</a></li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
