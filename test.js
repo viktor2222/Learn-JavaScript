@@ -30,16 +30,26 @@
 //
 //   // ... more tests to follow here, both describe and it can be added
 // });
-describe("checkSpam", function() {
-  it('this is spam "buy ViAgRA now"', function() {
-    assert.isTrue(checkSpam('buy ViAgRA now'));
+// describe("checkSpam", function() {
+//   it('this is spam "buy ViAgRA now"', function() {
+//     assert.isTrue(checkSpam('buy ViAgRA now'));
+//   });
+//
+//   it('this is spam "free xxxxx"', function() {
+//     assert.isTrue(checkSpam('free xxxxx'));
+//   });
+//
+//   it('this is`t spam "innocent rabbit"', function() {
+//     assert.isFalse(checkSpam('innocent rabbit'));
+//   });
+// });
+describe("truncate", function() {
+  it('cuts the string to the specified length (including the ellipsis)', function() {
+    assert.equal(truncate('Happy New Year New String old', 20), 'Happy New Year Ne...');
   });
 
-  it('this is spam "free xxxxx"', function() {
-    assert.isTrue(checkSpam('free xxxxx'));
+  it('does not change short lines', function() {
+    assert.equal(truncate('Hello all!', 20), 'Hello all!');
   });
 
-  it('this is`t spam "innocent rabbit"', function() {
-    assert.isFalse(checkSpam('innocent rabbit'));
-  });
 });

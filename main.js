@@ -62,14 +62,28 @@
 //
 // };
 // alert(ucFirst(str));
+// let str;
+//
+// function checkSpam(str) {
+//   let lowerStr = str.toLowerCase();
+//
+//   return !!(~lowerStr.indexOf('viagra') || ~lowerStr.indexOf('xxx'));
+// }
+//
+// alert( checkSpam('buy ViAgRA now') );
+// alert( checkSpam('free xxxxx') );
+// alert( checkSpam("innocent rabbit") );
 let str;
+let maxLength;
 
-function checkSpam(str) {
-  let lowerStr = str.toLowerCase();
+function truncate(str, maxLength) {
 
-  return !!(~lowerStr.indexOf('viagra') || ~lowerStr.indexOf('xxx'));
+  if(str.length > maxLength) {
+    return str.slice(0, maxLength - 3) + '...';
+  }
+
+  return str;
 }
 
-alert( checkSpam('buy ViAgRA now') );
-alert( checkSpam('free xxxxx') );
-alert( checkSpam("innocent rabbit") );
+alert( truncate("Happy New Year New String old", 20) );
+alert( truncate("Hello all!", 20) );
