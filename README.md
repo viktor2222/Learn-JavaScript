@@ -37,6 +37,12 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/181a9954d559748dd273cdab14e85eb9089d3031">Automated testing with mocha</a></li>
 </ul>
 
+<h2>Learned-19-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d4797e746c70ccb188be49753a8d308fb2d1811a">Uppercase first character</a></li>
+</ul>
+
 <h2>Description-12-11-2018</h2>
 
 <h4>Introduction</h4>
