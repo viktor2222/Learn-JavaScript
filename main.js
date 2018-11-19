@@ -92,18 +92,18 @@
 // user.surname = "Ahmedow";
 // user.name = "Mahmud"
 // delete user.name;
-
-function isEmpty(obj) {
-  for (let key in obj) {
-    return false;
-  }
-  return true;
-}
-
-let schedule = {};
-
-alert(isEmpty(schedule));
-
-schedule["8:30"] = "подъём";
-
-alert( isEmpty(schedule) );
+//
+// function isEmpty(obj) {
+//   for (let key in obj) {
+//     return false;
+//   }
+//   return true;
+// }
+//
+// let schedule = {};
+//
+// alert(isEmpty(schedule));
+//
+// schedule["8:30"] = "подъём";
+//
+// alert( isEmpty(schedule) );
