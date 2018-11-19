@@ -263,4 +263,6 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>Key cycle: for (key in obj).</li>
   <li>The search order corresponds to the order of declarations for non-numeric keys, and numeric keys are sorted (in modern browsers).</li>
   <li>If it is necessary that the order of iteration of numeric keys correspond to their declaration in the object, then use a trick: the numeric keys are replaced with similar ones, but containing not only numbers. For example, they add to the beginning +, as described in the example above, and then, during processing, convert such keys into numbers.</li>
+  <li>The object is assigned and copied "by reference." That is, the variable does not store the object itself, but, relatively speaking, the address in memory where it is located.</li>
+  <li>If the object variable is copied or transferred to a function, then this link is copied, and the object remains alone in memory.</li>
 </ul>
