@@ -266,3 +266,14 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>The object is assigned and copied "by reference." That is, the variable does not store the object itself, but, relatively speaking, the address in memory where it is located.</li>
   <li>If the object variable is copied or transferred to a function, then this link is copied, and the object remains alone in memory.</li>
 </ul>
+
+<h4>Arrays</h4>
+
+<ul>
+  <li>Arrays exist to work with an ordered set of elements.</li>
+  <li>The length property is the length of the array. If more precisely, then the last array index is plus 1. If it is reduced manually, the array will be shortened. If length is greater than the actual number of elements, then the missing elements are undefined. The array can be used as a queue or stack.</li>
+  <li>arr.push(element1, element2...) adds items to the end.</li>
+  <li>var elem = arr.pop () removes and returns the last element.</li>
+  <li>arr.unshift (element1, element2 ...) adds elements to the beginning.</li>
+  <li>var elem = arr.shift () removes and returns the first element.</li>
+</ul>
