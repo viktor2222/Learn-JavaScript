@@ -215,3 +215,26 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>assert.isTrue(value) – checks that value === true</li>
   <li>assert.isFalse(value) – checks that value === false</li>
 </ul>
+
+<h2>Description-19-11-2018</h2> 
+
+<h4>Number</h4> 
+
+<ul> 
+  <li>Numbers can be written in decimal, hexadecimal systems, as well as in a "scientific" way.</li> 
+  <li>In JavaScript, there is the Infinity Infinity numerical value.</li> <li>The calculation error gives NaN.</li> 
+  <li>Arithmetic and mathematical functions convert the string precisely into a number, ignoring the initial and final spaces.</li> 
+  <li>ParseInt / parseFloat functions make numbers from rows that start with a number.</li> 
+  <li>There are four rounding methods: Math.floor, Math.round, Math.ceil, and a bit operator. To round up the desired character, use + n.toFixed (p) or trick with multiplication and dividing by 10p.</li> 
+  <li>Fractional numbers give a calculation error. If necessary, it can be cut off by rounding up the required mark.</li> 
+  <li>Random numbers from 0 to 1 are generated using Math.random (), the rest are converted from them.</li> 
+</ul> 
+
+<h4>String</h4> 
+
+<ul> 
+  <li>The String in JavaScript have the Unicode internal encoding. When writing a line, you can use special characters, for example \ n and insert unique characters by code.</li>
+  <li>I learned about the length property and the charAt, toLowerCase / toUpperCase, substring / substr / slice methods (slice is preferred). There are other methods, for example trim trim spaces from the beginning and end of the line.</li>
+  <li>Strings are compared letter by letter. Therefore, if the number is received in the form of a string, then such numbers can be compared incorrectly, you need to convert it to the number type.</li> 
+  <li>When comparing strings it should be borne in mind that letters are compared by their codes. Therefore, a capital letter is smaller than a small one, and the letter e is generally outside the main alphabet.</li> 
+</ul>
