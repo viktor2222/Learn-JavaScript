@@ -40,12 +40,25 @@
 // }
 
 //Automated testing with mocha
-function pow(x, n) {
-  var result = 1;
+// function pow(x, n) {
+//   var result = 1;
+//
+//   for (var i = 0; i < n; i++) {
+//     result *= x;
+//   }
+//
+//   return result;
+// }
+// alert( 0.1 + 0.2 == 0.3 );
+let str = "asscx";
 
-  for (var i = 0; i < n; i++) {
-    result *= x;
+function ucFirst(str){
+
+  if(str.charAt(0) == ""){
+    return "please enter it correctly";
+  } else {
+    return str[0].toUpperCase() + str.slice(1);;
   }
 
-  return result;
-}
+};
+alert(ucFirst(str));
