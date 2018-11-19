@@ -246,3 +246,13 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>Strings are compared letter by letter. Therefore, if the number is received in the form of a string, then such numbers can be compared incorrectly, you need to convert it to the number type.</li> 
   <li>When comparing strings it should be borne in mind that letters are compared by their codes. Therefore, a capital letter is smaller than a small one, and the letter e is generally outside the main alphabet.</li> 
 </ul>
+
+<h4>Objects</h4>
+
+<ul>Objects are associative arrays with several special features.
+  <li>They store properties (key-value pairs), where: property keys must be strings or symbols (usually strings). Values can be of any type.</li>
+  <li>To access a property, we can use: the dot notation: obj.property. Square brackets notation obj["property"]. Square brackets allow to take the key from a variable, like obj[varWithKey].</li>
+  <li>To delete a property: delete obj.prop.</li>
+  <li>To check if a property with the given key exists: "key" in obj.</li>
+  <li>To iterate over an object: for(let key in obj) loop.</li>
+</ul>
