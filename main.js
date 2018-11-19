@@ -118,19 +118,19 @@
 //   sum += salaries[name];
 // }
 // alert(sum);
-let salaries = {
-  "Vasya": 100,
-  "Petya": 300,
-  "Dasha": 250
-};
-
-let max = 0;
-let maxName = "";
-
-for (let name in salaries) {
-  if(max < salaries[name]){
-    max = salaries[name];
-    maxName = name;
-  }
-}
-alert(maxName || "propertiesClear");
+// let salaries = {
+//   "Vasya": 100,
+//   "Petya": 300,
+//   "Dasha": 250
+// };
+//
+// let max = 0;
+// let maxName = "";
+//
+// for (let name in salaries) {
+//   if(max < salaries[name]){
+//     max = salaries[name];
+//     maxName = name;
+//   }
+// }
+// alert(maxName || "propertiesClear");
