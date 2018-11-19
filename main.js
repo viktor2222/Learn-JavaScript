@@ -107,14 +107,14 @@
 // schedule["8:30"] = "подъём";
 //
 // alert( isEmpty(schedule) );
-let salaries = {
-  "Vasya": 100,
-  "Petya": 300,
-  "Dasha": 250
-};
-let sum = 0;
-
-for (let name in salaries){
-  sum += salaries[name];
-}
-alert(sum);
+// let salaries = {
+//   "Vasya": 100,
+//   "Petya": 300,
+//   "Dasha": 250
+// };
+// let sum = 0;
+//
+// for (let name in salaries){
+//   sum += salaries[name];
+// }
+// alert(sum);
