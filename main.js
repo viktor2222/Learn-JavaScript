@@ -50,15 +50,26 @@
 //   return result;
 // }
 // alert( 0.1 + 0.2 == 0.3 );
-let str = "asscx";
+// let str = "asscx";
+//
+// function ucFirst(str){
+//
+//   if(str.charAt(0) == ""){
+//     return "please enter it correctly";
+//   } else {
+//     return str[0].toUpperCase() + str.slice(1);;
+//   }
+//
+// };
+// alert(ucFirst(str));
+let str;
 
-function ucFirst(str){
+function checkSpam(str) {
+  let lowerStr = str.toLowerCase();
 
-  if(str.charAt(0) == ""){
-    return "please enter it correctly";
-  } else {
-    return str[0].toUpperCase() + str.slice(1);;
-  }
+  return !!(~lowerStr.indexOf('viagra') || ~lowerStr.indexOf('xxx'));
+}
 
-};
-alert(ucFirst(str));
+alert( checkSpam('buy ViAgRA now') );
+alert( checkSpam('free xxxxx') );
+alert( checkSpam("innocent rabbit") );

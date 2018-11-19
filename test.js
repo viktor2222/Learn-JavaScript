@@ -18,15 +18,28 @@
 //
 //   // ... more tests to follow here, both describe and it can be added
 // });
-describe("ucFirst", function() {
-
-  describe("uppercase first character", function() {
-
-    it(`${str}`, function() {
-      assert.equal(ucFirst(str), str[0].toUpperCase() + str.slice(1));
-    });
-
+// describe("ucFirst", function() {
+//
+//   describe("uppercase first character", function() {
+//
+//     it(`${str}`, function() {
+//       assert.equal(ucFirst(str), str[0].toUpperCase() + str.slice(1));
+//     });
+//
+//   });
+//
+//   // ... more tests to follow here, both describe and it can be added
+// });
+describe("checkSpam", function() {
+  it('this is spam "buy ViAgRA now"', function() {
+    assert.isTrue(checkSpam('buy ViAgRA now'));
   });
 
-  // ... more tests to follow here, both describe and it can be added
+  it('this is spam "free xxxxx"', function() {
+    assert.isTrue(checkSpam('free xxxxx'));
+  });
+
+  it('this is`t spam "innocent rabbit"', function() {
+    assert.isFalse(checkSpam('innocent rabbit'));
+  });
 });
