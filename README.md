@@ -256,4 +256,7 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>To delete a property: delete obj.prop.</li>
   <li>To check if a property with the given key exists: "key" in obj.</li>
   <li>To iterate over an object: for(let key in obj) loop.</li>
+  <li>Key cycle: for (key in obj).</li>
+  <li>The search order corresponds to the order of declarations for non-numeric keys, and numeric keys are sorted (in modern browsers).</li>
+  <li>If it is necessary that the order of iteration of numeric keys correspond to their declaration in the object, then use a trick: the numeric keys are replaced with similar ones, but containing not only numbers. For example, they add to the beginning +, as described in the example above, and then, during processing, convert such keys into numbers.</li>
 </ul>
