@@ -42,6 +42,7 @@
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d4797e746c70ccb188be49753a8d308fb2d1811a">Uppercase first character</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e823fc0b7aaf0490b1a0d540e980b18732f29a19">CheckSpam</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/be77d8a2467c4e69e5f86d8159d897f27bc34bec">Line truncation</a> - create a truncate (str, maxlength) function that checks the length of the str string, and if it exceeds the maxlength, replaces the end of str with "..."</li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
