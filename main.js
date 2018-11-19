@@ -153,3 +153,9 @@
 // };
 // multiplyNumeric(menu);
 // alert( "menu width = " + menu.width + " height = " + menu.height + " title = " + menu.title );
+//Get the last element of an array
+let goods = [1, 4, "taaaaa", "asrs"];
+
+let lastItem = goods[goods.length - 1];
+
+alert(lastItem);
