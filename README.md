@@ -246,10 +246,7 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
 <h4>Objects</h4>
 
 <ul>
-  <li>To access the property through the obj.property point. Brackets denote obj ["property"]. Brackets allow you to take a key from a variable, for example obj [varWithKey].</li>
-  <li> To delete a property: delete obj.prop. </li>
-  <li> To iterate over an object: for (let key in obj) loop. </li>
-  <li> The object is assigned and copied "by reference." It is not the object of memory.</li>
+  
 </ul>
 
 <h4>Arrays</h4>
