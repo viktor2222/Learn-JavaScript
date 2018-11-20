@@ -255,8 +255,7 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
 <h4>Arrays</h4>
 
 <ul>
-  <li>Arrays exist to work with an ordered set of elements.</li>
-  <li>The length property is the length of the array. If more precisely, then the last array index is plus 1. If it is reduced manually, the array will be shortened. If length is greater than the actual number of elements, then the missing elements are undefined. The array can be used as a queue or stack.</li>
+  <li>The length property is the length of the array. If more precisely, then the last array index is plus (+) 1. If it is reduced manually, the array will be shortened. If length is greater than the actual number of elements, then the missing elements are undefined. The array can be used as a queue or stack.</li>
   <li>arr.push(element1, element2...) adds items to the end.</li>
   <li>let elem = arr.pop () removes and returns the last element.</li>
   <li>arr.unshift (element1, element2 ...) adds elements to the beginning.</li>
