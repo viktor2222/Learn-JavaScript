@@ -60,6 +60,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/a6fd8e86f9ec69e82034a1f829c6921c88dd1d05">Array search</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b6fa11f05678d161e793b17e5a579cbef9bae747">Filter range</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/28f6c98faee779bc7e69b18b6431ff366057a4a7">Sieve of Eratosthenes</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/eebb7f4d2f79514dcfa576c60396d1452fed0e91">Subarray of the highest amount</a></li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
