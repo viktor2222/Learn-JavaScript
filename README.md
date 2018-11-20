@@ -236,47 +236,28 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
 
 <h4>Number</h4> 
 
-<ul> 
-  <li>Numbers can be written in decimal, hexadecimal systems, as well as in a "scientific" way.</li> 
-  <li>In JavaScript, there is the Infinity Infinity numerical value.</li> <li>The calculation error gives NaN.</li> 
-  <li>Arithmetic and mathematical functions convert the string precisely into a number, ignoring the initial and final spaces.</li> 
+<ul>
   <li>ParseInt / parseFloat functions make numbers from rows that start with a number.</li> 
-  <li>There are four rounding methods: Math.floor, Math.round, Math.ceil, and a bit operator. To round up the desired character, use + n.toFixed (p) or trick with multiplication and dividing by 10p.</li> 
+  <li>There are four rounding methods: Math.floor, Math.round, Math.ceil, and a bit operator.</li> 
   <li>Fractional numbers give a calculation error. If necessary, it can be cut off by rounding up the required mark.</li> 
   <li>Random numbers from 0 to 1 are generated using Math.random (), the rest are converted from them.</li> 
-</ul> 
-
-<h4>String</h4> 
-
-<ul> 
-  <li>The String in JavaScript have the Unicode internal encoding. When writing a line, you can use special characters, for example \ n and insert unique characters by code.</li>
-  <li>I learned about the length property and the charAt, toLowerCase / toUpperCase, substring / substr / slice methods (slice is preferred). There are other methods, for example trim trim spaces from the beginning and end of the line.</li>
-  <li>Strings are compared letter by letter. Therefore, if the number is received in the form of a string, then such numbers can be compared incorrectly, you need to convert it to the number type.</li> 
-  <li>When comparing strings it should be borne in mind that letters are compared by their codes. Therefore, a capital letter is smaller than a small one, and the letter e is generally outside the main alphabet.</li> 
 </ul>
 
 <h4>Objects</h4>
 
-<ul>Objects are associative arrays with several special features.
-  <li>They store properties (key-value pairs), where: property keys must be strings or symbols (usually strings). Values can be of any type.</li>
-  <li>To access a property, we can use: the dot notation: obj.property. Square brackets notation obj["property"]. Square brackets allow to take the key from a variable, like obj[varWithKey].</li>
-  <li>To delete a property: delete obj.prop.</li>
-  <li>To check if a property with the given key exists: "key" in obj.</li>
-  <li>To iterate over an object: for(let key in obj) loop.</li>
-  <li>Key cycle: for (key in obj).</li>
-  <li>The search order corresponds to the order of declarations for non-numeric keys, and numeric keys are sorted (in modern browsers).</li>
-  <li>If it is necessary that the order of iteration of numeric keys correspond to their declaration in the object, then use a trick: the numeric keys are replaced with similar ones, but containing not only numbers. For example, they add to the beginning +, as described in the example above, and then, during processing, convert such keys into numbers.</li>
-  <li>The object is assigned and copied "by reference." That is, the variable does not store the object itself, but, relatively speaking, the address in memory where it is located.</li>
-  <li>If the object variable is copied or transferred to a function, then this link is copied, and the object remains alone in memory.</li>
+<ul>
+  <li>To access the property through the obj.property point. Brackets denote obj ["property"]. Brackets allow you to take a key from a variable, for example obj [varWithKey].</li>
+  <li> To delete a property: delete obj.prop. </li>
+  <li> To iterate over an object: for (let key in obj) loop. </li>
+  <li> The object is assigned and copied "by reference." It is not the object of memory.</li>
 </ul>
 
 <h4>Arrays</h4>
 
 <ul>
-  <li>Arrays exist to work with an ordered set of elements.</li>
-  <li>The length property is the length of the array. If more precisely, then the last array index is plus 1. If it is reduced manually, the array will be shortened. If length is greater than the actual number of elements, then the missing elements are undefined. The array can be used as a queue or stack.</li>
+  <li>The length property is the length of the array. If more precisely, then the last array index is plus (+) 1. If it is reduced manually, the array will be shortened. If length is greater than the actual number of elements, then the missing elements are undefined. The array can be used as a queue or stack.</li>
   <li>arr.push(element1, element2...) adds items to the end.</li>
-  <li>var elem = arr.pop () removes and returns the last element.</li>
+  <li>let elem = arr.pop () removes and returns the last element.</li>
   <li>arr.unshift (element1, element2 ...) adds elements to the beginning.</li>
-  <li>var elem = arr.shift () removes and returns the first element.</li>
+  <li>let elem = arr.shift () removes and returns the first element.</li>
 </ul>
