@@ -54,6 +54,12 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/f45002a08e1f68b54e281b6ce6317243321eff24">1)Get random value from array and 2) Create a calculator for the entered values.</a></li>
 </ul>
 
+<h2>Learned-20-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/a6fd8e86f9ec69e82034a1f829c6921c88dd1d05">Array search</a></li>
+</ul>
+
 <h2>Description-12-11-2018</h2>
 
 <h4>Introduction</h4>
