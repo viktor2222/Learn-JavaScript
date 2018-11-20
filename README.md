@@ -58,6 +58,7 @@
 
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/a6fd8e86f9ec69e82034a1f829c6921c88dd1d05">Array search</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b6fa11f05678d161e793b17e5a579cbef9bae747">Filter range</a></li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
