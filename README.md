@@ -37,6 +37,23 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/181a9954d559748dd273cdab14e85eb9089d3031">Automated testing with mocha</a></li>
 </ul>
 
+<h2>Learned-19-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d4797e746c70ccb188be49753a8d308fb2d1811a">Uppercase first character</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e823fc0b7aaf0490b1a0d540e980b18732f29a19">CheckSpam</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/be77d8a2467c4e69e5f86d8159d897f27bc34bec">Line truncation</a> - create a truncate (str, maxlength) function that checks the length of the str string, and if it exceeds the maxlength, replaces the end of str with "..."</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/fcf96ffa0b0b1951c2b673eb816d9bb7c1c36e6f">Plain object</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/15f1540eeede72b666f6cce4d8501ed9aa29c220">Determine if the object is empty</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/e82a4393c2503058e7fc6609ee7c417c50dc6c62">Sum of properties in object</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/43a9e5a3caac4b85aa4bb23ad5048930b7d3b85a">The property with the highest value</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/93c0cd09d919211cd0105e3e3a81c2345bfdbc1f">Multiply numerical properties by 2</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/a31a490368ccf08c418098aee79079e00e07a994">Get the last element of an array</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/ff02995667896953fd9d25b87bffca7ac0866624">Add a new element to the end of the array</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/f6713569ae98c7fbd885fa018fd234db9ff935cb">Creating an array</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/f45002a08e1f68b54e281b6ce6317243321eff24">1)Get random value from array and 2) Create a calculator for the entered values.</a></li>
+</ul>
+
 <h2>Description-12-11-2018</h2>
 
 <h4>Introduction</h4>
@@ -214,4 +231,34 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>assert.notEqual, assert.notStrictEqual – inverse checks to the ones above.</li>
   <li>assert.isTrue(value) – checks that value === true</li>
   <li>assert.isFalse(value) – checks that value === false</li>
+</ul>
+
+<h2>Description-19-11-2018</h2> 
+
+<h4>Number</h4> 
+
+<ul>
+  <li>ParseInt / parseFloat functions make numbers from rows that start with a number.</li> 
+  <li>There are four rounding methods: Math.floor, Math.round, Math.ceil, and a bit operator.</li> 
+  <li>Fractional numbers give a calculation error. If necessary, it can be cut off by rounding up the required mark.</li> 
+  <li>Random numbers from 0 to 1 are generated using Math.random (), the rest are converted from them.</li> 
+</ul>
+
+<h4>Objects</h4>
+
+<ul>
+  <li>To access the property through the obj.property point. Brackets denote obj ["property"]. Brackets allow you to take a key from a variable, for example obj [varWithKey].</li>
+  <li> To delete a property: delete obj.prop. </li>
+  <li> To iterate over an object: for (let key in obj) loop. </li>
+  <li> The object is assigned and copied "by reference." It is not the object of memory.</li>
+</ul>
+
+<h4>Arrays</h4>
+
+<ul>
+  <li>The length property is the length of the array. If more precisely, then the last array index is plus (+) 1. If it is reduced manually, the array will be shortened. If length is greater than the actual number of elements, then the missing elements are undefined. The array can be used as a queue or stack.</li>
+  <li>arr.push(element1, element2...) adds items to the end.</li>
+  <li>let elem = arr.pop () removes and returns the last element.</li>
+  <li>arr.unshift (element1, element2 ...) adds elements to the beginning.</li>
+  <li>let elem = arr.shift () removes and returns the first element.</li>
 </ul>
