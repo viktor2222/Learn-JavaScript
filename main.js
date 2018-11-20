@@ -1,1 +1,0 @@
-//Get random value from array // let arr = ["apple", "lemon", "orange"]; // // let rand = Math.floor(Math.random() * arr.length); // alert(arr[rand]); let arrNumbers = []; while (true) { let value = prompt("enter number"); if (value === "" || value === null || isNaN(value)) break;) {} }
