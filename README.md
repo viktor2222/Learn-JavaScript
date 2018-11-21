@@ -67,6 +67,7 @@
 
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b02d0b59604e63b29c9d520def21c999a11decb5">Add class to string</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d2998dfb93548c1f6b41c0dfb761151266905fa7">Function removeClass</a> - function removeClass (obj, cls), which removes the cls class, if any</li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
