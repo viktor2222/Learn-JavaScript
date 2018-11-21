@@ -63,6 +63,12 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/eebb7f4d2f79514dcfa576c60396d1452fed0e91">Subarray of the highest amount</a></li>
 </ul>
 
+<h2>Learned-21-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b02d0b59604e63b29c9d520def21c999a11decb5">Add class to string</a></li>
+</ul>
+
 <h2>Description-12-11-2018</h2>
 
 <h4>Introduction</h4>
