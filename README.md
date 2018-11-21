@@ -271,3 +271,16 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>arr.unshift (element1, element2 ...) adds elements to the beginning.</li>
   <li>let elem = arr.shift () removes and returns the first element.</li>
 </ul>
+
+<h2>Description-21-11-2018</h2>
+
+<ul>Array methods:
+  <li>push / pop, shift / unshift, splice - to add and delete items.</li>
+  <li>join / split - to convert a row to an array and back.</li>
+  <li>slice - copies the portion of the array.</li>
+  <li>sort - to sort the array. If you do not pass the comparison function - sorts the elements as rows.</li>
+  <li>reverse - reverses the order of the elements.</li>
+  <li>concat - combines arrays.</li>
+  <li>indexOf / lastIndexOf - return an element's position in the array (not supported in IE8-).</li>
+  <li>Object.keys (obj) returns an object property array.</li>
+</ul>
