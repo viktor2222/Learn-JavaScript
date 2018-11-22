@@ -299,3 +299,13 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>indexOf / lastIndexOf - return an element's position in the array (not supported in IE8-).</li>
   <li>Object.keys (obj) returns an object property array.</li>
 </ul>
+
+<h2>Description-22-11-2018</h2>
+
+<ul>Array methods:
+  <li>forEach - to iterate through the array.</li>
+  <li>filter - to filter the array.</li>
+  <li>every/some – для проверки массива.</li>
+  <li>map - to transform an array into an array.</li>
+  <li>reduce / reduceRight - to go through the array with the calculation of the value.</li>
+</ul>
