@@ -75,6 +75,7 @@
 
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/888d8ab7b68c7baff0bbab3f60dfb546d605b0f7">Sorted arrays</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/555638774e8d49b74847bb7a109017392ab8967c">Random order in an array</a></li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
