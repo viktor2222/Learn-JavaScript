@@ -54,6 +54,23 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/f45002a08e1f68b54e281b6ce6317243321eff24">1)Get random value from array and 2) Create a calculator for the entered values.</a></li>
 </ul>
 
+<h2>Learned-20-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/a6fd8e86f9ec69e82034a1f829c6921c88dd1d05">Array search</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b6fa11f05678d161e793b17e5a579cbef9bae747">Filter range</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/28f6c98faee779bc7e69b18b6431ff366057a4a7">Sieve of Eratosthenes</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/eebb7f4d2f79514dcfa576c60396d1452fed0e91">Subarray of the highest amount</a></li>
+</ul>
+
+<h2>Learned-21-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/b02d0b59604e63b29c9d520def21c999a11decb5">Add class to string</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/d2998dfb93548c1f6b41c0dfb761151266905fa7">Function removeClass</a> - function removeClass (obj, cls), which removes the cls class, if any</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/060334ec118a5b9b9dccb1dedaf7a23036f130c8">Array filtering "in place"</a> - function filterRangeInPlace (arr, a, b), which receives an array with numbers arr and removes from it all numbers outside the range a..b</li>
+</ul>
+
 <h2>Description-12-11-2018</h2>
 
 <h4>Introduction</h4>
@@ -261,4 +278,17 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>let elem = arr.pop () removes and returns the last element.</li>
   <li>arr.unshift (element1, element2 ...) adds elements to the beginning.</li>
   <li>let elem = arr.shift () removes and returns the first element.</li>
+</ul>
+
+<h2>Description-21-11-2018</h2>
+
+<ul>Array methods:
+  <li>push / pop, shift / unshift, splice - to add and delete items.</li>
+  <li>join / split - to convert a row to an array and back.</li>
+  <li>slice - copies the portion of the array.</li>
+  <li>sort - to sort the array. If you do not pass the comparison function - sorts the elements as rows.</li>
+  <li>reverse - reverses the order of the elements.</li>
+  <li>concat - combines arrays.</li>
+  <li>indexOf / lastIndexOf - return an element's position in the array (not supported in IE8-).</li>
+  <li>Object.keys (obj) returns an object property array.</li>
 </ul>
