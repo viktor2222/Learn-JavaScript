@@ -321,3 +321,13 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>this is a pseudo-array, that is, an object that looks like an array, it has numbered properties and length, but it does not have array methods.</li>
   <li>to specify the default arguments, in cases where they are certainly not false, the operator || is convenient.</li>
 </ul>
+
+<h4>Date and time</h4>
+<ul>
+  <li>Date and time are represented in JavaScript by one object: Date</li>
+  <li>The countdown of months starts from zero.</li>
+  <li>The countdown of the days of the week (for getDay ()) also starts from zero (and this is Sunday).</li>
+  <li>The Date object is convenient because it is auto-corrected. Thanks to it it is easy to shift dates.</li>
+  <li>To get the current date in milliseconds, it's better to use Date.now ()</li>
+  <li>For benchmarking it is better to use performance.now () (except IE9-), it is 1000 times more accurate.</li>
+</ul>
