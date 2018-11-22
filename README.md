@@ -71,6 +71,12 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/060334ec118a5b9b9dccb1dedaf7a23036f130c8">Array filtering "in place"</a> - function filterRangeInPlace (arr, a, b), which receives an array with numbers arr and removes from it all numbers outside the range a..b</li>
 </ul>
 
+<h2>Learned-22-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/888d8ab7b68c7baff0bbab3f60dfb546d605b0f7">Sorted arrays</a></li>
+</ul>
+
 <h2>Description-12-11-2018</h2>
 
 <h4>Introduction</h4>
