@@ -78,6 +78,7 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/555638774e8d49b74847bb7a109017392ab8967c">Random order in an array</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/f03162523e751c073e3e83a108cb7cc3009ffb07">Using map</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/6fb70e9ba27d242f70bfc501f0a99ee6639a8aa2">Using reduce</a> - array of sums in parts</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/6508d1c3002fc35f8eb7f952f3040b203612ffa7">The sum of the arguments</a></li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
