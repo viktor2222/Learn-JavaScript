@@ -291,7 +291,8 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
 
 <h2>Description-21-11-2018</h2>
 
-<ul>Array methods:
+<h4>Array methods:</h4>
+<ul>
   <li>push / pop, shift / unshift, splice - to add and delete items.</li>
   <li>join / split - to convert a row to an array and back.</li>
   <li>slice - copies the portion of the array.</li>
@@ -304,7 +305,8 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
 
 <h2>Description-22-11-2018</h2>
 
-<ul>Array methods:
+<h4>Array methods:</h4>
+<ul>
   <li>forEach - to iterate through the array.</li>
   <li>filter - to filter the array.</li>
   <li>every/some – для проверки массива.</li>
@@ -312,7 +314,8 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>reduce / reduceRight - to go through the array with the calculation of the value.</li>
 </ul>
 
-<ul>"arguments"
+<h4>"arguments"</h4>
+<ul>
   <li>the full list of arguments with which the function is called is available through arguments.</li>
   <li>this is a pseudo-array, that is, an object that looks like an array, it has numbered properties and length, but it does not have array methods.</li>
   <li>to specify the default arguments, in cases where they are certainly not false, the operator || is convenient.</li>
