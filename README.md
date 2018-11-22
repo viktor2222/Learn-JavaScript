@@ -311,3 +311,9 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>map - to transform an array into an array.</li>
   <li>reduce / reduceRight - to go through the array with the calculation of the value.</li>
 </ul>
+
+<ul>"arguments"
+  <li>the full list of arguments with which the function is called is available through arguments.</li>
+  <li>this is a pseudo-array, that is, an object that looks like an array, it has numbered properties and length, but it does not have array methods.</li>
+  <li>to specify the default arguments, in cases where they are certainly not false, the operator || is convenient.</li>
+</ul>
