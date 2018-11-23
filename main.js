@@ -1,26 +1,13 @@
-//Check for argument-undefined
-function f(x) {
+//Create a date
+let date = new Date(2012, 2, 20, 3, 12, 0);
 
-  alert( arguments.length ? 1 : 0 );
+alert(date);
 
+//Week day
+function getWeekDay(date) {
+  let days = ['sun', 'mon', 'tue', 'wen', 'thu', 'fri', 'sat'];
+
+  return days[date.getDay()];
 }
 
-f(undefined);
-f();
-
-//The sum of the arguments
-function sum() {
-  let rezult = 0;
-
-  for(let i = 0; i < arguments.length; i++) {
-    rezult += arguments[i];
-  }
-  return rezult;
-
-}
-
-alert( sum() );
-alert( sum(1) );
-alert( sum(1, 2) );
-alert( sum(1, 2, 3) );
-alert( sum(1, 2, 3, 4) );
+alert( getWeekDay(date) );
