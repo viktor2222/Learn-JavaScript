@@ -86,6 +86,7 @@
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/75e71d0d8682e965873452938e484ddb979a2e3b">Create a date</a></li>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/a6737ce2a8fe607ca764ba0b4aa243c0d51f647c">Day a specified number of days ago</a> - by creating a getDate As (date, days) function that returns a number that was days ago from the date.</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/9c40fb4ff94da79a5a7d0032e3689046e7ddb931">1)Last day of the month and 2)How many seconds have passed today?</a></li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
