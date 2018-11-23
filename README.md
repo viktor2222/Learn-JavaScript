@@ -81,6 +81,12 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/6508d1c3002fc35f8eb7f952f3040b203612ffa7">The sum of the arguments</a></li>
 </ul>
 
+<h2>Learned-23-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/75e71d0d8682e965873452938e484ddb979a2e3b">Create a date</a></li>
+</ul>
+
 <h2>Description-12-11-2018</h2>
 
 <h4>Introduction</h4>
