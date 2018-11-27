@@ -339,3 +339,12 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>To get the current date in milliseconds, it's better to use Date.now ()</li>
   <li>For benchmarking it is better to use performance.now () (except IE9-), it is 1000 times more accurate.</li>
 </ul>
+
+<h2>Description-27-11-2018</h2>
+
+<h4>Recursion and stack</h4>
+<ul>
+  <li>Recursion is a programming term that means a “self-calling” function. Such functions can be used to solve certain tasks in elegant ways.</li>
+  <li>When a function calls itself, that’s called a recursion step. The basis of recursion is function arguments that make the task so simple that the function does not make further calls.</li>
+  <li>A recursively-defined data structure is a data structure that can be defined using itself. For instance, the linked list can be defined as a data structure consisting of an object referencing a list (or null).</li>
+</ul>
