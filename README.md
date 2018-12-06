@@ -71,6 +71,24 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/060334ec118a5b9b9dccb1dedaf7a23036f130c8">Array filtering "in place"</a> - function filterRangeInPlace (arr, a, b), which receives an array with numbers arr and removes from it all numbers outside the range a..b</li>
 </ul>
 
+<h2>Learned-22-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/888d8ab7b68c7baff0bbab3f60dfb546d605b0f7">Sorted arrays</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/555638774e8d49b74847bb7a109017392ab8967c">Random order in an array</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/f03162523e751c073e3e83a108cb7cc3009ffb07">Using map</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/6fb70e9ba27d242f70bfc501f0a99ee6639a8aa2">Using reduce</a> - array of sums in parts</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/6508d1c3002fc35f8eb7f952f3040b203612ffa7">The sum of the arguments</a></li>
+</ul>
+
+<h2>Learned-23-11-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/75e71d0d8682e965873452938e484ddb979a2e3b">Create a date</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/a6737ce2a8fe607ca764ba0b4aa243c0d51f647c">Day a specified number of days ago</a> - by creating a getDate As (date, days) function that returns a number that was days ago from the date.</li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/9c40fb4ff94da79a5a7d0032e3689046e7ddb931">1)Last day of the month and 2)How many seconds have passed today?</a></li>
+</ul>
+
 <h2>Description-12-11-2018</h2>
 
 <h4>Introduction</h4>
@@ -282,7 +300,8 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
 
 <h2>Description-21-11-2018</h2>
 
-<ul>Array methods:
+<h4>Array methods:</h4>
+<ul>
   <li>push / pop, shift / unshift, splice - to add and delete items.</li>
   <li>join / split - to convert a row to an array and back.</li>
   <li>slice - copies the portion of the array.</li>
@@ -291,4 +310,41 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>concat - combines arrays.</li>
   <li>indexOf / lastIndexOf - return an element's position in the array (not supported in IE8-).</li>
   <li>Object.keys (obj) returns an object property array.</li>
+</ul>
+
+<h2>Description-22-11-2018</h2>
+
+<h4>Array methods:</h4>
+<ul>
+  <li>forEach - to iterate through the array.</li>
+  <li>filter - to filter the array.</li>
+  <li>every/some – для проверки массива.</li>
+  <li>map - to transform an array into an array.</li>
+  <li>reduce / reduceRight - to go through the array with the calculation of the value.</li>
+</ul>
+
+<h4>"arguments"</h4>
+<ul>
+  <li>the full list of arguments with which the function is called is available through arguments.</li>
+  <li>this is a pseudo-array, that is, an object that looks like an array, it has numbered properties and length, but it does not have array methods.</li>
+  <li>to specify the default arguments, in cases where they are certainly not false, the operator || is convenient.</li>
+</ul>
+
+<h4>Date and time</h4>
+<ul>
+  <li>Date and time are represented in JavaScript by one object: Date</li>
+  <li>The countdown of months starts from zero.</li>
+  <li>The countdown of the days of the week (for getDay ()) also starts from zero (and this is Sunday).</li>
+  <li>The Date object is convenient because it is auto-corrected. Thanks to it it is easy to shift dates.</li>
+  <li>To get the current date in milliseconds, it's better to use Date.now ()</li>
+  <li>For benchmarking it is better to use performance.now () (except IE9-), it is 1000 times more accurate.</li>
+</ul>
+
+<h2>Description-27-11-2018</h2>
+
+<h4>Recursion and stack</h4>
+<ul>
+  <li>Recursion is a programming term that means a “self-calling” function. Such functions can be used to solve certain tasks in elegant ways.</li>
+  <li>When a function calls itself, that’s called a recursion step. The basis of recursion is function arguments that make the task so simple that the function does not make further calls.</li>
+  <li>A recursively-defined data structure is a data structure that can be defined using itself. For instance, the linked list can be defined as a data structure consisting of an object referencing a list (or null).</li>
 </ul>
