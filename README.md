@@ -89,6 +89,13 @@
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/9c40fb4ff94da79a5a7d0032e3689046e7ddb931">1)Last day of the month and 2)How many seconds have passed today?</a></li>
 </ul>
 
+<h2>Learned-06-12-2018</h2>
+
+<ul>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/676f1f352167d70a970d73273996720910d647bd">Recursion and stack task</a></li>
+  <li><a href=""></a></li>
+</ul>
+
 <h2>Description-12-11-2018</h2>
 
 <h4>Introduction</h4>
