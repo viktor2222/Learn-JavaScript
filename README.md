@@ -93,7 +93,6 @@
 
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/676f1f352167d70a970d73273996720910d647bd">Recursion and stack task</a></li>
-  <li><a href=""></a></li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
@@ -354,4 +353,19 @@ In one SCRIPT tag it is impossible to simultaneously connect an external script 
   <li>Recursion is a programming term that means a “self-calling” function. Such functions can be used to solve certain tasks in elegant ways.</li>
   <li>When a function calls itself, that’s called a recursion step. The basis of recursion is function arguments that make the task so simple that the function does not make further calls.</li>
   <li>A recursively-defined data structure is a data structure that can be defined using itself. For instance, the linked list can be defined as a data structure consisting of an object referencing a list (or null).</li>
+</ul>
+
+<h2>Description-06-12-2018</h2>
+
+<h4>Rest parameters and spread operator</h4>
+<p>When we see "..." in the code, it is either rest parameters or the spread operator.</p>
+<h6>There’s an easy way to distinguish between them:</h6>
+<ul>
+  <li>When ... is at the end of function parameters, it’s “rest parameters” and gathers the rest of the list of arguments into an array.</li>
+  <li>When ... occurs in a function call or alike, it’s called a “spread operator” and expands an array into a list.</li>
+</ul>
+<h6>Use patterns:</h6>
+<ul>
+  <li>Rest parameters are used to create functions that accept any number of arguments.</li>
+  <li>The spread operator is used to pass an array to functions that normally require a list of many arguments.</li>
 </ul>
