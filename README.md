@@ -93,6 +93,7 @@
 
 <ul>
   <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/676f1f352167d70a970d73273996720910d647bd">Recursion and stack task</a></li>
+  <li><a href="https://github.com/viktor2222/Learn-JavaScript/commit/411f891c9dc2d41188bda0ea2d4dbe2874384239">Closure</a></li>
 </ul>
 
 <h2>Description-12-11-2018</h2>
