@@ -1,45 +1,19 @@
-function sumTo(n) {
-  let sum = 0;
+let arr = [1, 2, 3, 4, 5, 6, 7];
 
-  for (let i = 0; i <= n; i++) {
-    sum += i;
-  }
-  return sum;
-}
+function inBetween(a, b) {
 
-alert(sumTo(100));
-
-function sumTo(n) {
-  if(n == 1) {
-    return n;
-  } else {
-    return n = n + sumTo(n-1);
+  return function(i) {
+    return i >= a && i <= b;
   }
 
 }
+alert( arr.filter(inBetween(3, 5)) );
 
-alert(sumTo(1));
+function inArray(arr) {
 
-function factorial(n) {
-  if(n == 1) {
-    return n;
-  } else {
-    return n = n * factorial(n - 1);
+  return function(i) {
+    return arr.includes(i);
   }
-}
-alert(factorial(5));
 
-function fib(n) {
-  let a = 1;
-  let b = 1;
-  for (let i = 3; i <= n; i++) {
-    let c = a + b;
-    a = b;
-    b = c;
-  }
-  return b;
 }
-
-alert( fib(3) );
-alert( fib(7) );
-alert( fib(77) );
+alert( arr.filter(inArray([1, 2, 10])) );
